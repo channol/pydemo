@@ -11,4 +11,4 @@ url='https://www.baidu.com'
 r=requests.get(url)
 r.encoding=r.apparent_encoding
 print(r.text[-200:])
-
+print('good1234!')

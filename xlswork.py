@@ -13,6 +13,6 @@ cols=bugsheet.col_values(6)
 #print (cols)
 
 l1=len(cols) 
-#print (l1)
-for i in range (l1):
-    print (bugsheet.cell(6,i))
+print (l1)
+#for i in range (l1):
+#    print (bugsheet.cell(6,i))
