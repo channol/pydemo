@@ -1,0 +1,192 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Ant	/root/git/pydemo/demo.py	/^class Ant(Sprite):$/;"	kind:class	language:Python	inherits:Sprite
+AuthPass	/root/git/pydemo/other.py	/^                       AuthPass='password')$/;"	kind:variable	language:Python
+Community	/root/git/pydemo/snmp.py	/^                    Community='public')$/;"	kind:variable	language:Python
+DEFAULT_HTTP_PATH	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^DEFAULT_HTTP_PATH='http:\/\/'+SERVER_IP+':'+SERVER_PORT$/;"	kind:variable	language:Python
+DELETE	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^DELETE = "delete"$/;"	kind:variable	language:Python
+DestHost	/root/git/pydemo/other.py	/^                       DestHost='localhost',$/;"	kind:variable	language:Python
+DestHost	/root/git/pydemo/snmp.py	/^                    DestHost=testip,$/;"	kind:variable	language:Python
+GET	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^GET = "get"$/;"	kind:variable	language:Python
+GameField	/root/git/pydemo/2048.py	/^class GameField(object):$/;"	kind:class	language:Python	inherits:object
+GameOver	/root/git/pydemo/demo.py	/^class GameOver(object): #地图类$/;"	kind:class	language:Python	inherits:object
+MmeSession	/root/git/pydemo/mme.py	/^def MmeSession():$/;"	kind:function	language:Python	access:public
+Model	/root/git/pydemo/250movie.py	/^class Model(object):$/;"	kind:class	language:Python	inherits:object
+Movie	/root/git/pydemo/250movie.py	/^class Movie(Model):$/;"	kind:class	language:Python	inherits:Model
+PATCH	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^PATCH = "patch"$/;"	kind:variable	language:Python
+POST	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^POST = "post"$/;"	kind:variable	language:Python
+PUT	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^PUT = "put"$/;"	kind:variable	language:Python
+PrivPass	/root/git/pydemo/other.py	/^                       PrivPass='passworddes',$/;"	kind:variable	language:Python
+SERVER_IP	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^SERVER_IP = "172.0.4.138"$/;"	kind:variable	language:Python
+SERVER_PORT	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^SERVER_PORT= "8008"$/;"	kind:variable	language:Python
+SecLevel	/root/git/pydemo/other.py	/^                       SecLevel='authPriv',$/;"	kind:variable	language:Python
+SecName	/root/git/pydemo/other.py	/^                       SecName='snmpuser',$/;"	kind:variable	language:Python
+Sprite	/root/git/pydemo/demo.py	/^class Sprite(object): #父类 精灵类$/;"	kind:class	language:Python	inherits:object
+Worm	/root/git/pydemo/demo.py	/^class Worm(Sprite):$/;"	kind:class	language:Python	inherits:Sprite
+__init__	/root/git/pydemo/2048.py	/^    def __init__(self, height=4, width=4, win=2048):$/;"	kind:member	language:Python	class:GameField	access:public
+__init__	/root/git/pydemo/250movie.py	/^    def __init__(self):$/;"	kind:member	language:Python	class:Movie	access:public
+__init__	/root/git/pydemo/demo.py	/^    def __init__(self):$/;"	kind:member	language:Python	class:GameOver	access:public
+__init__	/root/git/pydemo/demo.py	/^    def __init__(self,gm,point):$/;"	kind:member	language:Python	class:Ant	access:public
+__init__	/root/git/pydemo/demo.py	/^    def __init__(self,gm,point):$/;"	kind:member	language:Python	class:Worm	access:public
+__init__	/root/git/pydemo/demo.py	/^    def __init__(self,gm,point=None):  #生成一个位置$/;"	kind:member	language:Python	class:Sprite	access:public
+__repr__	/root/git/pydemo/250movie.py	/^    def __repr__(self):$/;"	kind:member	language:Python	class:Model	file:	access:private
+actions	/root/git/pydemo/2048.py	/^actions = ['Up', 'Left', 'Down', 'Right', 'Restart', 'Exit']$/;"	kind:variable	language:Python
+actions_dict	/root/git/pydemo/2048.py	/^actions_dict = dict(zip(letter_codes, actions * 2))$/;"	kind:variable	language:Python
+ant	/root/git/pydemo/demo.py	/^    ant = Ant()$/;"	kind:variable	language:Python
+bugsheet	/root/git/pydemo/xlswork.py	/^bugsheet=workbook.sheet_by_name('Bug Statistics')$/;"	kind:variable	language:Python
+cast	/root/git/pydemo/2048.py	/^    def cast(string):$/;"	kind:member	language:Python	class:GameField	access:public
+catched	/root/git/pydemo/demo.py	/^    def catched(self):$/;"	kind:member	language:Python	class:GameOver	access:public
+cfg_path	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^cfg_path = {$/;"	kind:variable	language:Python
+cfg_pkg	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^cfg_pkg = {$/;"	kind:variable	language:Python
+chan	/root/git/pydemo/transport.py	/^chan=t.open_session()$/;"	kind:variable	language:Python
+change	/root/git/pydemo/2048.py	/^            def change(i):  # true if there'll be change in i-th tile$/;"	kind:function	language:Python	function:GameField.move_is_possible.row_is_left_movable	access:public
+check	/root/git/pydemo/2048.py	/^    check = {}$/;"	kind:variable	language:Python	class:GameField
+clidisplay	/root/git/pydemo/show.py	/^    clidisplay=show_context.decode(encoding='utf-8')$/;"	kind:variable	language:Python
+clidisplay	/root/git/pydemo/show1.py	/^    clidisplay=show_context.decode(encoding='utf-8')$/;"	kind:variable	language:Python
+cols	/root/git/pydemo/xlswork.py	/^cols=bugsheet.col_values(6)$/;"	kind:variable	language:Python
+download_covers	/root/git/pydemo/250movie.py	/^def download_covers(m):$/;"	kind:function	language:Python	access:public
+draw	/root/git/pydemo/2048.py	/^    def draw(self, screen):$/;"	kind:member	language:Python	class:GameField	access:public
+draw_hor_separator	/root/git/pydemo/2048.py	/^    def draw_hor_separator():$/;"	kind:member	language:Python	class:GameField	access:public
+draw_row	/root/git/pydemo/2048.py	/^    def draw_row(row):$/;"	kind:member	language:Python	class:GameField	access:public
+end	/root/git/pydemo/show.py	/^    end=time.time()$/;"	kind:variable	language:Python
+game	/root/git/pydemo/2048.py	/^    def game():$/;"	kind:function	language:Python	function:main	access:public
+gameover_string	/root/git/pydemo/2048.py	/^    gameover_string = '  GAME OVER'$/;"	kind:variable	language:Python	class:GameField
+gm	/root/git/pydemo/demo.py	/^    gm = GameOver()$/;"	kind:variable	language:Python
+guess	/root/git/pydemo/guess.py	/^def guess():$/;"	kind:function	language:Python	access:public
+help_string2	/root/git/pydemo/2048.py	/^    help_string2 = ' (R)Restart (Q)Exit'$/;"	kind:variable	language:Python	class:GameField
+host	/root/git/pydemo/show.py	/^host='172.0.10.165'$/;"	kind:variable	language:Python
+host	/root/git/pydemo/show1.py	/^host='172.0.10.165'$/;"	kind:variable	language:Python
+init	/root/git/pydemo/2048.py	/^    def init():$/;"	kind:function	language:Python	function:main	access:public
+invert	/root/git/pydemo/2048.py	/^def invert(field):$/;"	kind:function	language:Python	access:public
+is_gameover	/root/git/pydemo/2048.py	/^    def is_gameover(self):$/;"	kind:member	language:Python	class:GameField	access:public
+is_win	/root/git/pydemo/2048.py	/^    def is_win(self):$/;"	kind:member	language:Python	class:GameField	access:public
+jump	/root/git/pydemo/demo.py	/^    def jump(self): #移动方法, 通用$/;"	kind:member	language:Python	class:Sprite	access:public
+jump	/root/git/pydemo/demo.py	/^    def jump(self):$/;"	kind:member	language:Python	class:Ant	access:public
+jump	/root/git/pydemo/demo.py	/^    def jump(self):$/;"	kind:member	language:Python	class:Worm	access:public
+l1	/root/git/pydemo/xlswork.py	/^l1=len(cols) $/;"	kind:variable	language:Python
+letter_codes	/root/git/pydemo/2048.py	/^letter_codes = [ord(ch) for ch in 'WASDRQwasdrq']$/;"	kind:variable	language:Python
+line	/root/git/pydemo/test.py	/^line = "Catsaresmarterthandogs ar"$/;"	kind:variable	language:Python
+log	/root/git/pydemo/250movie.py	/^def log(*args, **kwargs):$/;"	kind:function	language:Python	access:public
+m	/root/git/pydemo/250movie.py	/^m = Model()$/;"	kind:variable	language:Python
+main	/root/git/pydemo/2048.py	/^def main(stdscr):$/;"	kind:function	language:Python	access:public
+main	/root/git/pydemo/250movie.py	/^def main():$/;"	kind:function	language:Python	access:public
+merge	/root/git/pydemo/2048.py	/^            def merge(row):$/;"	kind:function	language:Python	function:GameField.move.move_row_left	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_delete_nsi_1	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_delete_nsi_2	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_delete_nsi_3	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_delete_nsi_4	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_delete_nsi_5	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_delete_nsi_6	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_post_nsi_1	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_post_nsi_2	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_post_nsi_3	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_post_nsi_4	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_post_nsi_5	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_post_nsi_6	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_post_nsi_7	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_post_nsi_8	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_show_nsi_1	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_show_nsi_2	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_show_nsi_3	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_show_nsi_4	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_cfg_show_nsi_5	access:public
+method	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^    async def method():$/;"	kind:function	language:Python	function:test_db_init	access:public
+mmebind	/root/git/pydemo/show.py	/^mmebind = {$/;"	kind:variable	language:Python
+mmebind	/root/git/pydemo/show1.py	/^mmebind = {$/;"	kind:variable	language:Python
+mmebind	/root/git/pydemo/snmp.py	/^mmebind = {$/;"	kind:variable	language:Python
+mmebind1	/root/git/pydemo/mme.py	/^mmebind1='CASA-GW-MIB::casaMmeTotalEnbSessions'$/;"	kind:variable	language:Python
+mmebind2	/root/git/pydemo/mme.py	/^mmebind2='CASA-GW-MIB::casaMmeTotalUeSessions' $/;"	kind:variable	language:Python
+mmebind3	/root/git/pydemo/mme.py	/^mmebind3='CASA-GW-MIB::casaMmeTotalErabs'$/;"	kind:variable	language:Python
+mmeip	/root/git/pydemo/snmp.py	/^mmeip='172.0.10.165'$/;"	kind:variable	language:Python
+mmeip	/root/git/pydemo/transport.py	/^mmeip='172.0.10.165'$/;"	kind:variable	language:Python
+move	/root/git/pydemo/2048.py	/^    def move(self, direction):$/;"	kind:member	language:Python	class:GameField	access:public
+move_is_possible	/root/git/pydemo/2048.py	/^    def move_is_possible(self, direction):$/;"	kind:member	language:Python	class:GameField	access:public
+move_row_left	/root/git/pydemo/2048.py	/^        def move_row_left(row):$/;"	kind:function	language:Python	function:GameField.move	access:public
+moves	/root/git/pydemo/2048.py	/^    moves = {}$/;"	kind:variable	language:Python	class:GameField
+movie_log	/root/git/pydemo/250movie.py	/^def movie_log(*args, **kwargs):$/;"	kind:function	language:Python	access:public
+movies_from_div	/root/git/pydemo/250movie.py	/^def movies_from_div(div):$/;"	kind:function	language:Python	access:public
+movies_from_url	/root/git/pydemo/250movie.py	/^def movies_from_url(urls):$/;"	kind:function	language:Python	access:public
+mun	/root/git/pydemo/show.py	/^        mun=re.search(r'\\d+',result.group())$/;"	kind:variable	language:Python
+not_game	/root/git/pydemo/2048.py	/^    def not_game(state):$/;"	kind:function	language:Python	function:main	access:public
+passwd	/root/git/pydemo/transport.py	/^passwd='casa'$/;"	kind:variable	language:Python
+password	/root/git/pydemo/show.py	/^password='casa'$/;"	kind:variable	language:Python
+password	/root/git/pydemo/show1.py	/^password='casa'$/;"	kind:variable	language:Python
+password	/root/git/pydemo/snmp.py	/^password='casa'$/;"	kind:variable	language:Python
+port	/root/git/pydemo/show.py	/^port=22$/;"	kind:variable	language:Python
+port	/root/git/pydemo/show1.py	/^port=22$/;"	kind:variable	language:Python
+r	/root/git/pydemo/test.py	/^r=requests.get(url)$/;"	kind:variable	language:Python
+res	/root/git/pydemo/other.py	/^res = sess.set(vars)$/;"	kind:variable	language:Python
+reset	/root/git/pydemo/2048.py	/^    def reset(self):$/;"	kind:member	language:Python	class:GameField	access:public
+resub	/root/git/pydemo/show.py	/^    resub=re.compile(r'total\\sENBs\\s+\\d+\\s+',re.M)$/;"	kind:variable	language:Python
+resub	/root/git/pydemo/show1.py	/^    resub=re.compile(r's1ap\\sconnections\\s+\\d+\\s+',re.M)$/;"	kind:variable	language:Python
+result	/root/git/pydemo/show.py	/^    result=resub.search(clidisplay)$/;"	kind:variable	language:Python
+result	/root/git/pydemo/show1.py	/^    result=resub.search(clidisplay)$/;"	kind:variable	language:Python
+row_is_left_movable	/root/git/pydemo/2048.py	/^        def row_is_left_movable(row):$/;"	kind:function	language:Python	function:GameField.move_is_possible	access:public
+saegwip	/root/git/pydemo/snmp.py	/^saegwip='172.0.20.16'$/;"	kind:variable	language:Python
+saegwip	/root/git/pydemo/transport.py	/^saegwip='172.0.20.16'$/;"	kind:variable	language:Python
+sess	/root/git/pydemo/other.py	/^sess = netsnmp.Session(Version=3,$/;"	kind:variable	language:Python
+sess	/root/git/pydemo/snmp.py	/^sess=netsnmp.Session(Version=2,$/;"	kind:variable	language:Python
+set_point	/root/git/pydemo/demo.py	/^    def set_point(self,tp,point):$/;"	kind:member	language:Python	class:GameOver	access:public
+show_context	/root/git/pydemo/show.py	/^    show_context = showcli('show mme enodebs list\\r')$/;"	kind:variable	language:Python
+show_context	/root/git/pydemo/show1.py	/^    show_context = showcli('show mme info\\r')$/;"	kind:variable	language:Python
+showcli	/root/git/pydemo/show.py	/^def showcli(cmd):$/;"	kind:function	language:Python	access:public
+showcli	/root/git/pydemo/show1.py	/^def showcli(cmd):$/;"	kind:function	language:Python	access:public
+snmp_context	/root/git/pydemo/show1.py	/^    snmp_context=snmpget(mmebind[1])$/;"	kind:variable	language:Python
+snmp_result	/root/git/pydemo/show1.py	/^    snmp_result=snmp_context[0].decode(encoding='utf-8')$/;"	kind:variable	language:Python
+snmpcmd	/root/git/pydemo/show.py	/^    snmpcmd='snmpget -m all -v 2c -c public 172.0.10.165 1.3.6.1.4.1.20858.10.104.9.1.2.0'$/;"	kind:variable	language:Python
+snmpget	/root/git/pydemo/show1.py	/^def snmpget(oid):$/;"	kind:function	language:Python	access:public
+snmpresult	/root/git/pydemo/show.py	/^    snmpresult=os.popen(snmpcmd).readline()$/;"	kind:variable	language:Python
+spawn	/root/git/pydemo/2048.py	/^    def spawn(self):$/;"	kind:member	language:Python	class:GameField	access:public
+spend_time	/root/git/pydemo/show.py	/^    spend_time = end - start$/;"	kind:variable	language:Python
+ssh	/root/git/pydemo/snmp.py	/^ssh = paramiko.SSHClient()$/;"	kind:variable	language:Python
+start	/root/git/pydemo/show.py	/^    start=time.time()$/;"	kind:variable	language:Python
+step	/root/git/pydemo/demo.py	/^    step = [-2,+2,-3,+3]$/;"	kind:variable	language:Python	class:Sprite
+str	/root/git/pydemo/transport.py	/^str=chan.recv(65535)$/;"	kind:variable	language:Python
+t	/root/git/pydemo/transport.py	/^t=paramiko.Transport(mmeip,22)$/;"	kind:variable	language:Python
+test_cfg_delete_nsi_1	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_delete_nsi_1():$/;"	kind:function	language:Python	access:public
+test_cfg_delete_nsi_2	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_delete_nsi_2():$/;"	kind:function	language:Python	access:public
+test_cfg_delete_nsi_3	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_delete_nsi_3():$/;"	kind:function	language:Python	access:public
+test_cfg_delete_nsi_4	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_delete_nsi_4():$/;"	kind:function	language:Python	access:public
+test_cfg_delete_nsi_5	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_delete_nsi_5():                      ##relate to case 1.002##$/;"	kind:function	language:Python	access:public
+test_cfg_delete_nsi_6	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_delete_nsi_6():                      ##relate to case 1.007##$/;"	kind:function	language:Python	access:public
+test_cfg_post_nsi_1	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_post_nsi_1():$/;"	kind:function	language:Python	access:public
+test_cfg_post_nsi_2	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_post_nsi_2():$/;"	kind:function	language:Python	access:public
+test_cfg_post_nsi_3	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_post_nsi_3():$/;"	kind:function	language:Python	access:public
+test_cfg_post_nsi_4	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_post_nsi_4():$/;"	kind:function	language:Python	access:public
+test_cfg_post_nsi_5	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_post_nsi_5():$/;"	kind:function	language:Python	access:public
+test_cfg_post_nsi_6	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_post_nsi_6():$/;"	kind:function	language:Python	access:public
+test_cfg_post_nsi_7	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_post_nsi_7():$/;"	kind:function	language:Python	access:public
+test_cfg_post_nsi_8	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_post_nsi_8():$/;"	kind:function	language:Python	access:public
+test_cfg_show_nsi_1	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_show_nsi_1():$/;"	kind:function	language:Python	access:public
+test_cfg_show_nsi_2	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_show_nsi_2():$/;"	kind:function	language:Python	access:public
+test_cfg_show_nsi_3	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_show_nsi_3():$/;"	kind:function	language:Python	access:public
+test_cfg_show_nsi_4	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_show_nsi_4():$/;"	kind:function	language:Python	access:public
+test_cfg_show_nsi_5	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_cfg_show_nsi_5():$/;"	kind:function	language:Python	access:public
+test_db_init	/root/git/pydemo/test_cfg_NetSliceInstance.py	/^def test_db_init():$/;"	kind:function	language:Python	access:public
+testip	/root/git/pydemo/snmp.py	/^testip=mmeip$/;"	kind:variable	language:Python
+testip	/root/git/pydemo/transport.py	/^testip=mmeip$/;"	kind:variable	language:Python
+testuser	/root/git/pydemo/snmp.py	/^testuser='casa'$/;"	kind:variable	language:Python
+testuser	/root/git/pydemo/transport.py	/^testuser='casa'$/;"	kind:variable	language:Python
+tighten	/root/git/pydemo/2048.py	/^            def tighten(row):  # squeese non-zero elements together$/;"	kind:function	language:Python	function:GameField.move.move_row_left	access:public
+transpose	/root/git/pydemo/2048.py	/^def transpose(field):$/;"	kind:function	language:Python	access:public
+url	/root/git/pydemo/test.py	/^url='https:\/\/www.baidu.com'$/;"	kind:variable	language:Python
+urls_from_douban	/root/git/pydemo/250movie.py	/^def urls_from_douban():$/;"	kind:function	language:Python	access:public
+username	/root/git/pydemo/show.py	/^username='casa'$/;"	kind:variable	language:Python
+username	/root/git/pydemo/show1.py	/^username='casa'$/;"	kind:variable	language:Python
+vals	/root/git/pydemo/other.py	/^vals = sess.get(vars)$/;"	kind:variable	language:Python
+vals	/root/git/pydemo/other.py	/^vals = sess.getbulk(2, 8, vars)$/;"	kind:variable	language:Python
+vals	/root/git/pydemo/other.py	/^vals = sess.getnext(vars)$/;"	kind:variable	language:Python
+vals	/root/git/pydemo/other.py	/^vals = sess.walk(vars)$/;"	kind:variable	language:Python
+vals	/root/git/pydemo/snmp.py	/^vals=sess.get(vars)$/;"	kind:variable	language:Python
+vars	/root/git/pydemo/other.py	/^vars = netsnmp.VarList($/;"	kind:variable	language:Python
+vars	/root/git/pydemo/other.py	/^vars = netsnmp.VarList(netsnmp.Varbind('sysUpTime'),$/;"	kind:variable	language:Python
+vars	/root/git/pydemo/other.py	/^vars = netsnmp.VarList(netsnmp.Varbind('sysUpTime', 0),$/;"	kind:variable	language:Python
+vars	/root/git/pydemo/other.py	/^vars = netsnmp.VarList(netsnmp.Varbind('system'))$/;"	kind:variable	language:Python
+vars	/root/git/pydemo/snmp.py	/^vars = netsnmp.VarList(netsnmp.Varbind(mmebind[1],0))$/;"	kind:variable	language:Python
+win_string	/root/git/pydemo/2048.py	/^    win_string = '  YOU WIN!'$/;"	kind:variable	language:Python	class:GameField
+workbook	/root/git/pydemo/xlswork.py	/^workbook=xlrd.open_workbook(r'D:\\OneDrive\\python\\LQL-SAEGW_test_case_list_v1.1_stream495_DPI_20190422.xls')$/;"	kind:variable	language:Python
+worm	/root/git/pydemo/demo.py	/^    worm = Worm()$/;"	kind:variable	language:Python

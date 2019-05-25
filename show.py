@@ -56,14 +56,14 @@ if __name__ == '__main__':
     print(snmpresult)
 
     #snmpnum=re.search(r'=\sCounter32:\s\d+\s+',snmpresult,re.M|re.S)
-    snmpnum=re.search(r'\d+$',snmpresult,re.M|re.S)
-    print(snmpnum.group())
+    #snmpnum=re.search(r'\d+$',snmpresult,re.M|re.S)
+    #print(snmpnum.group())
 
-    if snmpnum.group()==mun.group():
-        print('pass!!')
-    else:
-        print('failed!!')
-        print(snmpnum.group(),"vs",mun.group())
+    #if snmpnum.group()==mun.group():
+    #    print('pass!!')
+    #else:
+    #    print('failed!!')
+    #    print(snmpnum.group(),"vs",mun.group())
 
     end=time.time()
     spend_time = end - start

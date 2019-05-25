@@ -1,0 +1,7524 @@
+cscope 15 $HOME/git/pydemo -q 0000000482 0000038829
+	@/root/git/pydemo/2048.py
+
+1 #-*- 
+codšg
+:
+utf
+-8 -*-
+
+2 
+impÜt
+ 
+cur£s
+
+
+3 
+äom
+ 
+¿ndom
+ 
+impÜt
+ 
+	g¿nd¿nge
+, 
+	gchoiû
+ #g’”©
+ªd
+ 
+¶aû
+ 
+Ãw
+ 
+te
+
+
+4 
+äom
+ 
+cŞËùiÚs
+ 
+impÜt
+ 
+deçuÉdiù
+
+
+6 
+	gË‰”_codes
+ = [
+	$Üd
+(
+ch
+èch 
+š
+ 'WASDRQwasdrq']
+
+7 
+aùiÚs
+ = ['Up', 'Left', 'Down', 'Right', 'Restart', 'Exit']
+
+8 
+aùiÚs_diù
+ = 
+	`diù
+(
+	$z
+(
+Ë‰”_codes
+, 
+aùiÚs
+ * 2))
+
+11 
+def
+ 
+	$Œª¥o£
+(
+f›ld
+):
+
+12  [
+	$li¡
+(
+row
+èrow 
+š
+ 
+	`z
+(*
+f›ld
+)]
+
+15 
+def
+ 
+	$šv”t
+(
+f›ld
+):
+
+16  [
+row
+[::-1] row 
+š
+ 
+f›ld
+]
+
+19 
+şass
+ 
+	$GameF›ld
+(
+objeù
+):
+
+20 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+height
+=4, 
+width
+=4, 
+wš
+=2048):
+
+21 
+£lf
+.
+height
+ = height
+
+23 
+£lf
+.
+width
+ = width
+
+24 
+£lf
+.
+wš_v®ue
+ = 
+wš
+
+
+25 
+£lf
+.
+scÜe
+ = 0
+
+26 
+£lf
+.
+highscÜe
+ = 0
+
+27 
+£lf
+.
+	$»£t
+()
+
+29 
+def
+ 
+	$»£t
+(
+£lf
+):
+
+30 
+£lf
+.
+scÜe
+ > s–f.
+highscÜe
+:
+
+31 
+£lf
+.
+highscÜe
+ = s–f.
+scÜe
+
+
+33 
+£lf
+.
+scÜe
+ = 0
+
+34 
+£lf
+.
+f›ld
+ = [[0 
+i
+ 
+š
+ 
+	`¿nge
+(£lf.
+width
+)] 
+j
+ iÀ¿nge(£lf.
+height
+)]
+
+35 
+£lf
+.
+	$¥awn
+()
+
+36 
+£lf
+.
+	$¥awn
+()
+
+38 
+def
+ 
+	$move
+(
+£lf
+, 
+dœeùiÚ
+):
+
+39 
+def
+ 
+	$move_row_Ëá
+(
+row
+):
+
+40 
+def
+ 
+	$tigh‹n
+(
+row
+): #squ“£ 
+nÚ
+-
+z”o
+ 
+–em’ts
+ 
+tog‘h”
+
+
+41 
+Ãw_row
+ = [
+i
+ ˜
+š
+ 
+row
+ i != 0]
+
+43 
+Ãw_row
+ +ğ[0 
+i
+ 
+š
+ 
+	`¿nge
+(
+	`Ën
+(
+row
+) -†en(new_row))]
+
+44  
+Ãw_row
+
+
+46 
+def
+ 
+	$m”ge
+(
+row
+):
+
+47 
+·œ
+ = 
+F®£
+
+
+49 
+Ãw_row
+ = []
+
+50 
+i
+ 
+š
+ 
+	`¿nge
+(
+	$Ën
+(
+row
+)):
+
+51 
+·œ
+:
+
+52 
+Ãw_row
+.
+	$­³nd
+(2 * 
+row
+[
+i
+])
+
+53 
+£lf
+.
+scÜe
+ +ğ2 * 
+row
+[
+i
+]
+
+54 
+·œ
+ = 
+F®£
+
+
+56 
+i
+ + 1 < 
+	$Ën
+(
+row
+è
+ªd
+„ow[
+i
+] ==„ow[i + 1]:
+
+57 
+·œ
+ = 
+True
+
+
+58 
+Ãw_row
+.
+	$­³nd
+(0)
+
+60 
+Ãw_row
+.
+	$­³nd
+(
+row
+[
+i
+])
+
+61 
+as£¹
+ 
+	`Ën
+(
+Ãw_row
+è=ğ
+	$Ën
+(
+row
+)
+
+62  
+Ãw_row
+
+
+63  
+	`tigh‹n
+(
+	`m”ge
+(
+	$tigh‹n
+(
+row
+)))
+
+65 
+moves
+ = {
+	}
+}
+
+66 
+moves
+['Leá'] = 
+Ïmbda
+ 
+f›ld
+: \
+
+67 [
+	$move_row_Ëá
+(
+row
+èrow 
+š
+ 
+f›ld
+]
+
+68 
+moves
+['Right'] = 
+Ïmbda
+ 
+f›ld
+: \
+
+69 
+	`šv”t
+(
+moves
+['Leá'](
+	$šv”t
+(
+f›ld
+)))
+
+70 
+moves
+['Up'] = 
+Ïmbda
+ 
+f›ld
+: \
+
+71 
+	`Œª¥o£
+(
+moves
+['Leá'](
+	$Œª¥o£
+(
+f›ld
+)))
+
+72 
+moves
+['Down'] = 
+Ïmbda
+ 
+f›ld
+: \
+
+73 
+	`Œª¥o£
+(
+moves
+['Right'](
+	$Œª¥o£
+(
+f›ld
+)))
+
+75 
+dœeùiÚ
+ 
+š
+ 
+moves
+:
+
+76 
+£lf
+.
+	$move_is_possibË
+(
+dœeùiÚ
+):
+
+77 
+£lf
+.
+f›ld
+ = 
+moves
+[
+dœeùiÚ
+](self.field)
+
+78 
+£lf
+.
+	$¥awn
+()
+
+79  
+True
+
+
+81  
+F®£
+
+
+83 
+def
+ 
+	$is_wš
+(
+£lf
+):
+
+84  
+	`ªy
+×ny(
+i
+ >ğ
+£lf
+.
+wš_v®ue
+ ˜
+š
+ 
+row
+èrow iÀ£lf.
+f›ld
+)
+
+86 
+def
+ 
+	$is_gameov”
+(
+£lf
+):
+
+87  
+nÙ
+ 
+	`ªy
+(
+£lf
+.
+	$move_is_possibË
+(
+move
+èmov
+š
+ 
+aùiÚs
+)
+
+89 
+def
+ 
+	$d¿w
+(
+£lf
+, 
+sü“n
+):
+
+90 
+h–p_¡ršg1
+ = '(W)Up (S)Down (A)Left (D)Right'
+
+92 
+h–p_¡ršg2
+ = ' (R)Restart (Q)Exit'
+
+93 
+gameov”_¡ršg
+ = ' GAME OVER'
+
+94 
+wš_¡ršg
+ = ' YOU WIN!'
+
+96 
+def
+ 
+	$ÿ¡
+(
+¡ršg
+):
+
+97 
+sü“n
+.
+	`add¡r
+(
+¡ršg
+ + '\n')
+
+99 
+def
+ 
+	$d¿w_hÜ_£·¿tÜ
+():
+
+100 
+lše
+ = '+' + ('+------' * 
+£lf
+.
+width
+ + '+')[1:]
+
+101 
+£·¿tÜ
+ = 
+	$deçuÉdiù
+(
+Ïmbda
+: 
+lše
+)
+
+102 
+nÙ
+ 
+	`ha§‰r
+(
+d¿w_hÜ_£·¿tÜ
+, "counter"):
+
+103 
+d¿w_hÜ_£·¿tÜ
+.
+couÁ”
+ = 0
+
+104 
+	$ÿ¡
+(
+£·¿tÜ
+[
+d¿w_hÜ_£·¿tÜ
+.
+couÁ”
+])
+
+105 
+d¿w_hÜ_£·¿tÜ
+.
+couÁ”
+ += 1
+
+107 
+def
+ 
+	$d¿w_row
+(
+row
+):
+
+108 
+	`ÿ¡
+(''.
+	`još
+('|{: ^5} '.
+	$fÜm©
+(
+num
+ènum > 0 '| ' num 
+š
+ 
+row
+) + '|')
+
+110 
+sü“n
+.
+	$ş—r
+()
+
+111 
+	`ÿ¡
+('SCORE: ' + 
+	$¡r
+(
+£lf
+.
+scÜe
+))
+
+112 0 !ğ
+£lf
+.
+highscÜe
+:
+
+113 
+	`ÿ¡
+('HGHSCORE: ' + 
+	$¡r
+(
+£lf
+.
+highscÜe
+))
+
+114 
+row
+ 
+š
+ 
+£lf
+.
+f›ld
+:
+
+115 
+	$d¿w_hÜ_£·¿tÜ
+()
+
+116 
+	$d¿w_row
+(
+row
+)
+
+117 
+	$d¿w_hÜ_£·¿tÜ
+()
+
+118 
+£lf
+.
+	$is_wš
+():
+
+119 
+	$ÿ¡
+(
+wš_¡ršg
+)
+
+121 
+£lf
+.
+	$is_gameov”
+():
+
+122 
+	$ÿ¡
+(
+gameov”_¡ršg
+)
+
+124 
+	$ÿ¡
+(
+h–p_¡ršg1
+)
+
+125 
+	$ÿ¡
+(
+h–p_¡ršg2
+)
+
+127 
+def
+ 
+	$¥awn
+(
+£lf
+):
+
+128 
+Ãw_–em’t
+ = 4 
+	`¿nd¿nge
+(100) > 89 2
+
+130 (
+i
+, 
+j
+èğ
+	`choiû
+([(i, jè˜
+š
+ 
+	$¿nge
+(
+£lf
+.
+width
+è
+j
+ 
+š
+ 
+	$¿nge
+(
+£lf
+.
+height
+è£lf.
+f›ld
+[
+i
+][
+j
+] == 0])
+
+131 
+£lf
+.
+f›ld
+[
+i
+][
+j
+] = 
+Ãw_–em’t
+
+
+133 
+def
+ 
+	$move_is_possibË
+(
+£lf
+, 
+dœeùiÚ
+):
+
+134 
+def
+ 
+	$row_is_Ëá_movabË
+(
+row
+):
+
+135 
+def
+ 
+	$chªge
+(
+i
+): #Œu
+th”e
+'ll be change in i-thile
+
+136 
+row
+[
+i
+] =ğ0 
+ªd
+„ow[i + 1] != 0: #Move
+
+137  
+True
+
+
+139 
+row
+[
+i
+] !ğ0 
+ªd
+„ow[i + 1] ==„ow[i]: #Merge
+
+140  
+True
+
+
+141  
+F®£
+
+
+142  
+	`ªy
+(
+	$chªge
+(
+i
+è˜
+š
+ 
+	`¿nge
+(
+	`Ën
+(
+row
+) - 1))
+
+144 
+check
+ = {
+	}
+}
+
+145 
+check
+['Leá'] = 
+Ïmbda
+ 
+f›ld
+: \
+
+146 
+ªy
+(
+	$row_is_Ëá_movabË
+(
+row
+èrow 
+š
+ 
+f›ld
+)
+
+148 
+check
+['Right'] = 
+Ïmbda
+ 
+f›ld
+: \
+
+149 
+check
+['Leá'](
+	$šv”t
+(
+f›ld
+))
+
+151 
+check
+['Up'] = 
+Ïmbda
+ 
+f›ld
+: \
+
+152 
+check
+['Leá'](
+	$Œª¥o£
+(
+f›ld
+))
+
+154 
+check
+['Down'] = 
+Ïmbda
+ 
+f›ld
+: \
+
+155 
+check
+['Right'](
+	$Œª¥o£
+(
+f›ld
+))
+
+157 
+dœeùiÚ
+ 
+š
+ 
+check
+:
+
+158  
+check
+[
+dœeùiÚ
+](
+£lf
+.
+f›ld
+)
+
+160  
+F®£
+
+
+163 
+def
+ 
+	$maš
+(
+¡dsü
+):
+
+164 
+def
+ 
+	$š™
+():
+
+167 
+game_f›ld
+.
+	$»£t
+()
+
+170 
+def
+ 
+	$nÙ_game
+(
+¡©e
+):
+
+172 #ç”»å‡º 
+GameOv”
+ æˆ–è€… 
+Wš
+ çš„ç•Œé¢
+
+173 
+game_f›ld
+.
+	$d¿w
+(
+¡dsü
+)
+
+174 #è¯»å–ç”¨æˆ·è¾“å…¥å¾—åˆ°
+aùiÚ
+ï¼Œåˆ¤æ–­æ˜¯é‡å¯æ¸¸æˆè¿˜æ˜¯ç»“æŸæ¸¸æˆ
+
+175 
+aùiÚ
+ = 
+	$g‘_u£r_aùiÚ
+(
+¡dsü
+)
+
+176 
+»¥Ú£s
+ = 
+	$deçuÉdiù
+(
+Ïmbda
+: 
+¡©e
+) #é»˜è®¤æ˜¯å½“å‰çŠ¶æ€ï¼Œæ²¡æœ‰è¡Œä¸ºå°±ä¼šä¸€ç›´åœ¨å½“å‰ç•Œé¢å¾ªç¯
+
+177 
+»¥Ú£s
+['Restart'],„esponses['Exit'] = 'Init', 'Exit' #å¯¹åº”ä¸åŒçš„è¡Œä¸ºè½¬æ¢åˆ°ä¸åŒçš„çŠ¶æ€
+
+178  
+»¥Ú£s
+[
+aùiÚ
+]
+
+180 
+def
+ 
+	$game
+():
+
+183 
+game_f›ld
+.
+	$d¿w
+(
+¡dsü
+)
+
+184 #è¯»å–ç”¨æˆ·è¾“å…¥å¾—åˆ°
+aùiÚ
+
+
+185 
+aùiÚ
+ = 
+	$g‘_u£r_aùiÚ
+(
+¡dsü
+)
+
+187 
+aùiÚ
+ == 'Restart':
+
+189 
+aùiÚ
+ == 'Exit':
+
+191 
+game_f›ld
+.
+	$move
+(
+aùiÚ
+): #mov
+sucûssful
+
+
+192 
+game_f›ld
+.
+	$is_wš
+():
+
+194 
+game_f›ld
+.
+	$is_gameov”
+():
+
+198 
+¡©e_aùiÚs
+ = {
+
+199 'In™': 
+š™
+,
+
+200 'Wš': 
+Ïmbda
+: 
+	`nÙ_game
+('Win'),
+
+201 'Gameov”': 
+Ïmbda
+: 
+	`nÙ_game
+('Gameover'),
+
+202 'Game': 
+game
+
+
+203 
+	}
+}
+
+204 
+cur£s
+.
+	$u£_deçuÉ_cŞÜs
+()
+
+205 
+game_f›ld
+ = 
+	$GameF›ld
+(
+wš
+=32)
+
+206 
+¡©e
+ = 'Init'
+
+208 
+¡©e
+ != 'Exit':
+
+209 
+¡©e
+ = 
+¡©e_aùiÚs
+[state]()
+
+212 
+cur£s
+.
+	`w¿µ”
+(
+maš
+)
+
+	@/root/git/pydemo/250movie.py
+
+1 #!/
+u¤
+/
+bš
+/
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+UTF
+-8 -*-
+
+6 #impÜˆ
+sys
+
+
+7 #impÜˆ
+lxml
+
+
+8 #sys.
+·th
+.
+­³nd
+('C:\Program Files\Python36\Lib')
+
+9 
+impÜt
+ 
+»que¡s
+
+
+10 
+äom
+ 
+lxml
+ 
+impÜt
+ 
+html
+
+
+12 
+def
+ 
+	$log
+(*
+¬gs
+, **
+kw¬gs
+):
+
+13 
+	$´št
+(*
+¬gs
+, **
+kw¬gs
+)
+
+15 
+def
+ 
+	$mov›_log
+(*
+¬gs
+, **
+kw¬gs
+):
+
+16 
+w™h
+ 
+	`İ’
+('mov›.txt', 'a', 
+’codšg
+='utf-8'è
+as
+ 
+f
+:
+
+17 
+	$´št
+(*
+¬gs
+, 
+fe
+=
+f
+, **
+kw¬gs
+)
+
+20 #+ 
+__add__
+
+
+22 #¡r(
+m
+)
+
+23 #a.
+	`__¡r__
+()
+
+24 #a.
+	`__»´__
+()
+
+26 #objeù é‡Œé¢çš„
+¡r
+ 
+»´
+ éƒ½ä¼šæ‰“å°è¿™æ ·çš„ä¸œè¥¿
+
+28 #<
+__maš__
+.
+Fru™s
+ 
+objeù
+ 
+©
+ 0x00000000002DB3400>
+
+32 
+şass
+ 
+	$Mod–
+(
+objeù
+):
+
+33 
+def
+ 
+	$__»´__
+(
+£lf
+):
+
+35 
+şass_Çme
+ = 
+£lf
+.
+__şass__
+.
+__Çme__
+
+
+36 #£lf.
+__diù__
+å°†å®ä¾‹å˜æˆä¸€ä¸ªå­—å…¸,å­—å…¸åŒ–
+
+37 #™em(èå°†å­—å…¸å˜æˆ[(
+key
+,
+v®ue
+),(),()]
+
+38 
+´İ”t›s
+ = ('{} = ({})'.
+	$fÜm©
+(
+k
+, 
+v
+èk, v 
+š
+ 
+£lf
+.
+__diù__
+.
+	$™ems
+())
+
+39 
+r
+ = '\n<{}:\À{}\n'.
+	`fÜm©
+(
+şass_Çme
+, '\À'.
+	$još
+(
+´İ”t›s
+))
+
+40  
+r
+
+
+44 #1\
+n
+ 2\n 3
+
+46 
+şass
+ 
+	$Mov›
+(
+Mod–
+):
+
+48 
+def
+ 
+	$__š™__
+(
+£lf
+):
+
+50 
+£lf
+.
+¿nkšg
+ = 0
+
+52 
+£lf
+.
+cov”_u¾
+ = ''
+
+54 
+£lf
+.
+¿tšg
+ = 0
+
+56 
+£lf
+.
+Çme
+ = ''
+
+58 
+£lf
+.
+numb”_of_comm’ts
+ = 0
+
+61 
+m
+ = 
+	$Mod–
+()
+
+62 
+	$´št
+(
+m
+)
+
+65 
+def
+ 
+	$u¾s_äom_doubª
+():
+
+66 
+u¾s
+ = []
+
+67 
+u¾
+ = 'https://movie.douban.com/top250?start={}&filter='
+
+69 
+šdex
+ 
+š
+ 
+	$¿nge
+(0, 250, 25):
+
+70 
+u
+ = 
+u¾
+.
+	$fÜm©
+(
+šdex
+)
+
+71 
+u¾s
+.
+	$­³nd
+(
+u
+)
+
+72  
+u¾s
+
+
+75 #´št(
+	`u¾s_äom_doubª
+())
+
+77 
+def
+ 
+	$mov›s_äom_u¾
+(
+u¾s
+):
+
+78 
+®l_mov›
+ = []
+
+79 
+u
+ 
+š
+ 
+u¾s
+:
+
+80 #¸æ˜¯
+»que¡s
+ å¯¹è±¡,
+html
+é‡Œé¢çš„ä¸œè¥¿
+
+82 
+r
+ = 
+»que¡s
+.
+	$g‘
+(
+u
+)
+
+83 #·gæ˜¯
+by‹s
+ ç±»å‹
+
+84 #ç½‘ç»œä¸Šä¼ è¾“æ•°æ®çš„éƒ½æ˜¯
+by‹s
+ç±»å‹
+
+85 
+·ge
+ = 
+r
+.
+cÚ‹Á
+
+
+87 
+roÙ
+ = 
+html
+.
+	$äom¡ršg
+(
+·ge
+)
+
+88 #è¿”å›ä¸€ä¸ªåˆ—è¡¨,é‡Œé¢æ¯ä¸ªå…ƒç´ éƒ½æ˜¯ä¸€ä¸ª
+–em’t
+å¯¹è±¡
+
+89 
+mov›s_divs
+ = 
+roÙ
+.
+	`x·th
+('//div[@class="item"')
+
+90 
+mov›s
+ = [
+	$mov›s_äom_div
+(
+div
+èdiv 
+š
+ 
+mov›s_divs
+]
+
+92 
+®l_mov›
+.
+	$ex‹nd
+(
+mov›s
+)
+
+93  
+®l_mov›
+
+
+96 
+def
+ 
+	$mov›s_äom_div
+(
+div
+):
+
+98 
+mov›
+ = 
+	$Mov›
+()
+
+99 
+mov›
+.
+¿nkšg
+ = 
+div
+.
+	`x·th
+('.//div[@şass="pic"]/em')[0].
+‹xt
+
+
+100 
+mov›
+.
+cov”_u¾
+ = 
+div
+.
+	`x·th
+('.//div[@class="pic"]/a/img/@stc')[0]
+
+101 
+Çmes
+ = 
+div
+.
+	`x·th
+('.//span[@class="title"]/text()')
+
+102 
+mov›
+.
+Çme
+ = ''.
+	$još
+(
+Çmes
+)
+
+103 
+mov›
+.
+¿tšg
+ = 
+div
+.
+	`x·th
+('.//¥ª[@şass="¿tšg_num"]')[0].
+‹xt
+
+
+104 
+mov›
+.
+numb”_of_comm’ts
+ = 
+div
+.
+	`x·th
+('.//div[@şass="¡¬"]/¥ª')[-1].
+‹xt
+[-3]
+
+105 
+	`log
+('mov›', 
+mov›
+)
+
+106  
+mov›
+
+
+108 
+def
+ 
+	$dowÆßd_cov”s
+(
+m
+):
+
+109 
+m
+ 
+š
+ 
+mov›s
+:
+
+110 
+image_u¾
+ = 
+m
+.
+cov”_u¾
+
+
+111 
+r
+ = 
+»que¡s
+.
+	$g‘
+(
+image_u¾
+)
+
+112 
+·th
+ = 'cov”s/' + 
+m
+.
+Çme
+.
+	`¥l™
+('/')[0] + '.jpg'
+
+113 
+w™h
+ 
+	`İ’
+(
+·th
+, 'wb'è
+as
+ 
+f
+:
+
+114 
+f
+.
+	$wr™e
+(
+r
+.
+cÚ‹Á
+)
+
+115 
+def
+ 
+	$maš
+():
+
+116 
+u¾s
+ = 
+	$u¾s_äom_doubª
+()
+
+117 
+mov›s
+ = 
+	$mov›s_äom_u¾
+(
+u¾s
+)
+
+119 
+	$mov›_log
+(
+mov›s
+)
+
+120 
+	$dowÆßd_cov”s
+(
+mov›s
+)
+
+122 
+__Çme__
+ == '__main__':
+
+123 
+	`maš
+()
+
+	@/root/git/pydemo/demo.py
+
+1 #!/
+u¤
+/
+bš
+/
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+UTF
+-8 -*-
+
+6 
+´št
+('å®ä¾‹1:')
+
+7 
+	gd
+=[]
+
+8 
+i
+ 
+š
+ 
+	$¿nge
+(1,5):
+
+9 
+j
+ 
+š
+ 
+	$¿nge
+(1,5):
+
+10 
+k
+ 
+š
+ 
+	$¿nge
+(1,5):
+
+11 
+i
+ !ğ
+j
+ !ğ
+k
+:
+
+12 
+	$´št
+(
+i
+,
+j
+,
+k
+)
+
+13 
+d
+.
+	$­³nd
+([
+i
+,
+j
+,
+k
+])
+
+14 
+	`´št
+('é•¿åº¦:{}'.
+	`fÜm©
+(
+	$Ën
+(
+d
+)))
+
+15 
+	$´št
+(
+d
+)
+
+17 
+	`´št
+('='*30)
+
+18 
+	`´št
+('å®ä¾‹2:')
+
+19 #˜ğ(
+	`šput
+('è¾“å…¥å‡€åˆ©æ¶¦:'))
+
+20 
+i
+ = (120000)
+
+21 
+¬r
+ = [1000000,600000,400000,200000,100000,0]
+
+22 
+¿t
+ = [0.01,0.015,0.03,0.05,0.075,0.1]
+
+23 
+r
+ = 0
+
+24 
+idx
+ 
+š
+ 
+	$¿nge
+(0,6):
+
+25 
+i
+ > 
+¬r
+[
+idx
+]:
+
+26 
+r
+ +ğ(
+i
+ - 
+¬r
+[
+idx
+]è* 
+¿t
+[idx]
+
+27 
+	`´št
+((
+i
+ - 
+¬r
+[
+idx
+]è* 
+¿t
+[idx])
+
+28 
+i
+ = 
+¬r
+[
+idx
+]
+
+29 
+	$´št
+ (
+r
+)
+
+31 
+	`´št
+('='*30)
+
+32 
+	`´št
+('å®ä¾‹3:')
+
+36 
+impÜt
+ 
+¿ndom
+
+
+38 
+def
+ 
+	$guess
+():
+
+40 
+n
+ = (
+¿ndom
+.
+	$¿ndšt
+(1,100))
+
+41 #´št(
+n
+)
+
+42 
+True
+:
+
+43 
+s
+ = 
+	`šput
+('è¾“å…¥1åˆ°100é—´çš„æ•°å­—,è¾“å…¥endé€€å‡ºçŒœè°œ:')
+
+44 
+s
+ == 'end':
+
+46 
+–if
+ 
+nÙ
+ 
+s
+.
+	$i¢um”ic
+():
+
+47 
+	`´št
+('è¯·è¾“å…¥æ•°å­—!')
+
+49 
+–if
+ (
+s
+è> 
+n
+ :
+
+50 
+	`´št
+('è¾“å…¥æ•°å­—å¤§äº†!')
+
+51 
+–if
+ (
+s
+è< 
+n
+ :
+
+52 
+	`´št
+('è¾“å…¥æ•°å­—å°äº†!')
+
+54 
+	`´št
+('ç­”å¯¹äº†!')
+
+55 
+	`´št
+('åº•æ•°æ˜¯: {}'.
+	$fÜm©
+(
+n
+))
+
+57 
+__Çme__
+ == '__main__':
+
+58 
+	$guess
+()
+
+62 
+impÜt
+ 
+¿ndom
+
+
+65 
+şass
+ 
+	$S´™e
+(
+objeù
+): #çˆ¶ç±» ç²¾çµç±»
+
+66 
+¡•
+ = [-2,+2,-3,+3]
+
+68 
+def
+ 
+	$__š™__
+(
+£lf
+,
+gm
+,
+pošt
+=
+NÚe
+): #ç”Ÿæˆä¸€ä¸ªä½ç½®
+
+69 
+£lf
+.
+gm
+ = gm
+
+70 
+pošt
+ 
+is
+ 
+NÚe
+:
+
+71 
+£lf
+.
+pošt
+ = 
+¿ndom
+.
+	$¿ndšt
+(0,20)
+
+73 
+£lf
+.
+pošt
+ =…oint
+
+74 
+def
+ 
+	$jump
+(
+£lf
+): #ç§»åŠ¨æ–¹æ³•, é€šç”¨
+
+75 
+a¡•
+ = 
+¿ndom
+.
+	$choiû
+(
+S´™e
+.
+¡•
+) #éšæœºäº§ç”Ÿçš„ç§»åŠ¨çš„å¤§å°
+
+76 0 <ğ
+£lf
+.
+pošt
++
+a¡•
+ <= 20:
+
+77 
+£lf
+.
+pošt
+ +ğ
+a¡•
+
+
+79 
+şass
+ 
+	$AÁ
+(
+S´™e
+):
+
+80 
+def
+ 
+	$__š™__
+(
+£lf
+,
+gm
+,
+pošt
+):
+
+81 
+	`su³r
+(
+AÁ
+,
+£lf
+).
+	$__š™__
+(
+gm
+,
+pošt
+)
+
+82 
+£lf
+.
+gm
+.
+	`£t_pošt
+('ªt',£lf.
+pošt
+) #æ˜¾ç¤ºåˆå§‹åŒ–ä½ç½®
+
+83 
+def
+ 
+	$jump
+(
+£lf
+):
+
+84 
+	`su³r
+(
+AÁ
+, 
+£lf
+).
+	$jump
+()
+
+85 
+£lf
+.
+gm
+.
+	`£t_pošt
+('ªt',£lf.
+pošt
+) #æ˜¾ç¤ºç§»åŠ¨ä½
+
+87 
+şass
+ 
+	$WÜm
+(
+S´™e
+):
+
+88 
+def
+ 
+	$__š™__
+(
+£lf
+,
+gm
+,
+pošt
+):
+
+89 
+	`su³r
+(
+WÜm
+,
+£lf
+).
+	$__š™__
+(
+gm
+,
+pošt
+)
+
+90 
+£lf
+.
+gm
+.
+	`£t_pošt
+('wÜm',£lf.
+pošt
+) #æ˜¾ç¤ºåˆå§‹åŒ–ä½ç½®
+
+91 
+def
+ 
+	$jump
+(
+£lf
+):
+
+92 
+	`su³r
+(
+WÜm
+, 
+£lf
+).
+	$jump
+()
+
+93 
+£lf
+.
+gm
+.
+	`£t_pošt
+('wÜm',£lf.
+pošt
+) #æ˜¾ç¤ºç§»åŠ¨ä½
+
+96 
+şass
+ 
+	$GameOv”
+(
+objeù
+): #åœ°å›¾ç±»
+
+97 
+def
+ 
+	$__š™__
+(
+£lf
+):
+
+98 
+£lf
+.
+ªt_pošt
+ = 
+NÚe
+
+
+99 
+£lf
+.
+wÜm_pošt
+ = 
+NÚe
+
+
+100 
+def
+ 
+	$ÿtched
+(
+£lf
+):
+
+101 
+	`´št
+('ªt:',
+£lf
+.
+ªt_pošt
+,'wÜm:',£lf.
+wÜm_pošt
+
+
+102 
+£lf
+.
+ªt_pošt
+ 
+is
+ 
+nÙ
+ 
+NÚe
+ 
+ªd
+ s–f.
+wÜm_pošt
+ is‚ot None‡nd self.ant_point == self.worm_point:
+
+103 #»tuº 
+True
+
+
+104 
+def
+ 
+	$£t_pošt
+(
+£lf
+,
+
+,
+pošt
+):
+
+105 
+
+ == 'ant':
+
+106 
+£lf
+.
+ªt_pošt
+ = 
+pošt
+
+
+107 
+
+ == 'worm':
+
+108 
+£lf
+.
+wÜm_pošt
+ = 
+pošt
+
+
+110 
+__Çme__
+ == '__main__':
+
+111 
+gm
+ = 
+	$GameOv”
+()
+
+112 
+wÜm
+ = 
+	$WÜm
+()
+
+113 
+ªt
+ = 
+	`AÁ
+()
+
+	@/root/git/pydemo/guess.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #-*- 
+codšg
+: 
+UTF
+-8 -*-
+
+4 
+impÜt
+ 
+¿ndom
+
+
+6 
+def
+ 
+	$guess
+():
+
+8 
+n
+ = (
+¿ndom
+.
+	$¿ndšt
+(1,100)) #100å†…éšæœºæ•°
+
+9 
+	`´št
+('=' * 80)
+
+10 
+	`´št
+('çŒœæ•°å­—æ¸¸æˆ:è¾“å…¥ä¸€ä¸ª1åˆ°100é—´çš„æ•´æ•°!è¾“å…¥endé€€å‡ºçŒœè°œ!è¾“å…¥helpè·å–è°œåº•!')
+
+11 
+	`´št
+('=' * 80)
+
+12 
+True
+:
+
+13 
+s
+ = 
+	`šput
+('è¯·è¾“å…¥1åˆ°100é—´çš„æ•°å­—(è¾“å…¥endé€€å‡º,helpè·å–è°œåº•):')
+
+14 
+s
+ == 'end': #endé€€å‡º
+
+16 
+–if
+ 
+s
+ == 'help': #è·å–è°œåº•å¹¶é€€å‡º
+
+17 
+	`´št
+('è°œåº•æ•°æ˜¯: {}'.
+	$fÜm©
+(
+n
+))
+
+19 
+–if
+ 
+nÙ
+ 
+s
+.
+	$i¢um”ic
+(): #åˆ¤æ–­æ˜¯å¦æ•°å­—
+
+20 
+	`´št
+('è¾“å…¥æœ‰è¯¯!è¯·è¾“å…¥æ•°å­—!')
+
+22 
+–if
+ (
+s
+è> 
+n
+:
+
+23 
+	`´št
+('è¾“å…¥æ•°å­—å¤§äº†!')
+
+24 
+–if
+ (
+s
+è< 
+n
+:
+
+25 
+	`´št
+('è¾“å…¥æ•°å­—å°äº†!')
+
+27 
+	`´št
+('æ­å–œæ‚¨,ç­”å¯¹äº†!')
+
+28 
+	`´št
+('è°œåº•æ•°æ˜¯: {}'.
+	$fÜm©
+(
+n
+))
+
+30 
+__Çme__
+ == '__main__':
+
+31 
+	`guess
+()
+
+	@/root/git/pydemo/mme.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+3 
+impÜt
+ 
+Ãt¢mp
+
+
+4 
+impÜt
+ 
+	gtime
+
+
+6 ###deà
+mme
+ 
+£ssiÚ
+
+
+7 
+def
+ 
+	$MmeSessiÚ
+():
+
+8 
+MmeSessiÚ
+=
+Ãt¢mp
+.
+	`SessiÚ
+(
+V”siÚ
+=2,
+
+9 
+De¡Ho¡
+='172.0.14.250',
+
+10 
+Commun™y
+='public')
+
+11  
+MmeSessiÚ
+
+
+12 
+	`´št
+(
+	$MmeSessiÚ
+())
+
+14 
+mmebšd1
+='CASA-GW-MIB::casaMmeTotalEnbSessions'
+
+15 
+mmebšd2
+='CASA-GW-MIB::casaMmeTotalUeSessions'
+
+16 
+mmebšd3
+='CASA-GW-MIB::casaMmeTotalErabs'
+
+	@/root/git/pydemo/other.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 #cofšg:
+utf
+-8
+
+4 
+impÜt
+ 
+Ãt¢mp
+
+
+7 
+	g´št
+ "---v3 setup-------------------------------------\n"
+
+8 
+	g£ss
+ = 
+Ãt¢mp
+.
+SessiÚ
+(
+V”siÚ
+=3,
+
+9 
+De¡Ho¡
+='localhost',
+
+10 
+SecLev–
+='authPriv',
+
+11 
+SecName
+='snmpuser',
+
+12 
+PrivPass
+='passworddes',
+
+13 
+AuthPass
+='password')
+
+15 
+£ss
+.
+U£S´štV®ue
+ = 1
+
+17 
+v¬s
+ = 
+Ãt¢mp
+.
+V¬Li¡
+Ò‘¢mp.
+V¬bšd
+('sysUpTime', 0),
+
+18 
+Ãt¢mp
+.
+V¬bšd
+('sysContact', 0),
+
+19 
+Ãt¢mp
+.
+V¬bšd
+('sysLocation', 0))
+
+20 
+	g´št
+ "---v3 get-------------------------------------\n"
+
+21 
+	gv®s
+ = 
+£ss
+.
+	$g‘
+(
+v¬s
+)
+
+22 
+´št
+ "v3 sess.g‘„esuÉ: ", 
+v®s
+, "\n"
+
+24 
+v¬
+ 
+š
+ 
+v¬s
+:
+
+25 
+´št
+ 
+v¬
+.
+g
+, v¬.
+iid
+, "=", v¬.
+v®
+, '(',v¬.
+ty³
+,')'
+
+26 
+´št
+ "\n"
+
+28 
+´št
+ "---v3 getnext-------------------------------------\n"
+
+30 
+v®s
+ = 
+£ss
+.
+	$g‘Ãxt
+(
+v¬s
+)
+
+31 
+´št
+ "v3 sess.g‘Ãxˆ»suÉ: ", 
+v®s
+, "\n"
+
+33 
+v¬
+ 
+š
+ 
+v¬s
+:
+
+34 
+´št
+ 
+v¬
+.
+g
+, v¬.
+iid
+, "=", v¬.
+v®
+, '(',v¬.
+ty³
+,')'
+
+35 
+´št
+ "\n"
+
+37 
+v¬s
+ = 
+Ãt¢mp
+.
+	`V¬Li¡
+Ò‘¢mp.
+	`V¬bšd
+('sysUpTime'),
+
+38 
+Ãt¢mp
+.
+	`V¬bšd
+('sysORLastChange'),
+
+39 
+Ãt¢mp
+.
+	`V¬bšd
+('sysORID'),
+
+40 
+Ãt¢mp
+.
+	`V¬bšd
+('sysORDescr'),
+
+41 
+Ãt¢mp
+.
+	`V¬bšd
+('sysORUpTime'))
+
+43 
+v®s
+ = 
+£ss
+.
+	$g‘bulk
+(2, 8, 
+v¬s
+)
+
+44 
+´št
+ "v3 sess.g‘bulk„esuÉ: ", 
+v®s
+, "\n"
+
+46 
+v¬
+ 
+š
+ 
+v¬s
+:
+
+47 
+´št
+ 
+v¬
+.
+g
+, v¬.
+iid
+, "=", v¬.
+v®
+, '(',v¬.
+ty³
+,')'
+
+48 
+´št
+ "\n"
+
+50 
+´št
+ "---v3 set-------------------------------------\n"
+
+52 
+v¬s
+ = 
+Ãt¢mp
+.
+	`V¬Li¡
+(
+
+53 
+Ãt¢mp
+.
+	`V¬bšd
+('sysLocation','0', 'my final destination'))
+
+54 
+»s
+ = 
+£ss
+.
+	$£t
+(
+v¬s
+)
+
+55 
+´št
+ "v3 sess.£ˆ»suÉ: ", 
+»s
+, "\n"
+
+57 
+´št
+ "---v3 walk-------------------------------------\n"
+
+58 
+v¬s
+ = 
+Ãt¢mp
+.
+	`V¬Li¡
+Ò‘¢mp.
+	`V¬bšd
+('system'))
+
+60 
+v®s
+ = 
+£ss
+.
+	$w®k
+(
+v¬s
+)
+
+61 
+´št
+ "v3 sess.w®k„esuÉ: ", 
+v®s
+, "\n"
+
+63 
+v¬
+ 
+š
+ 
+v¬s
+:
+
+64 
+´št
+ " ",
+v¬
+.
+g
+, v¬.
+iid
+, "=", v¬.
+v®
+, '(',v¬.
+ty³
+,')'
+
+	@/root/git/pydemo/show.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 
+impÜt
+ 
+·¿miko
+
+
+3 
+impÜt
+ 
+time
+
+
+4 
+impÜt
+ 
+	gos
+, 
+sys
+
+
+5 
+impÜt
+ 
+	g»
+
+
+9 
+	gho¡
+='172.0.10.165'
+
+10 
+pÜt
+=22
+
+11 
+u£ºame
+='casa'
+
+12 
+·sswÜd
+='casa'
+
+14 ##åˆå§‹åŒ–
+Ãt
+-
+¢mp
+
+
+16 
+mmebšd
+ = {
+
+22 ##
+def
+ 
+showşi
+
+
+23 
+def
+ 
+	$showşi
+(
+cmd
+):
+
+25 
+Œª¥Üt
+=
+·¿miko
+.
+	$T¿n¥Üt
+(
+ho¡
+,
+pÜt
+)
+
+26 
+Œª¥Üt
+.
+	$cÚÃù
+(
+u£ºame
+=u£ºame,
+·sswÜd
+=password)
+
+27 
+chªÃl
+=
+Œª¥Üt
+.
+	$İ’_£ssiÚ
+()
+
+28 
+chªÃl
+.
+	$£‰imeout
+(3)
+
+29 
+chªÃl
+.
+	$g‘_±y
+()
+
+30 
+chªÃl
+.
+	$švoke_sh–l
+()
+
+31 
+chªÃl
+.
+	$£nd
+(
+cmd
+)
+
+32 
+time
+.
+	$¦“p
+(1)
+
+33 
+show_cÚ‹xt
+=
+chªÃl
+.
+	$»cv
+(65535)
+
+34 
+Œª¥Üt
+.
+	$şo£
+()
+
+35  
+show_cÚ‹xt
+
+
+37 
+__Çme__
+ == '__main__':
+
+38 
+¡¬t
+=
+time
+.
+	$time
+()
+
+40 
+show_cÚ‹xt
+ = 
+	`showşi
+('show mmeƒnodebs†ist\r')
+
+41 
+	`´št
+("="*20,"CLI display","="*20)
+
+42 
+şidi¥Ïy
+=
+show_cÚ‹xt
+.
+	`decode
+(
+’codšg
+='utf-8')
+
+43 
+	$´št
+(
+şidi¥Ïy
+)
+
+44 
+»sub
+=
+»
+.
+	`compe
+(
+r
+'tÙ®\sENBs\s+\d+\s+',».
+M
+)
+
+45 
+»suÉ
+=
+»sub
+.
+	$£¬ch
+(
+şidi¥Ïy
+)
+
+46 
+»suÉ
+:
+
+47 
+	`´št
+("======match=====")
+
+48 #´št(
+»suÉ
+.
+	`group
+())
+
+49 
+mun
+=
+»
+.
+	`£¬ch
+(
+r
+'\d+',
+»suÉ
+.
+	$group
+())
+
+50 
+	`´št
+('TÙ®EnbSessiÚs:',
+mun
+.
+	$group
+())
+
+52 
+	`´št
+('match failed!!!')
+
+54 
+¢mpcmd
+='snmpget -m‡ll -v 2c -c…ublic 172.0.10.165 1.3.6.1.4.1.20858.10.104.9.1.2.0'
+
+55 
+¢m´esuÉ
+=
+os
+.
+	`pİ’
+(
+¢mpcmd
+).
+	$»adlše
+()
+
+56 
+	$´št
+(
+¢m´esuÉ
+)
+
+58 #¢m²um=
+»
+.
+	`£¬ch
+(
+r
+'=\sCouÁ”32:\s\d+\s+',
+¢m´esuÉ
+,».
+M
+|».
+S
+)
+
+59 #¢m²um=
+»
+.
+	`£¬ch
+(
+r
+'\d+$',
+¢m´esuÉ
+,».
+M
+|».
+S
+)
+
+60 #´št(
+¢m²um
+.
+	`group
+())
+
+62 #ià
+¢m²um
+.
+	`group
+()==
+mun
+.group():
+
+66 #´št(
+¢m²um
+.
+	`group
+(),"vs",
+mun
+.group())
+
+68 
+’d
+=
+time
+.
+	$time
+()
+
+69 
+¥’d_time
+ = 
+’d
+ - 
+¡¬t
+
+
+70 
+	`´št
+("S³ndime:",
+¥’d_time
+)
+
+	@/root/git/pydemo/show1.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 
+impÜt
+ 
+·¿miko
+
+
+3 
+impÜt
+ 
+time
+
+
+4 
+impÜt
+ 
+	gos
+, 
+sys
+
+
+5 
+impÜt
+ 
+»
+
+
+6 
+impÜt
+ 
+Ãt¢mp
+
+
+7 
+impÜt
+ 
+	gjsÚ
+
+
+11 
+	gho¡
+='172.0.10.165'
+
+12 
+pÜt
+=22
+
+13 
+u£ºame
+='casa'
+
+14 
+·sswÜd
+='casa'
+
+16 ##åˆå§‹åŒ–
+Ãt
+-
+¢mp
+
+
+17 
+mmebšd
+ = {
+
+39 ##
+def
+ 
+showşi
+
+
+40 
+def
+ 
+	$showşi
+(
+cmd
+):
+
+42 
+Œª¥Üt
+=
+·¿miko
+.
+	$T¿n¥Üt
+(
+ho¡
+,
+pÜt
+)
+
+43 
+Œª¥Üt
+.
+	$cÚÃù
+(
+u£ºame
+=u£ºame,
+·sswÜd
+=password)
+
+44 
+chªÃl
+=
+Œª¥Üt
+.
+	$İ’_£ssiÚ
+()
+
+45 
+chªÃl
+.
+	$£‰imeout
+(3)
+
+46 
+chªÃl
+.
+	$g‘_±y
+()
+
+47 
+chªÃl
+.
+	$švoke_sh–l
+()
+
+48 
+chªÃl
+.
+	$£nd
+(
+cmd
+)
+
+49 
+time
+.
+	$¦“p
+(1)
+
+50 
+show_cÚ‹xt
+=
+chªÃl
+.
+	$»cv
+(65535)
+
+51 
+Œª¥Üt
+.
+	$şo£
+()
+
+52  
+show_cÚ‹xt
+
+
+54 ##
+def
+ 
+¢mpİ
+
+
+55 
+def
+ 
+	$¢mpg‘
+(
+oid
+):
+
+57 
+¢mp£ss
+=
+Ãt¢mp
+.
+	`SessiÚ
+(
+V”siÚ
+=2,
+De¡Ho¡
+=
+ho¡
+,
+Commun™y
+='public')
+
+58 
+v¬s
+=
+Ãt¢mp
+.
+	`V¬Li¡
+Ò‘¢mp.
+	$V¬bšd
+(
+oid
+,0))
+
+59 
+¢mp_cÚ‹xt
+=
+¢mp£ss
+.
+	$g‘
+(
+v¬s
+)
+
+60  
+¢mp_cÚ‹xt
+
+
+63 
+__Çme__
+ == '__main__':
+
+64 #g‘ 
+¢mp
+
+
+65 
+¢mp_cÚ‹xt
+=
+	$¢mpg‘
+(
+mmebšd
+[1])
+
+66 
+¢mp_»suÉ
+=
+¢mp_cÚ‹xt
+[0].
+	`decode
+(
+’codšg
+='utf-8')
+
+67 
+	$´št
+(
+¢mp_»suÉ
+)
+
+69 #g‘ 
+şi
+
+
+70 
+show_cÚ‹xt
+ = 
+	`showşi
+('show mme info\r')
+
+71 
+	`´št
+("="*20,"CLI display","="*20)
+
+72 
+şidi¥Ïy
+=
+show_cÚ‹xt
+.
+	`decode
+(
+’codšg
+='utf-8')
+
+73 
+	$´št
+(
+şidi¥Ïy
+)
+
+74 #´št(
+show_cÚ‹xt
+)
+
+75 #d©a=
+jsÚ
+.
+	`dumps
+(
+şidi¥Ïy
+)
+
+76 #´št(
+d©a
+)
+
+77 ##
+g‘
+ 
+şi
+ 
+¡©is
+
+
+78 
+»sub
+=
+»
+.
+	`compe
+(
+r
+'s1­\scÚÃùiÚs\s+\d+\s+',».
+M
+)
+
+79 
+»suÉ
+=
+»sub
+.
+	`£¬ch
+(
+şidi¥Ïy
+)
+
+	@/root/git/pydemo/snmp.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ3
+
+
+2 
+impÜt
+ 
+Ãt¢mp
+
+
+3 
+impÜt
+ 
+time
+
+
+4 
+impÜt
+ 
+·¿miko
+
+
+6 
+	g§egw
+='172.0.20.16'
+
+7 
+mme
+='172.0.10.165'
+
+9 
+‹¡
+=
+mme
+
+
+11 
+‹¡u£r
+='casa'
+
+12 
+·sswÜd
+='casa'
+
+14 
+£ss
+=
+Ãt¢mp
+.
+SessiÚ
+(
+V”siÚ
+=2,
+
+15 
+De¡Ho¡
+=
+‹¡
+,
+
+16 
+Commun™y
+='public')
+
+18 #£ss.
+U£S´štV®ue
+=1
+
+20 
+mmebšd
+ = {
+
+43 #fÜ 
+i
+ 
+š
+ 
+¿nge
+(1,3):
+
+44 #v¬ ğ
+Ãt¢mp
+.
+V¬Li¡
+Ò‘¢mp.
+V¬bšd
+(
+mmebšd
+[
+i
+],0))
+
+45 #v®s=
+£ss
+.
+g‘
+(
+v¬s
+)
+
+46 #´št(
+i
+,
+mmebšd
+[i],"=",
+v®s
+)
+
+47 
+	gv¬s
+ = 
+Ãt¢mp
+.
+V¬Li¡
+Ò‘¢mp.
+	$V¬bšd
+(
+mmebšd
+[1],0))
+
+48 
+v®s
+=
+£ss
+.
+	$g‘
+(
+v¬s
+)
+
+49 
+	`´št
+('======1.mibƒnb sessions======')
+
+50 
+	`´št
+(1,
+mmebšd
+[1],"=",
+v®s
+)
+
+51 ##
+·¿miko
+
+
+52 
+	`´št
+('======2.check cli======')
+
+53 
+ssh
+ = 
+·¿miko
+.
+	$SSHCl›Á
+()
+
+54 
+ssh
+.
+	`£t_missšg_ho¡_key_pŞicy
+(
+·¿miko
+.
+	$AutoAddPŞicy
+())
+
+55 
+ssh
+.
+	`cÚÃù
+(
+ho¡Çme
+=
+‹¡
+,
+pÜt
+=22,
+u£ºame
+='roÙ',
+·sswÜd
+="casa")
+
+56 
+¡dš
+,
+¡dout
+,
+¡d”r
+ = 
+ssh
+.
+	`exec_commªd
+("ls")
+
+57 #¡dš,
+¡dout
+,
+¡d”r
+ = 
+ssh
+.
+	`exec_commªd
+("/usr/local/bin/casa/casa-cli")
+
+58 #¡dš,
+¡dout
+,
+¡d”r
+ = 
+ssh
+.
+	`exec_commªd
+("show mmeƒnodebs†ist \| include \"total ENBs\"")
+
+59 
+	`´št
+('===cmd…utout====')
+
+60 
+lše
+ 
+š
+ 
+¡dout
+:
+
+61 
+	`´št
+(
+lše
+.
+	`¡r
+('\n'))
+
+62 #»suÉ = 
+¡dout
+.
+	`»ad
+()
+
+63 #´št(
+»suÉ
+)
+
+	@/root/git/pydemo/test.py
+
+1 #!/
+u¤
+/
+bš
+/
+pythÚ3
+
+
+3 
+impÜt
+ 
+»que¡s
+
+
+4 
+impÜt
+ 
+»
+
+
+6 
+	glše
+ = "Catsaresmarterthandogs‡r"
+
+7 
+´št
+ (
+»
+.
+m©ch
+('¬',
+lše
+,».
+I
+))
+
+9 
+	gu¾
+='https://www.baidu.com'
+
+10 
+r
+=
+»que¡s
+.
+	$g‘
+(
+u¾
+)
+
+11 
+r
+.
+’codšg
+ô.
+­·»Á_’codšg
+
+
+12 
+	`´št
+(
+r
+.
+‹xt
+[-200:])
+
+13 
+	`´št
+('good1234!')
+
+	@/root/git/pydemo/test_cfg_NetSliceInstance.py
+
+1 #Thi 
+süt
+ 
+could
+ 
+be
+ 
+u£d
+ 
+aùix
+-
+web
+ 
+CASA
+ 5
+G
+ 
+´ÙocŞ
+ 
+‹¡
+
+
+2 #ju¡ 
+¡¬t
+ 
+£rv”
+ 
+ªd
+ 
+run
+ 
+‹¡_ş›Á
+.
+py
+
+
+3 #OrigšÜ 
+AuthÜ
+: 
+N
+/
+A
+
+
+4 #SecÚd 
+AuthÜ
+: 
+zhixŸng
+ 
+ch’
+
+
+7 #Pu½o£: 
+this
+ 
+süts
+ 
+»¶aû
+ 
+the
+ 
+mªul
+ 
+cu¾
+ 
+‹¡
+.
+
+8 #Onû 
+you
+ 
+fšished
+ 
+the
+ 
+API
+, you 
+may
+ 
+u£
+ 
+this
+ 
+süts
+ 
+to
+ 
+cÚduù
+h
+‹¡
+.
+
+9 #IÀ
+g’”®
+, 
+you
+ 
+Ãed
+ 
+­·nd
+ 
+što
+ 
+the
+ 
+‹¡_·th
+, 
+š
+ 
+wh©
+ 
+is
+ 
+ÿÎed
+ 
+diùiÚ¬y
+ 
+d©a
+ 
+¡ruùu»
+ iÀ
+PythÚ
+, 
+ªd
+ 
+add
+ 
+your
+ 
+own
+ 
+‹¡_·ckage
+.
+
+10 #Rememb”: 
+this
+ 
+is
+ 
+a
+ 
+pythÚ
+ 
+´og¿m
+, 
+Úû
+ 
+the
+ 
+boŞ
+ 
+defšed
+ 
+š
+ 
+Ru¡
+…rog¿m 
+suchlike
+ 1, 
+çl£
+,
+
+11 #You 
+mu¡
+ 
+Œª¦©e
+ 1, 
+F®£
+ 
+©
+ 
+which
+ 
+pythÚ
+ 
+´og¿m
+ 
+acû±s
+.
+
+12 #tØ
+run
+ 
+this
+ 
+süts
+: 
+pythÚ3
+ 
+‹¡_uecm
+.
+py
+
+
+13 #FÜ 
+run
+, 
+You
+ 
+mo¡
+ 
+lik–y
+ 
+©
+ 
+v”y
+ 
+fœ¡
+ 
+Ãed
+ 
+š¡®l
+ 
+thœd
+ 
+·¹y
+ 
+lib
+
+
+14 #p3 
+š¡®l
+ <
+·ckage
+>
+
+16 
+impÜt
+ 
+jsÚ
+
+
+17 
+impÜt
+ 
+asyncio
+
+
+18 
+impÜt
+ 
+aioh‰p
+
+
+19 
+impÜt
+ 
+»que¡s
+
+
+20 
+äom
+ 
+cÚfig
+ 
+impÜt
+ *
+
+22 
+	gSERVER_IP
+ = "172.0.4.138"
+
+23 
+SERVER_PORT
+= "8008"
+
+25 
+DEFAULT_HTTP_PATH
+='h‰p://'+
+SERVER_IP
++':'+
+SERVER_PORT
+
+
+27 
+cfg_·th
+ = {
+
+30 #po¡/
+g‘
+ 
+NSI
+
+
+32 #g‘/
+d–‘e
+ 
+NSI
+
+
+35 #po¡/
+g‘
+ 
+CSNs§i
+
+
+37 #g‘/
+d–‘e
+ 
+CSNs§i
+
+
+39 #g‘ 
+¶mn
+ 
+»¡riùed
+-
+¢s§i
+
+
+41 #g‘ 
+
+ 
+»¡riùed
+-
+¢s§i
+
+
+43 #po¡/
+g‘
+ 
+šcÜ»ù
+ 
+NSI
+ 
+URI
+
+
+45 #g‘/
+d–‘e
+ 
+nÙ
+ 
+exi¡
+ 
+nsiId
+
+
+47 #show 
+nsiId
+ 
+w™h
+ 
+šcÜ»ù
+ 
+URI
+
+
+49 #d–‘
+nsiId
+ 
+w™h
+ 
+šcÜ»ù
+ 
+URI
+ 
+ªd
+ 
+dÚ
+'tƒxist‚siId
+
+53 
+cfg_pkg
+ = {
+
+60 "deçuÉ":
+True
+,"supportedFeatures":"910abcd"},
+
+61 #N‘SliûIn¡ªû 2 (
+add
+ 
+Ùh”
+ 
+·¿m‘”s
+)
+
+65 "deçuÉ":
+True
+,"supportedFeatures":"910abcd"},
+
+66 #N‘SliûIn¡ªû 3 (
+ju¡
+ 
+Úe
+ 
+·¿m‘”
+)
+
+68 #N‘SliûIn¡ªû 4 (
+ju¡
+ 
+two
+ 
+·¿m‘”s
+)
+
+71 #N‘SliûIn¡ªû 5 (
+th»e
+ 
+·¿m‘”s
+)
+
+75 #N‘SliûIn¡ªû 6 (
+th»e
+ 
+·¿m‘”s
+)
+
+78 "¿tTy³":["NR","EUTRA","WLAN","VIRTUAL"],"deçuÉ":
+True
+},
+
+87 12: {"sNs§i":[{"s¡":1,"sd":"abd002"},{"s¡":1,"sd":"sd6456"}],"nfS‘s":[{"£tId":"£t1","nfTy³":"AMF","nfId":["9104871234151","amf-1","AMF-1","AMF_1"]},{"£tId":"£t2","nfTy³":"SMF","nfId":["smf-1","SMF-1","SMF_1"]},{"£tId":"£t3","nfTy³":"NRF","nfId":["Äf-1","NRF-1","NRF_1"]}],"¿tTy³":["NR","EUTRA","WLAN","VIRTUAL"],"deçuÉ":
+F®£
+,"supportedFeatures":"910abcd"},
+
+89 13: {"¢s§i":{"s¡":1,"sd":"abd001"},"hPlmnId":[{"¶mnId":{"mcc":"910","mnc":"487"},"»¡riùed":
+F®£
+,"»¡riùedTai":[{"¶mnId":{"mcc":"811","mnc":"491"},"c":"c811"},{"¶mnId":{"mcc":"811","mnc":"492"},"c":"c811"}]},{"¶mnId":{"mcc":"910","mnc":"488"},"»¡riùed":
+True
+,"restrictedTai":[]}],"sPlmnId":[{"plmnId":{"mcc":"911","mnc":"491"},"homeSnssai":{"sst":2,"sd":"abd002"},"restricted":False,"restrictedTai":[{"plmnId":{"mcc":"811","mnc":"493"},"tac":"tac811"},{"plmnId":{"mcc":"811","mnc":"494"},"tac":"tac811"}]},{"plmnId":{"mcc":"911","mnc":"492"},"homeSnssai":{"sst":3,"sd":"abd003"},"restricted":True,"restrictedTai":[]}],"restrictedTai":[{"plmnId":{"mcc":"811","mnc":"491"},"tac":"tac811"},{"plmnId":{"mcc":"811","mnc":"492"},"tac":"tac811"}],"ratType":["NR","EUTRA","WLAN","VIRTUAL"],"supportedFeatures":"910abcd"},
+
+93 
+POST
+ = "post"
+
+94 
+PUT
+ = "put"
+
+95 
+GET
+ = "get"
+
+96 
+DELETE
+ = "delete"
+
+97 
+PATCH
+ = "patch"
+
+99 
+def
+ 
+	$‹¡_db_š™
+():
+
+100 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[2]
+
+101 
+	`´št
+('Request Info -----')
+
+102 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+104 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+105 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	$»que¡
+(
+
+106 
+PUT
+, 
+·th
+)
+
+108 
+	`´št
+('Response Info -----')
+
+109 
+	`´št
+(
+	$¡r
+(
+»¥
+))
+
+110 
+	`´št
+('Response Body -----')
+
+111 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+112 
+as£¹
+ 200 =ğ
+»¥
+.
+¡©us
+
+
+113 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+115 #Po¡ 
+NSI
+
+
+116 ###1.001 
+CÚfigu»_£rv”
+ 
+po¡
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+cÜ»ù
+ 
+URI
+ 
+ªd
+ 
+fuÎ
+ 
+·¿m‘”s
+ 
+Ú
+ 
+	`body_cÚ‹Á
+(
+šşude
+ 'sNssai', 'nfSets', 'ratType', 'default', 'supportedFeatures'),
+
+117 ###NSSF 
+»¥Ú£
+ 200 
+¡©us
+ 
+code
+ 
+ªd
+ 
+NSIID
+ 
+Ú
+ 
+cÚ‹Á
+.###
+e¡_cfg_po¡_nsi_1():
+
+119 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[3]
+
+120 
+	`´št
+('Request Info -----cfg_path[3]')
+
+121 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+122 
+	`´št
+('Request Body -----cfg_pkg[1]')
+
+123 
+	`´št
+(
+	$¡r
+(
+cfg_pkg
+[1]))
+
+125 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+126 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+127 
+POST
+, 
+·th
+,
+
+128 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[1]),
+
+129 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+131 
+´št
+('Response Info -----')
+
+132 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+133 
+	`´št
+('Response Body -----')
+
+134 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+135 
+as£¹
+ 200 =ğ
+»¥
+.
+¡©us
+
+
+136 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+138 ###1.002 
+CÚfigu»_£rv”
+ 
+po¡
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+cÜ»ù
+ 
+URI
+ 
+ªd
+ 
+add™iÚ®
+ 
+·¿m‘”s
+ 
+Ú
+ 
+	`body_cÚ‹Á
+(
+šşude
+ 'sNs§i', 'nfS‘s', '¿tTy³', 'deçuÉ', 'suµÜ‹dF—tu»s', 
+add
+ 
+Ùh”
+…¬am‘” 
+such
+ 
+as
+ '¶mnid'‡nd 
+so
+ on)###
+e¡_cfg_po¡_nsi_2():
+
+140 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[3]
+
+141 
+	`´št
+('Request Info -----cfg_path[3]')
+
+142 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+143 
+	`´št
+('Request Body -----cfg_pkg[2]')
+
+144 
+	`´št
+(
+	$¡r
+(
+cfg_pkg
+[2]))
+
+146 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+147 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+148 
+POST
+, 
+·th
+,
+
+149 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[2]),
+
+150 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+152 
+´št
+('Response Info -----')
+
+153 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+154 
+	`´št
+('Response Body -----')
+
+155 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+156 
+as£¹
+ 200 =ğ
+»¥
+.
+¡©us
+
+
+157 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+159 ###1.003 
+CÚfigu»_£rv”
+ 
+po¡
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+šcÜ»ù
+ 
+URI
+ 
+ªd
+ 
+fuÎ
+ 
+	`body_cÚ‹Á
+(
+šşude
+ 'sNs§i', 'nfS‘s', '¿tTy³', 'deçuÉ', 'suµÜ‹dF—tu»s'), 
+NSSF
+ 
+»¥Ú£
+ 404 
+¡©us
+ 
+code
+.###
+e¡_cfg_po¡_nsi_3():
+
+161 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[10]
+
+162 
+	`´št
+('Request Info -----cfg_path[10]')
+
+163 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+164 
+	`´št
+('Request Body -----cfg_pkg[1]')
+
+165 
+	`´št
+(
+	$¡r
+(
+cfg_pkg
+[1]))
+
+167 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+168 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+169 
+POST
+, 
+·th
+,
+
+170 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[1]),
+
+171 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+173 
+´št
+('Response Info -----')
+
+174 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+175 
+	`´št
+('Response Body -----')
+
+176 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+177 
+as£¹
+ 404 =ğ
+»¥
+.
+¡©us
+
+
+178 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+180 ###1.004 
+CÚfigu»_£rv”
+ 
+po¡
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+cÜ»ù
+ 
+URI
+ 
+ªd
+ 
+some
+ 
+·¿m‘”s
+ 
+Ú
+ 
+	`body_cÚ‹Á
+(
+šşude
+ 'sNs§i')###
+e¡_cfg_po¡_nsi_4():
+
+182 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[3]
+
+183 
+	`´št
+('Request Info -----cfg_path[3]')
+
+184 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+185 
+	`´št
+('Request Body -----cfg_pkg[3]')
+
+186 
+	`´št
+(
+	$¡r
+(
+cfg_pkg
+[3]))
+
+188 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+189 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+190 
+POST
+, 
+·th
+,
+
+191 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[3]),
+
+192 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+194 
+´št
+('Response Info -----')
+
+195 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+196 
+	`´št
+('Response Body -----')
+
+197 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+198 
+	$as£¹
+ (404 =ğ
+»¥
+.
+¡©us
+ 
+Ü
+ 400 ==„esp.status)
+
+199 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+201 ###1.005 
+CÚfigu»_£rv”
+ 
+po¡
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+cÜ»ù
+ 
+URI
+ 
+ªd
+ 
+some
+ 
+·¿m‘”s
+ 
+Ú
+ 
+	`body_cÚ‹Á
+(
+šşude
+ 'sNs§i', 'nfS‘s')###
+e¡_cfg_po¡_nsi_5():
+
+203 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[3]
+
+204 
+	`´št
+('Request Info -----cfg_path[3]')
+
+205 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+206 
+	`´št
+('Request Body -----cfg_pkg[4]')
+
+207 
+	`´št
+(
+	$¡r
+(
+cfg_pkg
+[4]))
+
+209 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+210 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+211 
+POST
+, 
+·th
+,
+
+212 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[4]),
+
+213 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+215 
+´št
+('Response Info -----')
+
+216 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+217 
+	`´št
+('Response Body -----')
+
+218 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+219 
+	$as£¹
+ (404 =ğ
+»¥
+.
+¡©us
+ 
+Ü
+ 400 ==„esp.status)
+
+220 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+222 ###1.006 
+CÚfigu»_£rv”
+ 
+po¡
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+cÜ»ù
+ 
+URI
+ 
+ªd
+ 
+some
+ 
+·¿m‘”s
+ 
+Ú
+ 
+	`body_cÚ‹Á
+(
+šşude
+ 'sNs§i', 'nfS‘s', '¿tTy³')###
+e¡_cfg_po¡_nsi_6():
+
+224 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[3]
+
+225 
+	`´št
+('Request Info -----cfg_path[3]')
+
+226 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+227 
+	`´št
+('Request Body -----cfg_pkg[5]')
+
+228 
+	`´št
+(
+	$¡r
+(
+cfg_pkg
+[5]))
+
+230 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+231 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+232 
+POST
+, 
+·th
+,
+
+233 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[5]),
+
+234 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+236 
+´št
+('Response Info -----')
+
+237 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+238 
+	`´št
+('Response Body -----')
+
+239 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+240 
+	$as£¹
+ (404 =ğ
+»¥
+.
+¡©us
+ 
+Ü
+ 400 ==„esp.status)
+
+241 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+243 ###1.007 
+CÚfigu»_£rv”
+ 
+po¡
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+cÜ»ù
+ 
+URI
+ 
+ªd
+ 
+some
+ 
+·¿m‘”s
+ 
+Ú
+ 
+	`body_cÚ‹Á
+(
+šşude
+ 'sNs§i', 'nfS‘s', '¿tTy³','deçuÉ')###
+e¡_cfg_po¡_nsi_7():
+
+245 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[3]
+
+246 
+	`´št
+('Request Info -----cfg_path[3]')
+
+247 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+248 
+	`´št
+('Request Body -----cfg_pkg[6]')
+
+249 
+	`´št
+(
+	$¡r
+(
+cfg_pkg
+[6]))
+
+251 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+252 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+253 
+POST
+, 
+·th
+,
+
+254 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[6]),
+
+255 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+257 
+´št
+('Response Info -----')
+
+258 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+259 
+	`´št
+('Response Body -----')
+
+260 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+261 
+as£¹
+ 200 =ğ
+»¥
+.
+¡©us
+
+
+262 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+264 ###1.008 
+CÚfigu»_£rv”
+ 
+po¡
+ 
+the
+ 
+§me
+ 
+Ãt¦iûš¡ªû
+, 
+NSSF
+ 
+»¥Ú£
+ 200 
+¡©us
+ 
+code
+ 
+ªd
+ 
+NSIID
+&
+NSI
+-
+	`šfo
+Ñh§m
+w™h
+h
+´evious
+ NSIIDè
+Ú
+ 
+cÚ‹Á
+.###
+e¡_cfg_po¡_nsi_8():
+
+266 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[3]
+
+267 
+	`´št
+('Request Info -----cfg_path[3]')
+
+268 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+269 
+	`´št
+('Request Body -----cfg_pkg[6]')
+
+270 
+	`´št
+(
+	$¡r
+(
+cfg_pkg
+[6]))
+
+272 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+273 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+274 
+POST
+, 
+·th
+,
+
+275 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[6]),
+
+276 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+278 
+´št
+('Response Info -----')
+
+279 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+280 
+	`´št
+('Response Body -----')
+
+281 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+282 
+as£¹
+ 200 =ğ
+»¥
+.
+¡©us
+
+
+283 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+286 ## 
+Po¡
+ 
+show
+ 
+NSI
+
+
+287 ###2.001 
+CÚfigu»_£rv”
+ 
+	`po¡
+(
+show
+è
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+cÜ»ù
+ 
+	`URI
+ (
+the
+ 
+nsiID
+ 
+exi¡
+ 
+Ú
+ 
+nssf
+), 
+NSSF
+ 
+»¥Ú£
+ 200 
+¡©us
+ 
+code
+ 
+ªd
+ 
+N‘SliûIn¡ªû
+ 
+šfo
+.###
+e¡_cfg_show_nsi_1():
+
+289 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[4]
+
+290 
+	`´št
+('Request Info -----cfg_path[4]')
+
+291 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+293 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+294 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+295 
+POST
+, 
+·th
+,
+
+296 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[7]),
+
+297 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+299 
+´št
+('Response Info -----')
+
+300 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+301 
+	`´št
+('Response Body -----')
+
+302 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+303 
+as£¹
+ 200 =ğ
+»¥
+.
+¡©us
+
+
+304 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+306 ###2.002 
+CÚfigu»_£rv”
+ 
+	`po¡
+(
+show
+è
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+cÜ»ù
+ 
+	`URI
+ (
+the
+ 
+nsiID
+ 
+dÚ
+'ˆexi¡ oÀnssf), NSSF„e¥Ú£ 404 stu codªd cÚ‹Á inşud'
+NSI
+ 
+NÙ
+ 
+Found
+'###
+
+307 
+def
+ 
+	$‹¡_cfg_show_nsi_2
+():
+
+308 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[4]
+
+309 
+	`´št
+('Request Info -----cfg_path[4]')
+
+310 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+312 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+313 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+314 
+POST
+, 
+·th
+,
+
+315 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[8]),
+
+316 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+318 
+´št
+('Response Info -----')
+
+319 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+320 
+	`´št
+('Response Body -----')
+
+321 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+322 
+as£¹
+ 404 =ğ
+»¥
+.
+¡©us
+
+
+323 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+325 ###2.003 
+CÚfigu»_£rv”
+ 
+	`po¡
+(
+show
+è
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+šcÜ»ù
+ 
+	`URI
+ (
+the
+ 
+nsiID
+ 
+exi¡
+ 
+Ú
+ 
+nssf
+), 
+NSSF
+ 
+»¥Ú£
+ 404 
+¡©us
+ 
+code
+.###
+e¡_cfg_show_nsi_3():
+
+327 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[12]
+
+328 
+	`´št
+('Request Info -----cfg_path[12]')
+
+329 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+331 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+332 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+333 
+POST
+, 
+·th
+,
+
+334 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[7]),
+
+335 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+337 
+´št
+('Response Info -----')
+
+338 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+339 
+	`´št
+('Response Body -----')
+
+340 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+341 
+as£¹
+ 404 =ğ
+»¥
+.
+¡©us
+
+
+342 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+344 ###2.004 
+CÚfigu»_£rv”
+ 
+	`po¡
+(
+show
+è
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+šcÜ»ù
+ 
+	`URI
+ (
+the
+ 
+nsiID
+ 
+dÚ
+'tƒxist on‚ssf), NSSF„esponse 404 status code.###
+
+345 
+def
+ 
+	$‹¡_cfg_show_nsi_4
+():
+
+346 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[12]
+
+347 
+	`´št
+('Request Info -----cfg_path[12]')
+
+348 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+350 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+351 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+352 
+POST
+, 
+·th
+,
+
+353 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[8]),
+
+354 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+356 
+´št
+('Response Info -----')
+
+357 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+358 
+	`´št
+('Response Body -----')
+
+359 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+360 
+as£¹
+ 404 =ğ
+»¥
+.
+¡©us
+
+
+361 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+363 ## 
+D–‘e
+ 
+NSI
+
+
+364 ###3.001 
+CÚfigu»_£rv”
+ 
+d–‘e
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+cÜ»ù
+ 
+	`URI
+ (
+the
+ 
+nsi
+ 
+exi¡
+ 
+Ú
+ 
+nssf
+), 
+NSSF
+ 
+»¥Ú£
+ 200 
+¡©us
+ 
+code
+.###
+e¡_cfg_d–‘e_nsi_1():
+
+366 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[5]
+
+367 
+	`´št
+('Request Info -----cfg_path[5]')
+
+368 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+370 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+371 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+372 
+POST
+, 
+·th
+,
+
+373 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[7]),
+
+374 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+376 
+´št
+('Response Info -----')
+
+377 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+378 
+	`´št
+('Response Body -----')
+
+379 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+380 
+as£¹
+ 200 =ğ
+»¥
+.
+¡©us
+
+
+381 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+383 ###3.002 
+Aá”
+ 
+d–‘e
+ 
+Ãt¦iûš¡ªû
+ 
+Ú
+ 
+nssf
+, 
+CÚfigu»_£rv”
+ 
+show
+‚‘¦iûš¡ªû 
+w™h
+ 
+the
+ 
+´evious
+ 
+nsiID
+, 
+NSSF
+ 
+»¥Ú£
+ 404 
+¡©us
+ 
+code
+.###
+e¡_cfg_show_nsi_5():
+
+385 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[4]
+
+386 
+	`´št
+('Request Info -----cfg_path[4]')
+
+387 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+389 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+390 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+391 
+POST
+, 
+·th
+,
+
+392 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[7]),
+
+393 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+395 
+´št
+('Response Info -----')
+
+396 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+397 
+	`´št
+('Response Body -----')
+
+398 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+399 
+as£¹
+ 404 =ğ
+»¥
+.
+¡©us
+
+
+400 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+402 ###3.003 
+CÚfigu»_£rv”
+ 
+d–‘e
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+cÜ»ù
+ 
+	`URI
+ (
+the
+ 
+nsi
+ 
+dÚ
+'tƒxist on‚ssf), NSSF„esponse 404 status code.###
+
+403 
+def
+ 
+	$‹¡_cfg_d–‘e_nsi_2
+():
+
+404 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[5]
+
+405 
+	`´št
+('Request Info -----cfg_path[5]')
+
+406 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+408 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+409 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+410 
+POST
+, 
+·th
+,
+
+411 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[8]),
+
+412 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+414 
+´št
+('Response Info -----')
+
+415 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+416 
+	`´št
+('Response Body -----')
+
+417 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+418 
+as£¹
+ 404 =ğ
+»¥
+.
+¡©us
+
+
+419 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+421 ###3.004 
+CÚfigu»_£rv”
+ 
+d–‘e
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+šcÜ»ù
+ 
+	`URI
+ (
+the
+ 
+nsi
+ 
+exi¡
+ 
+Ú
+ 
+nssf
+), 
+NSSF
+ 
+»¥Ú£
+ 404 
+¡©us
+ 
+code
+.###
+e¡_cfg_d–‘e_nsi_3():
+
+423 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[13]
+
+424 
+	`´št
+('Request Info -----cfg_path[13]')
+
+425 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+427 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+428 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+429 
+POST
+, 
+·th
+,
+
+430 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[7]),
+
+431 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+433 
+´št
+('Response Info -----')
+
+434 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+435 
+	`´št
+('Response Body -----')
+
+436 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+437 
+as£¹
+ 404 =ğ
+»¥
+.
+¡©us
+
+
+438 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+440 ###3.005 
+CÚfigu»_£rv”
+ 
+d–‘e
+ 
+Ãt¦iûš¡ªû
+ 
+w™h
+ 
+šcÜ»ù
+ 
+	`URI
+ (
+the
+ 
+nsi
+ 
+dÚ
+'tƒxist on‚ssf), NSSF„esponse 404 status code.###
+
+441 
+def
+ 
+	$‹¡_cfg_d–‘e_nsi_4
+():
+
+442 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[13]
+
+443 
+	`´št
+('Request Info -----cfg_path[13]')
+
+444 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+446 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+447 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+448 
+POST
+, 
+·th
+,
+
+449 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[8]),
+
+450 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+452 
+´št
+('Response Info -----')
+
+453 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+454 
+	`´št
+('Response Body -----')
+
+455 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+456 
+as£¹
+ 404 =ğ
+»¥
+.
+¡©us
+
+
+457 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+459 #################################################d–‘
+»cÜds
+ 
+äom
+ 
+DB
+ ###################################################
+e¡_cfg_d–‘e_nsi_5(): ##»Ï‹Ø1.002##
+
+461 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[5]
+
+462 
+	`´št
+('Request Info -----cfg_path[5]')
+
+463 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+465 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+466 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+467 
+POST
+, 
+·th
+,
+
+468 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[9]),
+
+469 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+471 
+´št
+('Response Info -----')
+
+472 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+473 
+	`´št
+('Response Body -----')
+
+474 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+475 
+as£¹
+ 200 =ğ
+»¥
+.
+¡©us
+
+
+476 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	$m‘hod
+())
+
+478 
+def
+ 
+	$‹¡_cfg_d–‘e_nsi_6
+(): ##
+»Ï‹
+ 
+to
+ 1.007##
+
+479 
+·th
+ = 
+DEFAULT_HTTP_PATH
+ + 
+cfg_·th
+[5]
+
+480 
+	`´št
+('Request Info -----cfg_path[5]')
+
+481 
+	`´št
+(
+	$¡r
+(
+·th
+))
+
+483 
+async
+ 
+def
+ 
+	$m‘hod
+():
+
+484 
+»¥
+ = 
+awa™
+ 
+aioh‰p
+.
+	`Cl›ÁSessiÚ
+().
+	`»que¡
+(
+
+485 
+POST
+, 
+·th
+,
+
+486 
+d©a
+=
+jsÚ
+.
+	`dumps
+(
+cfg_pkg
+[10]),
+
+487 
+h—d”s
+={"cÚ‹Á-ty³": "­¶iÿtiÚ/jsÚ"
+	}
+})
+
+489 
+´št
+('Response Info -----')
+
+490 
+´št
+(
+	$¡r
+(
+»¥
+))
+
+491 
+	`´št
+('Response Body -----')
+
+492 
+	`´št
+(
+awa™
+ 
+»¥
+.
+	$‹xt
+())
+
+493 
+as£¹
+ 200 =ğ
+»¥
+.
+¡©us
+
+
+494 
+asyncio
+.
+	`g‘_ev’t_loİ
+().
+	`run_uÁ_com¶‘e
+(
+	`m‘hod
+())
+
+	@/root/git/pydemo/transport.py
+
+1 #!/
+u¤
+/
+bš
+/
+pythÚ3
+
+
+2 
+impÜt
+ 
+Ãt¢mp
+
+
+3 
+impÜt
+ 
+time
+
+
+4 
+impÜt
+ 
+·¿miko
+
+
+7 
+	g§egw
+='172.0.20.16'
+
+8 
+mme
+='172.0.10.165'
+
+10 
+‹¡
+=
+mme
+
+
+12 
+‹¡u£r
+='casa'
+
+13 
+·sswd
+='casa'
+
+15 
+t
+=
+·¿miko
+.
+	$T¿n¥Üt
+(
+mme
+,22)
+
+16 
+t
+.
+	$cÚÃù
+(
+u£ºame
+=
+‹¡u£r
+,
+·sswÜd
+=
+·sswd
+)
+
+17 
+chª
+=
+t
+.
+	$İ’_£ssiÚ
+()
+
+18 
+chª
+.
+	$£‰imeout
+(3)
+
+19 
+chª
+.
+	$g‘_±y
+()
+
+20 
+chª
+.
+	$švoke_sh–l
+()
+
+21 
+	`´št
+("============")
+
+22 
+chª
+.
+	`£nd
+("show mme info\r")
+
+23 
+time
+.
+	$¦“p
+(1)
+
+24 
+¡r
+=
+chª
+.
+	$»cv
+(65535)
+
+25 
+	`´št
+(
+¡r
+.
+	`decode
+(
+’codšg
+='utf-8'))
+
+26 
+t
+.
+	`şo£
+()
+
+	@/root/git/pydemo/xlswork.py
+
+1 #!/
+u¤
+/
+bš
+/
+pythÚ3
+
+
+3 
+impÜt
+ 
+xÌd
+
+
+4 
+impÜt
+ 
+xlwt
+
+
+5 
+impÜt
+ 
+»
+
+
+7 
+	gwÜkbook
+=
+xÌd
+.
+İ’_wÜkbook
+(
+r
+'D:\OneDrive\python\LQL-SAEGW_test_case_list_v1.1_stream495_DPI_20190422.xls')
+
+8 #´šˆ(
+wÜkbook
+.
+sh“t_Çmes
+())
+
+10 
+bugsh“t
+=
+wÜkbook
+.
+sh“t_by_Çme
+('Bug Statistics')
+
+11 #´šˆ(
+bugsh“t
+.
+Çme
+,bugsh“t.
+Äows
+,bugsh“t.
+ncŞs
+)
+
+12 
+	gcŞs
+=
+bugsh“t
+.
+	$cŞ_v®ues
+(6)
+
+13 #´šˆ(
+cŞs
+)
+
+15 
+l1
+=
+	$Ën
+(
+cŞs
+)
+
+16 
+	$´št
+ (
+l1
+)
+
+17 #fÜ 
+i
+ 
+š
+ 
+	`¿nge
+ (
+l1
+):
+
+18 #´šˆ(
+bugsh“t
+.
+	`ûÎ
+(6,
+i
+))
+
+	@
+1
+.
+0
+13
+360
+/root/git/pydemo/2048.py
+/root/git/pydemo/250movie.py
+/root/git/pydemo/demo.py
+/root/git/pydemo/guess.py
+/root/git/pydemo/mme.py
+/root/git/pydemo/other.py
+/root/git/pydemo/show.py
+/root/git/pydemo/show1.py
+/root/git/pydemo/snmp.py
+/root/git/pydemo/test.py
+/root/git/pydemo/test_cfg_NetSliceInstance.py
+/root/git/pydemo/transport.py
+/root/git/pydemo/xlswork.py
