@@ -1,0 +1,28 @@
+2019-07-12  10:14:11 Fri root INFO init connecting to host 172.0.5.35
+2019-07-12  10:14:11 Fri paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-12  10:14:11 Fri paramiko.transport INFO Authentication (password) successful!
+2019-07-12  10:14:18 Fri root INFO 
+===================================
+Welcome to CASA MEC x86 Platform
+===================================
+show mme info
+[KCLI services started!
+CASA-MOBILE>show mme info
+-----------------------------------------------------
+service name       mme1
+service started    Mon Jul  1 03:50:26 2019
+served gummeis     mcc 311, mnc 480, group-id 1, mme-code 1
+relative capacity  100
+sctp parameters    hb-interval 30, stream[in/out] 2/2 
+                   max-retransmit: init 5, path 5, assoc 10
+sctp listen on     172.1.5.35_36412 (p)
+sctp associations  1
+s1ap connections   1
+subscribers        6
+bearers            7
+[KCASA-MOBILE>show task crash
+Number  Task             Crash-Time                Exit-Code     Exit-Reason     Core-file
+==========================================================================================
+Total 0 crash records
+[KCASA-MOBILE>
+2019-07-12  10:14:18 Fri root INFO END!
