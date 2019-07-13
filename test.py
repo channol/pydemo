@@ -9,30 +9,55 @@ logging.basicConfig(level=logging.INFO,
                     #filename='./log/check.log',
                     #filemode='w')
 
-hostname='172.0.5.35'
+host_mme = '172.0.5.35'
+host_gw = '172.0.5.36'
+host_sgw = '172.0.5.37'
+host_pgw = '172.0.5.38'
 port=22
-username='test'
-password='casa1234'
+username='root'
+password='casa'
 cmd='show mme info\r'
 cmd1='show task crash\r'
-try:
-    logging.info('init connecting to host {}'.format(hostname))
-    transport = paramiko.Transport(hostname,port)
-    transport.connect(username=username,password=password)
+cmd2='show version\r'
+
+def transport(hostname,port=22):
+    try:
+        logging.info('init connecting to host {}'.format(hostname))
+        transport = paramiko.Transport(hostname,port)
+        transport.connect(username=username,password=password)
+        logging.info('Connect to host {} successful!'.format(hostname))
+        return transport
+    except Exception as e:
+        logging.error('Try to connect host {} failure! The reason is {}'.format(hostname,e))
+
+
+def cli(transport,command):
     channel = transport.open_session()
+    logging.info(channel.get_transport())
     channel.settimeout(3)
     channel.get_pty()
     channel.invoke_shell()
-    channel.send(cmd)
+    channel.send('/usr/local/bin/casa/casa-cli\n')
+    time.sleep(1)
+    logging.debug(channel.recv(65535).decode(encoding='utf-8'))
+    sys.stdout.flush()  #clear init connection info
+    channel.send(command)
     time.sleep(3)
-    channel.send(cmd1)
-    time.sleep(3)
-    showmmeinfo_bytes=channel.recv(65535)
-    showmmeinfo=showmmeinfo_bytes.decode(encoding='utf-8')
-#    print(showmmeinfo_bytes)
-    logging.info(showmmeinfo)
+    cli_bytes=channel.recv(65535)
+    cli=cli_bytes.decode(encoding='utf-8')
+    logging.info(cli)
+    channel.close()
+    logging.info(channel.get_transport())
     transport.close()
-    logging.info('END!')
-except Exception as e:
-    logging.error('The host {} connecting failure! The reason is {}'.format(hostname,e))
+    channel.get_transport()
+    logging.info(channel.get_transport())
 
+#    logging.info('END!')
+
+if __name__ == '__main__':
+    transport = transport(host_mme)
+    cli(transport,cmd1)
+    #cli(transport,cmd1)
+    #cli(transport,cmd2)
+    transport1 = transport(host_mme)
+    cli(transport1,cmd1)
