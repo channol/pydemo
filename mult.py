@@ -3,7 +3,7 @@ import paramiko
 import os,sys,re,time
 import logging
 
-#logging 配置
+#logging settin
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
@@ -21,7 +21,7 @@ console_handler.setLevel(logging.INFO)
 console_handler.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a'))
 logger.addHandler(console_handler)
 
-
+#host paramer
 host_mme = '172.0.5.35'
 host_4ggw = '172.0.5.36'
 host_sgw = '172.0.5.37'
@@ -36,7 +36,14 @@ showTaskCrash = 'show task crash\r'
 showHaInfo = 'show ha info\r'
 showSgwcPfcp = 'show sgw-c stats pfcp peer\r'
 showPgwcPfcp = 'show pgw-c stats pfcp peer\r'
-showsgwcsessionsummary = 'show sgw-c session summary\r'
+showSgwcSessionSummary = 'show sgw-c session summary\r'
+showSgwuPfcp = 'show sgw-u stats pfcp peer\r'
+showUpfPfcp = 'show upf stats pfcp peer\r'
+showUpfSessionCounter = 'show upf session all counter\r'
+showUpfSession = 'show upf session all\r'
+showLteServiceHenbGatewayHenbInterface = 'show lte-service henb-gateway henb-interface henbs verbose\r'
+
+
 
 def run_cli(hostname,command,port=22):
     try:
@@ -77,14 +84,6 @@ def comparsion(result,*comparer):
             logging.info('Checking step {} is successful!'.format(comparsion))
             continue
 
-#    pattern = re.compile(*comparer,re.M)
-#    comparsion = pattern.search(result)
-#    if comparsion:
-#        logging.debug(result)
-#        logging.info('******The result is Successful!')
-#    else:
-#        logging.error(result)
-#        logging.error('******The result is Failure!')
 
 
 if __name__ == '__main__':
@@ -104,54 +103,93 @@ if __name__ == '__main__':
     cli_context = run_cli(host_mme,showMmeInfo)
     logging.info('Checking host {} system status:{}'.format(host_mme,showMmeInfo))
     comparer = 'service\sname\s+mme1'
-    comparer1 = 's2ap\sconnections\s+[0-9]*[1-9][0-9]*'
+    comparer1 = 's1ap\sconnections\s+[0-9]*[1-9][0-9]*'
     comparer2 = 'sctp\sassociations\s+[0-9]*[1-9][0-9]*'
     comparsion(cli_context,comparer,comparer1,comparer2)
+    logging.info(cli_context)
 
-#    logging.info('beginning check 4ggw info')
-#    cli_context = run_cli(host_4ggw,showTaskCrash)
-#    logging.info('Checking host {} system status:{}'.format(host_4ggw,showTaskCrash))
-#    comparer = '[Tt]otal\s0\scrash\srecords'
-#    comparsion(cli_context,comparer)
-#
-#    logging.info('beginning check 4ggw ha info')
-#    cli_context = run_cli(host_4ggw,showHaInfo)
-#    logging.info('Checking host {} system status:{}'.format(host_4ggw,showHaInfo))
-#    comparer = 'state\s+:\sActive'
-#    comparsion(cli_context,comparer)
-#
-#    logging.info('beginning check sgw crash info')
-#    cli_context = run_cli(host_sgw,showTaskCrash)
-#    logging.info('Checking host {} system status:{}'.format(host_sgw,showTaskCrash))
-#    comparer = '[Tt]otal\s0\scrash\srecords'
-#    comparsion(cli_context,comparer)
-#
-#    logging.info('beginning check sgw ha info')
-#    cli_context = run_cli(host_sgw,showHaInfo)
-#    logging.info('Checking host {} system status:{}'.format(host_sgw,showHaInfo))
-#    comparer = 'state\s+:\sActive'
-#    comparsion(cli_context,comparer)
-#
-#    logging.info('beginning check pgw task crash info')
-#    cli_context = run_cli(host_pgw,showTaskCrash)
-#    logging.info('Checking host {} system status:{}'.format(host_pgw,showTaskCrash))
-#    comparer = '[Tt]otal\s0\scrash\srecords'
-#    comparsion(cli_context,comparer)
-#
-#    logging.info('beginning check pgw ha info')
-#    cli_context = run_cli(host_pgw,showHaInfo)
-#    logging.info('Checking host {} system status:{}'.format(host_pgw,showHaInfo))
-#    comparer = 'state\s+:\sActive'
-#    comparsion(cli_context,comparer)
-#
-#    logging.info('beginning check sgwc pfcp info')
-#    cli_context = run_cli(host_sgw,showSgwcPfcp)
-#    logging.info('Checking host {} system status:{}'.format(host_sgw,showSgwcPfcp))
-#    comparer = 'Peer\sNode\sType\s:\sPFCP_SGW_UP\s+State\s:\sConnected'
-#    comparsion(cli_context,comparer)
-#
-#    logging.info('beginning check pgwc pfcp info')
-#    cli_context = run_cli(host_sgw,showPgwcPfcp)
-#    logging.info('Checking host {} system status:{}'.format(host_sgw,showPgwcPfcp))
-#    comparer = 'Peer\sNode\sType\s:\sPFCP_PGW_UP\s+State\s:\sConnected'
-#    comparsion(cli_context,comparer)
+
+    logging.info('beginning check 4ggw info')
+    cli_context = run_cli(host_4ggw,showTaskCrash)
+    logging.info('Checking host {} system status:{}'.format(host_4ggw,showTaskCrash))
+    comparer = '[Tt]otal\s0\scrash\srecords'
+    comparsion(cli_context,comparer)
+
+    logging.info('beginning check 4ggw ha info')
+    cli_context = run_cli(host_4ggw,showHaInfo)
+    logging.info('Checking host {} system status:{}'.format(host_4ggw,showHaInfo))
+    comparer = 'state\s+:\sActive'
+    comparsion(cli_context,comparer)
+
+    logging.info('beginning check {}'.format(showLteServiceHenbGatewayHenbInterface))
+    cli_context = run_cli(host_4ggw,showLteServiceHenbGatewayHenbInterface)
+    logging.info('Checking host {} system status:{}'.format(host_4ggw,showLteServiceHenbGatewayHenbInterface))
+    comparer = 'global-enb-id\s+:\smcc\s311,\smnc\s480,\shome-enb-id\s400'
+    comparer1 = 'global-enb-id\s+:\smcc\s311,\smnc\s480,\shome-enb-id\s401'
+    comparsion(cli_context,comparer,comparer1)
+    logging.info(cli_context)
+
+    logging.info('beginning check sgw crash info')
+    cli_context = run_cli(host_sgw,showTaskCrash)
+    logging.info('Checking host {} system status:{}'.format(host_sgw,showTaskCrash))
+    comparer = '[Tt]otal\s0\scrash\srecords'
+    comparsion(cli_context,comparer)
+
+    logging.info('beginning check sgw ha info')
+    cli_context = run_cli(host_sgw,showHaInfo)
+    logging.info('Checking host {} system status:{}'.format(host_sgw,showHaInfo))
+    comparer = 'state\s+:\sActive'
+    comparsion(cli_context,comparer)
+
+    logging.info('beginning check sgwc pfcp info')
+    cli_context = run_cli(host_sgw,showSgwcPfcp)
+    logging.info('Checking host {} system status:{}'.format(host_sgw,showSgwcPfcp))
+    comparer = 'Peer\sNode\sType\s:\sPFCP_SGW_UP\s+State\s:\sConnected'
+    comparsion(cli_context,comparer)
+
+    logging.info('beginning check pgwc pfcp info')
+    cli_context = run_cli(host_sgw,showPgwcPfcp)
+    logging.info('Checking host {} system status:{}'.format(host_sgw,showPgwcPfcp))
+    comparer = 'Peer\sNode\sType\s:\sPFCP_PGW_UP\s+State\s:\sConnected'
+    comparsion(cli_context,comparer)
+
+    logging.info('beginning check {}'.format(showSgwcSessionSummary))
+    cli_context = run_cli(host_sgw,showSgwcSessionSummary)
+    logging.info('Checking host {} system status:{}'.format(host_sgw,showSgwcSessionSummary))
+    logging.info(cli_context)
+
+    logging.info('beginning check pgw task crash info')
+    cli_context = run_cli(host_pgw,showTaskCrash)
+    logging.info('Checking host {} system status:{}'.format(host_pgw,showTaskCrash))
+    comparer = '[Tt]otal\s0\scrash\srecords'
+    comparsion(cli_context,comparer)
+
+    logging.info('beginning check pgw ha info')
+    cli_context = run_cli(host_pgw,showHaInfo)
+    logging.info('Checking host {} system status:{}'.format(host_pgw,showHaInfo))
+    comparer = 'state\s+:\sActive'
+    comparsion(cli_context,comparer)
+
+
+    logging.info('beginning check {}'.format(showSgwuPfcp))
+    cli_context = run_cli(host_pgw,showSgwuPfcp)
+    logging.info('Checking host {} system status:{}'.format(host_pgw,showSgwuPfcp))
+    comparer = 'Peer\sNode\sType\s:\sPFCP_SGW_CP\s+State\s:\sConnected'
+    comparsion(cli_context,comparer)
+
+    logging.info('beginning check {}'.format(showUpfPfcp))
+    cli_context = run_cli(host_pgw,showUpfPfcp)
+    logging.info('Checking host {} system status:{}'.format(host_pgw,showUpfPfcp))
+    comparer = 'Peer\sNode\sType\s:\sPFCP_PGW_CP\s+State\s:\sConnected'
+    comparsion(cli_context,comparer)
+
+    logging.info('beginning check {}'.format(showUpfSession))
+    cli_context = run_cli(host_pgw,showUpfSession)
+    logging.info('Checking host {} system status:{}'.format(host_pgw,showUpfSession))
+    logging.info(cli_context)
+
+    logging.info('beginning check {}'.format(showUpfSessionCounter))
+    cli_context = run_cli(host_pgw,showUpfSessionCounter)
+    logging.info('Checking host {} system status:{}'.format(host_pgw,showUpfSessionCounter))
+    logging.info(cli_context)
+
