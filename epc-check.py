@@ -10,7 +10,8 @@ logger.setLevel(logging.DEBUG)
 #logging.basicConfig(level=logging.INFO,format="%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a')
 
 #set file handler of logging
-file_handler = logging.FileHandler('./log/{}.log'.format(time.strftime('%Y_%m_%d_%H_%M_%S')),mode='w')
+#file_handler = logging.FileHandler('./log/{}.log'.format(time.strftime('%Y_%m_%d_%H_%M_%S')),mode='w')
+file_handler = logging.FileHandler('./log/epc-check.log',mode='w')
 file_handler.setLevel(logging.DEBUG)
 file_handler.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a'))
 logger.addHandler(file_handler)
@@ -53,7 +54,7 @@ def run_cli(hostname,command,port=22):
         logging.info('Connect to host {} successful!'.format(hostname))
         channel = transport.open_session()
         channel.settimeout(3)
-        channel.get_pty()   #模拟终端
+        channel.get_pty()
         channel.invoke_shell()
         channel.send('/usr/local/bin/casa/casa-cli\n')  #login into cli mode 
         time.sleep(1)
