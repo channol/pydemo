@@ -3,11 +3,24 @@ import paramiko
 import os,sys,re,time
 import logging
 
-logging.basicConfig(level=logging.INFO,
-                    format="%(asctime)s %(name)s %(levelname)s %(message)s",
-                    datefmt='%Y-%m-%d  %H:%M:%S %a')
-                    #filename='./log/check.log',
-                    #filemode='w')
+#logging 配置
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+
+#set file handler of logging
+file_handler = logging.FileHandler('./log/mult.log',mode='w')
+file_handler.setLevel(logging.DEBUG)
+#logging.basicConfig(level=logging.INFO,format="%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a')
+file_handler.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a'))
+logger.addHandler(file_handler)
+
+#set console handler of logging
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+#logging.basicConfig(level=logging.INFO,format="%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a')
+console_handler.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a'))
+logger.addHandler(console_handler)
+
 
 host_mme = '172.0.5.35'
 host_4ggw = '172.0.5.36'
