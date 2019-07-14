@@ -7,17 +7,17 @@ import logging
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
-#set file handler of logging
-file_handler = logging.FileHandler('./log/mult.log',mode='w')
-file_handler.setLevel(logging.DEBUG)
 #logging.basicConfig(level=logging.INFO,format="%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a')
+
+#set file handler of logging
+file_handler = logging.FileHandler('./log/{}.log'.format(time.strftime('%Y_%m_%d_%H_%M_%S')),mode='w')
+file_handler.setLevel(logging.DEBUG)
 file_handler.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a'))
 logger.addHandler(file_handler)
 
 #set console handler of logging
 console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.INFO)
-#logging.basicConfig(level=logging.INFO,format="%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a')
 console_handler.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a'))
 logger.addHandler(console_handler)
 
@@ -31,9 +31,12 @@ username = 'root'
 password = 'casa'
 
 #cmd list
-showmmeinfo = 'show mme info\r'
-showtaskcrash = 'show task crash\r'
-showhainfo = 'show ha info\r'
+showMmeInfo = 'show mme info\r'
+showTaskCrash = 'show task crash\r'
+showHaInfo = 'show ha info\r'
+showSgwcPfcp = 'show sgw-c stats pfcp peer\r'
+showPgwcPfcp = 'show pgw-c stats pfcp peer\r'
+showsgwcsessionsummary = 'show sgw-c session summary\r'
 
 def run_cli(hostname,command,port=22):
     try:
@@ -62,69 +65,93 @@ def run_cli(hostname,command,port=22):
     except Exception as e:
         logging.error('Try to connect host {} failure! The reason is {}'.format(hostname,e))
 
-def comparsion(result,comparer):
-    pattern = re.compile(comparer,re.M)
-    comparsion = pattern.search(result)
-    if comparsion:
-        logging.info(result)
-        logging.info('The result is Successful!')
-    else:
-        logging.error(result)
-        logging.info('The result is Failure!')
+def comparsion(result,*comparer):
+    for comp in comparer:
+        pattern = re.compile(comp,re.M)
+        comparsion = pattern.search(result)
+        if comparsion is None:
+            logging.error(result)
+            logging.error('******The result is Failure! The matcher is {}'.format(comp))
+            break
+        else:
+            logging.info('Checking step {} is successful!'.format(comparsion))
+            continue
+
+#    pattern = re.compile(*comparer,re.M)
+#    comparsion = pattern.search(result)
+#    if comparsion:
+#        logging.debug(result)
+#        logging.info('******The result is Successful!')
+#    else:
+#        logging.error(result)
+#        logging.error('******The result is Failure!')
 
 
 if __name__ == '__main__':
-    #check mme crash status
-    cli_context = run_cli(host_mme,showtaskcrash)
-    logging.info('Checking host {} system status:show task crash info'.format(host_mme))
+    logging.info('beginning check mme crash status')
+    cli_context = run_cli(host_mme,showTaskCrash)
+    logging.info('Checking host {} system status:{}'.format(host_mme,showTaskCrash))
     comparer = '[Tt]otal\s0\scrash\srecords'
     comparsion(cli_context,comparer)
 
-    #check mme ha info
-    cli_context = run_cli(host_mme,showhainfo)
-    logging.info('Checking host {} system status:show ha info'.format(host_mme))
+    logging.info('beginning check mme ha info')
+    cli_context = run_cli(host_mme,showHaInfo)
+    logging.info('Checking host {} system status:{}'.format(host_mme,showHaInfo))
     comparer = 'state\s+:\sActive'
     comparsion(cli_context,comparer)
 
-    #check mme info
-    cli_context = run_cli(host_mme,showmmeinfo)
-    logging.info('Checking host {} system status:show mme info'.format(host_mme))
-    #logging.info(cli_context)
+    logging.info('beginning check mme info')
+    cli_context = run_cli(host_mme,showMmeInfo)
+    logging.info('Checking host {} system status:{}'.format(host_mme,showMmeInfo))
     comparer = 'service\sname\s+mme1'
-    comparsion(cli_context,comparer)
+    comparer1 = 's2ap\sconnections\s+[0-9]*[1-9][0-9]*'
+    comparer2 = 'sctp\sassociations\s+[0-9]*[1-9][0-9]*'
+    comparsion(cli_context,comparer,comparer1,comparer2)
 
-    #check 4ggw crash status
-    cli_context = run_cli(host_4ggw,showtaskcrash)
-    logging.info('Checking host {} system status:show task crash info'.format(host_mme))
-    comparer = '[Tt]otal\s0\scrash\srecords'
-    comparsion(cli_context,comparer)
-
-    #check 4ggw ha info
-    cli_context = run_cli(host_4ggw,showhainfo)
-    logging.info('Checking host {} system status:show ha info'.format(host_mme))
-    comparer = 'state\s+:\sActive'
-    comparsion(cli_context,comparer)
-
-    #check sgw crash status
-    cli_context = run_cli(host_sgw,showtaskcrash)
-    logging.info('Checking host {} system status:show task crash info'.format(host_mme))
-    comparer = '[Tt]otal\s0\scrash\srecords'
-    comparsion(cli_context,comparer)
-
-    #check sgw ha info
-    cli_context = run_cli(host_sgw,showhainfo)
-    logging.info('Checking host {} system status:show ha info'.format(host_mme))
-    comparer = 'state\s+:\sActive'
-    comparsion(cli_context,comparer)
-
-    #check pgw crash status
-    cli_context = run_cli(host_pgw,showtaskcrash)
-    logging.info('Checking host {} system status:show task crash info'.format(host_mme))
-    comparer = '[Tt]otal\s0\scrash\srecords'
-    comparsion(cli_context,comparer)
-
-    #check pgw ha info
-    cli_context = run_cli(host_pgw,showhainfo)
-    logging.info('Checking host {} system status:show ha info'.format(host_mme))
-    comparer = 'state\s+:\sActive'
-    comparsion(cli_context,comparer)
+#    logging.info('beginning check 4ggw info')
+#    cli_context = run_cli(host_4ggw,showTaskCrash)
+#    logging.info('Checking host {} system status:{}'.format(host_4ggw,showTaskCrash))
+#    comparer = '[Tt]otal\s0\scrash\srecords'
+#    comparsion(cli_context,comparer)
+#
+#    logging.info('beginning check 4ggw ha info')
+#    cli_context = run_cli(host_4ggw,showHaInfo)
+#    logging.info('Checking host {} system status:{}'.format(host_4ggw,showHaInfo))
+#    comparer = 'state\s+:\sActive'
+#    comparsion(cli_context,comparer)
+#
+#    logging.info('beginning check sgw crash info')
+#    cli_context = run_cli(host_sgw,showTaskCrash)
+#    logging.info('Checking host {} system status:{}'.format(host_sgw,showTaskCrash))
+#    comparer = '[Tt]otal\s0\scrash\srecords'
+#    comparsion(cli_context,comparer)
+#
+#    logging.info('beginning check sgw ha info')
+#    cli_context = run_cli(host_sgw,showHaInfo)
+#    logging.info('Checking host {} system status:{}'.format(host_sgw,showHaInfo))
+#    comparer = 'state\s+:\sActive'
+#    comparsion(cli_context,comparer)
+#
+#    logging.info('beginning check pgw task crash info')
+#    cli_context = run_cli(host_pgw,showTaskCrash)
+#    logging.info('Checking host {} system status:{}'.format(host_pgw,showTaskCrash))
+#    comparer = '[Tt]otal\s0\scrash\srecords'
+#    comparsion(cli_context,comparer)
+#
+#    logging.info('beginning check pgw ha info')
+#    cli_context = run_cli(host_pgw,showHaInfo)
+#    logging.info('Checking host {} system status:{}'.format(host_pgw,showHaInfo))
+#    comparer = 'state\s+:\sActive'
+#    comparsion(cli_context,comparer)
+#
+#    logging.info('beginning check sgwc pfcp info')
+#    cli_context = run_cli(host_sgw,showSgwcPfcp)
+#    logging.info('Checking host {} system status:{}'.format(host_sgw,showSgwcPfcp))
+#    comparer = 'Peer\sNode\sType\s:\sPFCP_SGW_UP\s+State\s:\sConnected'
+#    comparsion(cli_context,comparer)
+#
+#    logging.info('beginning check pgwc pfcp info')
+#    cli_context = run_cli(host_sgw,showPgwcPfcp)
+#    logging.info('Checking host {} system status:{}'.format(host_sgw,showPgwcPfcp))
+#    comparer = 'Peer\sNode\sType\s:\sPFCP_PGW_UP\s+State\s:\sConnected'
+#    comparsion(cli_context,comparer)
