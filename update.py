@@ -114,6 +114,8 @@ def update(version,hostname,port=22):
             comparsion1 = pattern_update.search(result_update)
             if comparsion1:
                 logging.info('system update successful and should be reboot!')
+                time.sleep(10)
+                channel.send('system reboot\r')
             else:
                 logging.error('The version is not failure!')
                 logging.error(result_update)
@@ -132,7 +134,7 @@ if __name__ == '__main__':
 #    version = input('enter update version:')
 #    time.sleep(1)
     hostname = '172.0.10.165'
-    version = '4.9.3-319'
+    version = '4.9.3-320'
     port = 22
     copy_version(version,hostname)
     update(version,hostname)
