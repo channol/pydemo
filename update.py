@@ -57,6 +57,7 @@ def copy_version(version,hostname,port=22):
                     logging.info(result2)
                     end = time.time()
                     logging.info('Spend time:{}'.format(end-start))
+                    return 1
                 else:
                     logging.info('The version file is no exist!')
                     end = time.time()
@@ -81,7 +82,8 @@ def copy_version(version,hostname,port=22):
 
 def update(version,hostname,port=22):
     try:
-        logging.info('software update!')
+        start = time.time()
+        logging.info('Start host {} version {} update!'.format(hostname,version))
         transport = paramiko.Transport(hostname,port)
         transport.connect(username='root',password='casa')
         logging.info('login server {} successful'.format(hostname))
@@ -114,10 +116,12 @@ def update(version,hostname,port=22):
             comparsion1 = pattern_update.search(result_update)
             if comparsion1:
                 logging.info('system update successful and should be reboot!')
-                time.sleep(10)
-                channel.send('system reboot\r')
+                time.sleep(3)
+                #channel.send('system reboot\r')
+                end = time.time()
+                logging.info('Spend time:{}'.format(end-start))
             else:
-                logging.error('The version is not failure!')
+                logging.error('The version update is failure!')
                 logging.error(result_update)
         else:
             logging.error('It need enable mode to update version!!!')
@@ -136,7 +140,8 @@ if __name__ == '__main__':
     hostname = '172.0.10.165'
     version = '4.9.3-320'
     port = 22
-    copy_version(version,hostname)
-    update(version,hostname)
-
+    if copy_version(version,hostname):
+        update(version,hostname)
+    else:
+        pass
 
