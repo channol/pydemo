@@ -2,6 +2,7 @@
 import paramiko
 import os,sys,re,time
 import logging
+import configparser
 
 #logging settin
 logger = logging.getLogger()
@@ -23,27 +24,29 @@ console_handler.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname
 logger.addHandler(console_handler)
 
 #host paramer
-host_mme = '172.0.5.35'
-host_4ggw = '172.0.5.36'
-host_sgw = '172.0.5.37'
-host_pgw = '172.0.5.38'
-port = 22
-username = 'root'
-password = 'casa'
+config = configparser.ConfigParser()
+config.read('./config/epc.config')
+host_mme = config.get('login','host_mme')
+host_4ggw = config.get('login','host_4ggw')
+host_sgw = config.get('login','host_sgw')
+host_pgw  = config.get('login','host_pgw')
+port = config.get('login','port')
+username = config.get('login','username')
+password = config.get('login','password')
 
 #cmd list
-showMmeInfo = 'show mme info\r'
-showTaskCrash = 'show task crash\r'
-showHaInfo = 'show ha info\r'
-showSgwcPfcp = 'show sgw-c stats pfcp peer\r'
-showPgwcPfcp = 'show pgw-c stats pfcp peer\r'
-showSgwcSessionSummary = 'show sgw-c session summary\r'
-showSgwuPfcp = 'show sgw-u stats pfcp peer\r'
-showUpfPfcp = 'show upf stats pfcp peer\r'
-showUpfSessionCounter = 'show upf session all counter\r'
-showUpfSession = 'show upf session all\r'
-showLteServiceHenbGatewayHenbInterface = 'show lte-service henb-gateway henb-interface henbs verbose\r'
-
+#showMmeInfo = 'show mme info\r'
+showMmeInfo = config.get('cli','showMmeInfo')
+showTaskCrash = config.get('cli','showTaskCrash')
+showHaInfo = config.get('cli','showHaInfo')
+showSgwcPfcp = config.get('cli','showSgwcPfcp')
+showPgwcPfcp = config.get('cli','showPgwcPfcp')
+showSgwcSessionSummary = config.get('cli','showSgwcSessionSummary')
+showSgwuPfcp = config.get('cli','showSgwuPfcp')
+showUpfPfcp = config.get('cli','showUpfPfcp')
+showUpfSessionCounter = config.get('cli','showUpfSessionCounter')
+showUpfSession = config.get('cli','showUpfSession')
+showLteServiceHenbGatewayHenbInterface = config.get('cli','showLteServiceHenbGatewayHenbInterface')
 
 
 def run_cli(hostname,command,port=22):
@@ -63,6 +66,7 @@ def run_cli(hostname,command,port=22):
         logging.debug(channel.recv(65535).decode(encoding='utf-8')) #debug login info
         sys.stdout.flush()  #clear login info flush data
         channel.send(command)   #send the command
+        channel.send('\r')
         time.sleep(3)
         context_bytes = channel.recv(65535)
         context = context_bytes.decode(encoding='utf-8')
@@ -88,6 +92,7 @@ def comparsion(result,*comparer):
 
 
 if __name__ == '__main__':
+    start = time.time()
     logging.info('beginning check mme crash status')
     cli_context = run_cli(host_mme,showTaskCrash)
     logging.info('Checking host {} system status:{}'.format(host_mme,showTaskCrash))
@@ -194,3 +199,5 @@ if __name__ == '__main__':
     logging.info('Checking host {} system status:{}'.format(host_pgw,showUpfSessionCounter))
     logging.info(cli_context)
 
+    end = time.time()
+    logging.info('Spend time: {}'.format(end-start))
