@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+# snmp
+#snmp test files
+# import netsnmp
+#pip install python3-netsnmp
+## netsnmp github
+#https://pypi.org/project/python3-netsnmp/
+
 import paramiko
 import time
 import os, sys
