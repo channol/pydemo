@@ -1,38 +1,38 @@
-2019-07-15  10:00:32 Mon root INFO beginning check mme crash status
-2019-07-15  10:00:32 Mon root INFO The host 172.0.5.35 is connecting!
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG starting thread (client mode): 0xee5a2cf8
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:00:32 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:00:32 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:00:32 Mon root INFO Connect to host 172.0.5.35 successful!
-2019-07-15  10:00:32 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:00:33 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:00:33 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:00:33 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:00:33 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:00:35 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:29:02 Thu root INFO beginning check mme crash status
+2019-07-18  10:29:02 Thu root INFO The host 172.0.5.35 is connecting!
+2019-07-18  10:29:02 Thu paramiko.transport DEBUG starting thread (client mode): 0xde449cc0
+2019-07-18  10:29:02 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:29:03 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:29:03 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:29:03 Thu root INFO Connect to host 172.0.5.35 successful!
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:03 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:06 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 21:41:11 EDT 2019
+  System information as of Wed Jul 17 22:03:14 EDT 2019
 
-  System load:     4.16               IP address for docker0: 172.17.0.1
-  Usage of /:      48.3% of 13.54GB   IP address for dp_0_0:  172.0.5.35
+  System load:     4.09               IP address for docker0: 172.17.0.1
+  Usage of /:      48.4% of 13.54GB   IP address for dp_0_0:  172.0.5.35
   Memory usage:    53%                IP address for dp_0_1:  172.1.5.35
   Swap usage:      0%                 IP address for dp_0_2:  172.2.5.35
-  Processes:       676                IP address for lo1:     1.1.5.35
-  Users logged in: 1
+  Processes:       674                IP address for lo1:     1.1.5.35
+  Users logged in: 0
 
   Graph this data and manage this system at:
     https://landscape.canonical.com/
@@ -40,8 +40,7 @@
 276 packages can be updated.
 189 updates are security updates.
 
-Last login: Sun Jul 14 21:41:12 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:03:15 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -50,50 +49,50 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:00:38 Mon root DEBUG show task crash
+2019-07-18  10:29:09 Thu root DEBUG show task crash
 Number  Task             Crash-Time                Exit-Code     Exit-Reason     Core-file
 ==========================================================================================
 Total 0 crash records
 CASA-MOBILE>
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:00:38 Mon root INFO Checking host 172.0.5.35 system status:show task crash
-2019-07-15  10:00:38 Mon root INFO Checking step <_sre.SRE_Match object; span=(201, 222), match='Total 0 crash records'> is successful!
-2019-07-15  10:00:38 Mon root INFO beginning check mme ha info
-2019-07-15  10:00:38 Mon root INFO The host 172.0.5.35 is connecting!
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG starting thread (client mode): 0xea9ca320
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:00:38 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:00:38 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:00:38 Mon root INFO Connect to host 172.0.5.35 successful!
-2019-07-15  10:00:38 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:00:39 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:00:39 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:00:39 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:00:39 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:00:41 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:29:09 Thu root INFO Checking host 172.0.5.35 system status:show task crash
+2019-07-18  10:29:09 Thu root INFO Checking step <_sre.SRE_Match object; span=(201, 222), match='Total 0 crash records'> is successful!
+2019-07-18  10:29:09 Thu root INFO beginning check mme ha info
+2019-07-18  10:29:09 Thu root INFO The host 172.0.5.35 is connecting!
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG starting thread (client mode): 0xda8733c8
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:29:09 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:29:09 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:29:10 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:29:10 Thu root INFO Connect to host 172.0.5.35 successful!
+2019-07-18  10:29:10 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:29:10 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:29:10 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:29:10 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:10 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:13 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:00:58 EDT 2019
+  System information as of Wed Jul 17 22:29:30 EDT 2019
 
-  System load:     4.23               IP address for docker0: 172.17.0.1
-  Usage of /:      48.3% of 13.54GB   IP address for dp_0_0:  172.0.5.35
+  System load:     4.02               IP address for docker0: 172.17.0.1
+  Usage of /:      48.4% of 13.54GB   IP address for dp_0_0:  172.0.5.35
   Memory usage:    53%                IP address for dp_0_1:  172.1.5.35
   Swap usage:      0%                 IP address for dp_0_2:  172.2.5.35
-  Processes:       675                IP address for lo1:     1.1.5.35
-  Users logged in: 1
+  Processes:       672                IP address for lo1:     1.1.5.35
+  Users logged in: 0
 
   Graph this data and manage this system at:
     https://landscape.canonical.com/
@@ -101,8 +100,7 @@ CASA-MOBILE>
 276 packages can be updated.
 189 updates are security updates.
 
-Last login: Sun Jul 14 22:00:58 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:29:31 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -111,7 +109,7 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:00:44 Mon root DEBUG show ha info
+2019-07-18  10:29:16 Thu root DEBUG show ha info
 VNF node name: Default:f7830f3c-e17c-11e8-a4da-525400a7c450
 Group level HA:
 	 group-ha-ctrl           : disabled
@@ -135,7 +133,7 @@ Node level HA status :
 	 overall monitor status  : VnfHaMonitorStateUnknown
 	 overall task HA status  : VnfHaStateActive
 	 peer standby-status     : Not Ready
-	 heartbeats sent         : 1184766
+	 heartbeats sent         : 1444826
 	 heartbeats received     : 0
 Individual task HA status: 
 	                                                been active before, down times in last minute
@@ -153,45 +151,45 @@ Individual task HA status:
 	      ltectrl/0:      VnfHaStateActive,                Yes,               0
 
 CASA-MOBILE>
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:00:44 Mon root INFO Checking host 172.0.5.35 system status:show ha info
-2019-07-15  10:00:44 Mon root INFO Checking step <_sre.SRE_Match object; span=(593, 625), match='state                   : Active'> is successful!
-2019-07-15  10:00:44 Mon root INFO beginning check mme info
-2019-07-15  10:00:44 Mon root INFO The host 172.0.5.35 is connecting!
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG starting thread (client mode): 0xe903ff98
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:00:44 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:00:44 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:00:44 Mon root INFO Connect to host 172.0.5.35 successful!
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:00:44 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:00:46 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:29:16 Thu root INFO Checking host 172.0.5.35 system status:show ha info
+2019-07-18  10:29:16 Thu root INFO Checking step <_sre.SRE_Match object; span=(593, 625), match='state                   : Active'> is successful!
+2019-07-18  10:29:16 Thu root INFO beginning check mme info
+2019-07-18  10:29:16 Thu root INFO The host 172.0.5.35 is connecting!
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8ee6e48
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:29:16 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:29:16 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:29:17 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:29:17 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:29:17 Thu root INFO Connect to host 172.0.5.35 successful!
+2019-07-18  10:29:17 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:29:17 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:29:17 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:29:17 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:17 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:20 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:01:03 EDT 2019
+  System information as of Wed Jul 17 22:29:37 EDT 2019
 
-  System load:     4.21               IP address for docker0: 172.17.0.1
-  Usage of /:      48.3% of 13.54GB   IP address for dp_0_0:  172.0.5.35
+  System load:     4.02               IP address for docker0: 172.17.0.1
+  Usage of /:      48.4% of 13.54GB   IP address for dp_0_0:  172.0.5.35
   Memory usage:    53%                IP address for dp_0_1:  172.1.5.35
   Swap usage:      0%                 IP address for dp_0_2:  172.2.5.35
-  Processes:       676                IP address for lo1:     1.1.5.35
-  Users logged in: 1
+  Processes:       674                IP address for lo1:     1.1.5.35
+  Users logged in: 0
 
   Graph this data and manage this system at:
     https://landscape.canonical.com/
@@ -199,8 +197,7 @@ CASA-MOBILE>
 276 packages can be updated.
 189 updates are security updates.
 
-Last login: Sun Jul 14 22:01:04 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:29:38 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -209,7 +206,7 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:00:49 Mon root DEBUG show mme info
+2019-07-18  10:29:23 Thu root DEBUG show mme info
 -----------------------------------------------------
 service name       mme1
 service started    Mon Jul  1 03:50:26 2019
@@ -220,15 +217,15 @@ sctp parameters    hb-interval 30, stream[in/out] 2/2
 sctp listen on     172.1.5.35_36412 (p)
 sctp associations  1
 s1ap connections   1
-subscribers        5
-bearers            6
+subscribers        6
+bearers            7
 CASA-MOBILE>
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:00:49 Mon root INFO Checking host 172.0.5.35 system status:show mme info
-2019-07-15  10:00:49 Mon root INFO Checking step <_sre.SRE_Match object; span=(70, 93), match='service name       mme1'> is successful!
-2019-07-15  10:00:49 Mon root INFO Checking step <_sre.SRE_Match object; span=(405, 425), match='s1ap connections   1'> is successful!
-2019-07-15  10:00:49 Mon root INFO Checking step <_sre.SRE_Match object; span=(383, 403), match='sctp associations  1'> is successful!
-2019-07-15  10:00:49 Mon root INFO show mme info
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:29:23 Thu root INFO Checking host 172.0.5.35 system status:show mme info
+2019-07-18  10:29:23 Thu root INFO Checking step <_sre.SRE_Match object; span=(70, 93), match='service name       mme1'> is successful!
+2019-07-18  10:29:23 Thu root INFO Checking step <_sre.SRE_Match object; span=(405, 425), match='s1ap connections   1'> is successful!
+2019-07-18  10:29:23 Thu root INFO Checking step <_sre.SRE_Match object; span=(383, 403), match='sctp associations  1'> is successful!
+2019-07-18  10:29:23 Thu root INFO show mme info
 -----------------------------------------------------
 service name       mme1
 service started    Mon Jul  1 03:50:26 2019
@@ -239,40 +236,40 @@ sctp parameters    hb-interval 30, stream[in/out] 2/2
 sctp listen on     172.1.5.35_36412 (p)
 sctp associations  1
 s1ap connections   1
-subscribers        5
-bearers            6
+subscribers        6
+bearers            7
 CASA-MOBILE>
-2019-07-15  10:00:49 Mon root INFO beginning check 4ggw info
-2019-07-15  10:00:49 Mon root INFO The host 172.0.5.36 is connecting!
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8b9b978
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:00:49 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:00:49 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:00:49 Mon root INFO Connect to host 172.0.5.36 successful!
-2019-07-15  10:00:49 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:00:50 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:00:50 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:00:50 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:00:50 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:00:52 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:29:23 Thu root INFO beginning check 4ggw info
+2019-07-18  10:29:23 Thu root INFO The host 172.0.5.36 is connecting!
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a42f28
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:29:23 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:29:23 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:29:23 Thu root INFO Connect to host 172.0.5.36 successful!
+2019-07-18  10:29:23 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:29:24 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:29:24 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:29:24 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:24 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:27 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 21:41:08 EDT 2019
+  System information as of Wed Jul 17 22:03:17 EDT 2019
 
-  System load:            4.3                IP address for dp_0_0: 172.0.5.36
+  System load:            4.11               IP address for dp_0_0: 172.0.5.36
   Usage of /:             77.3% of 13.54GB   IP address for dp_0_1: 172.1.5.36
   Memory usage:           55%                IP address for dp_0_2: 172.2.5.36
   Swap usage:             0%                 IP address for lo11:   1.1.1.36
@@ -286,8 +283,7 @@ CASA-MOBILE>
 276 packages can be updated.
 189 updates are security updates.
 
-Last login: Sun Jul 14 21:41:08 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:03:18 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -296,49 +292,49 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:00:55 Mon root DEBUG show task crash
+2019-07-18  10:29:30 Thu root DEBUG show task crash
 Number  Task             Crash-Time                Exit-Code     Exit-Reason     Core-file
 ==========================================================================================
 Total 0 crash records
 CASA-MOBILE>
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:00:55 Mon root INFO Checking host 172.0.5.36 system status:show task crash
-2019-07-15  10:00:55 Mon root INFO Checking step <_sre.SRE_Match object; span=(201, 222), match='Total 0 crash records'> is successful!
-2019-07-15  10:00:55 Mon root INFO beginning check 4ggw ha info
-2019-07-15  10:00:55 Mon root INFO The host 172.0.5.36 is connecting!
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8ba2438
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:00:55 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:00:55 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:00:55 Mon root INFO Connect to host 172.0.5.36 successful!
-2019-07-15  10:00:55 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:00:56 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:00:56 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:00:56 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:00:56 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:00:58 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:29:30 Thu root INFO Checking host 172.0.5.36 system status:show task crash
+2019-07-18  10:29:30 Thu root INFO Checking step <_sre.SRE_Match object; span=(201, 222), match='Total 0 crash records'> is successful!
+2019-07-18  10:29:30 Thu root INFO beginning check 4ggw ha info
+2019-07-18  10:29:30 Thu root INFO The host 172.0.5.36 is connecting!
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a498d0
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:29:30 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:29:30 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:29:30 Thu root INFO Connect to host 172.0.5.36 successful!
+2019-07-18  10:29:30 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:29:31 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:29:31 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:29:31 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:31 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:34 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:00:53 EDT 2019
+  System information as of Wed Jul 17 22:29:28 EDT 2019
 
-  System load:            4.15               IP address for dp_0_0: 172.0.5.36
+  System load:            4.01               IP address for dp_0_0: 172.0.5.36
   Usage of /:             77.3% of 13.54GB   IP address for dp_0_1: 172.1.5.36
   Memory usage:           55%                IP address for dp_0_2: 172.2.5.36
   Swap usage:             0%                 IP address for lo11:   1.1.1.36
-  Processes:              689                IP address for lo12:   2.1.1.36
+  Processes:              688                IP address for lo12:   2.1.1.36
   Users logged in:        0                  IP address for lo13:   3.1.1.36
   IP address for docker0: 172.17.0.1
 
@@ -348,8 +344,7 @@ CASA-MOBILE>
 276 packages can be updated.
 189 updates are security updates.
 
-Last login: Sun Jul 14 22:00:54 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:29:28 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -358,7 +353,7 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:01 Mon root DEBUG show ha info
+2019-07-18  10:29:37 Thu root DEBUG show ha info
 VNF node name: Default:f7830f3c-e17c-11e8-a4da-525400a7c450
 Group level HA:
 	 group-ha-ctrl           : disabled
@@ -382,7 +377,7 @@ Node level HA status :
 	 overall monitor status  : VnfHaMonitorStateUnknown
 	 overall task HA status  : VnfHaStateActive
 	 peer standby-status     : Not Ready
-	 heartbeats sent         : 433646
+	 heartbeats sent         : 693705
 	 heartbeats received     : 0
 Individual task HA status: 
 	                                                been active before, down times in last minute
@@ -403,44 +398,44 @@ Individual task HA status:
 	      ltectrl/0:      VnfHaStateActive,                Yes,               0
 
 CASA-MOBILE>
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:01 Mon root INFO Checking host 172.0.5.36 system status:show ha info
-2019-07-15  10:01:01 Mon root INFO Checking step <_sre.SRE_Match object; span=(593, 625), match='state                   : Active'> is successful!
-2019-07-15  10:01:01 Mon root INFO beginning check show lte-service henb-gateway henb-interface henbs verbose
-2019-07-15  10:01:01 Mon root INFO The host 172.0.5.36 is connecting!
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8ba2518
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:01:01 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:01:01 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:01:01 Mon root INFO Connect to host 172.0.5.36 successful!
-2019-07-15  10:01:01 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:01:02 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:01:02 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:01:02 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:02 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:04 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:29:37 Thu root INFO Checking host 172.0.5.36 system status:show ha info
+2019-07-18  10:29:37 Thu root INFO Checking step <_sre.SRE_Match object; span=(593, 625), match='state                   : Active'> is successful!
+2019-07-18  10:29:37 Thu root INFO beginning check show lte-service henb-gateway henb-interface henbs verbose
+2019-07-18  10:29:37 Thu root INFO The host 172.0.5.36 is connecting!
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a49cf8
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:29:37 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:29:37 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:29:37 Thu root INFO Connect to host 172.0.5.36 successful!
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:37 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:40 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:00:59 EDT 2019
+  System information as of Wed Jul 17 22:29:35 EDT 2019
 
-  System load:            4.22               IP address for dp_0_0: 172.0.5.36
+  System load:            4.01               IP address for dp_0_0: 172.0.5.36
   Usage of /:             77.3% of 13.54GB   IP address for dp_0_1: 172.1.5.36
   Memory usage:           55%                IP address for dp_0_2: 172.2.5.36
   Swap usage:             0%                 IP address for lo11:   1.1.1.36
-  Processes:              689                IP address for lo12:   2.1.1.36
+  Processes:              690                IP address for lo12:   2.1.1.36
   Users logged in:        0                  IP address for lo13:   3.1.1.36
   IP address for docker0: 172.17.0.1
 
@@ -450,8 +445,7 @@ CASA-MOBILE>
 276 packages can be updated.
 189 updates are security updates.
 
-Last login: Sun Jul 14 22:01:00 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:29:35 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -460,7 +454,7 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:07 Mon root DEBUG show lte-service henb-gateway henb-interface henbs verbose
+2019-07-18  10:29:43 Thu root DEBUG show lte-service henb-gateway henb-interface henbs verbose
 ----------------------------------------------------------------------
 henb                  : DEV
   sctp                : 3:3::_36412
@@ -480,16 +474,16 @@ henb                  : lqlmac59
                         mcc 311, mnc 480, tac 4369 
   access mode         : open
   supported csg id's  : 0
-  attached subscribers: 1
+  attached subscribers: 0
 ----------------------------------------------------------------------
 total henbs           : 2
-total subscribers     : 2
+total subscribers     : 1
 CASA-MOBILE>
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:07 Mon root INFO Checking host 172.0.5.36 system status:show lte-service henb-gateway henb-interface henbs verbose
-2019-07-15  10:01:07 Mon root INFO Checking step <_sre.SRE_Match object; span=(200, 255), match='global-enb-id       : mcc 311, mnc 480, home-enb-> is successful!
-2019-07-15  10:01:07 Mon root INFO Checking step <_sre.SRE_Match object; span=(625, 680), match='global-enb-id       : mcc 311, mnc 480, home-enb-> is successful!
-2019-07-15  10:01:07 Mon root INFO show lte-service henb-gateway henb-interface henbs verbose
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:29:43 Thu root INFO Checking host 172.0.5.36 system status:show lte-service henb-gateway henb-interface henbs verbose
+2019-07-18  10:29:43 Thu root INFO Checking step <_sre.SRE_Match object; span=(200, 255), match='global-enb-id       : mcc 311, mnc 480, home-enb-> is successful!
+2019-07-18  10:29:43 Thu root INFO Checking step <_sre.SRE_Match object; span=(625, 680), match='global-enb-id       : mcc 311, mnc 480, home-enb-> is successful!
+2019-07-18  10:29:43 Thu root INFO show lte-service henb-gateway henb-interface henbs verbose
 ----------------------------------------------------------------------
 henb                  : DEV
   sctp                : 3:3::_36412
@@ -509,46 +503,46 @@ henb                  : lqlmac59
                         mcc 311, mnc 480, tac 4369 
   access mode         : open
   supported csg id's  : 0
-  attached subscribers: 1
+  attached subscribers: 0
 ----------------------------------------------------------------------
 total henbs           : 2
-total subscribers     : 2
+total subscribers     : 1
 CASA-MOBILE>
-2019-07-15  10:01:07 Mon root INFO beginning check sgw crash info
-2019-07-15  10:01:07 Mon root INFO The host 172.0.5.37 is connecting!
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8ba2780
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:01:07 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:01:07 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:01:07 Mon root INFO Connect to host 172.0.5.37 successful!
-2019-07-15  10:01:07 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:01:08 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:01:08 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:01:08 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:08 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:10 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:29:43 Thu root INFO beginning check sgw crash info
+2019-07-18  10:29:43 Thu root INFO The host 172.0.5.37 is connecting!
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a495c0
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:29:43 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:29:43 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:29:43 Thu root INFO Connect to host 172.0.5.37 successful!
+2019-07-18  10:29:43 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:29:44 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:29:44 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:29:44 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:44 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:47 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 21:41:10 EDT 2019
+  System information as of Wed Jul 17 22:03:33 EDT 2019
 
-  System load:            4.36               IP address for dp_0_1: 172.1.5.37
-  Usage of /:             50.3% of 13.54GB   IP address for dp_0_2: 172.2.5.37
+  System load:            4.56               IP address for dp_0_1: 172.1.5.37
+  Usage of /:             50.4% of 13.54GB   IP address for dp_0_2: 172.2.5.37
   Memory usage:           49%                IP address for lo1:    1.1.1.37
   Swap usage:             0%                 IP address for lo2:    2.1.1.37
-  Processes:              699                IP address for lo3:    3.1.1.37
+  Processes:              697                IP address for lo3:    3.1.1.37
   Users logged in:        0                  IP address for lo4:    4.1.1.37
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.37
   IP address for dp_0_0:  172.0.5.37
@@ -559,8 +553,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 21:41:10 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:03:33 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -569,49 +562,49 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:13 Mon root DEBUG show task crash
+2019-07-18  10:29:50 Thu root DEBUG show task crash
 Number  Task             Crash-Time                Exit-Code     Exit-Reason     Core-file
 ==========================================================================================
 Total 0 crash records
 CASA-MOBILE>
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:13 Mon root INFO Checking host 172.0.5.37 system status:show task crash
-2019-07-15  10:01:13 Mon root INFO Checking step <_sre.SRE_Match object; span=(201, 222), match='Total 0 crash records'> is successful!
-2019-07-15  10:01:13 Mon root INFO beginning check sgw ha info
-2019-07-15  10:01:13 Mon root INFO The host 172.0.5.37 is connecting!
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8ba69b0
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:01:13 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:01:13 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:01:13 Mon root INFO Connect to host 172.0.5.37 successful!
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:13 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:15 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:29:50 Thu root INFO Checking host 172.0.5.37 system status:show task crash
+2019-07-18  10:29:50 Thu root INFO Checking step <_sre.SRE_Match object; span=(201, 222), match='Total 0 crash records'> is successful!
+2019-07-18  10:29:50 Thu root INFO beginning check sgw ha info
+2019-07-18  10:29:50 Thu root INFO The host 172.0.5.37 is connecting!
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a4f898
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:29:50 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:29:50 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:29:50 Thu root INFO Connect to host 172.0.5.37 successful!
+2019-07-18  10:29:50 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:29:51 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:29:51 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:29:51 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:51 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:54 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:00:44 EDT 2019
+  System information as of Wed Jul 17 22:29:19 EDT 2019
 
-  System load:            4.07               IP address for dp_0_1: 172.1.5.37
-  Usage of /:             50.3% of 13.54GB   IP address for dp_0_2: 172.2.5.37
+  System load:            4.08               IP address for dp_0_1: 172.1.5.37
+  Usage of /:             50.4% of 13.54GB   IP address for dp_0_2: 172.2.5.37
   Memory usage:           49%                IP address for lo1:    1.1.1.37
   Swap usage:             0%                 IP address for lo2:    2.1.1.37
-  Processes:              695                IP address for lo3:    3.1.1.37
+  Processes:              696                IP address for lo3:    3.1.1.37
   Users logged in:        0                  IP address for lo4:    4.1.1.37
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.37
   IP address for dp_0_0:  172.0.5.37
@@ -622,8 +615,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 22:00:45 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:29:19 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -632,7 +624,7 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:18 Mon root DEBUG show ha info
+2019-07-18  10:29:57 Thu root DEBUG show ha info
 VNF node name: Default:f7830f3c-e17c-11e8-a4da-525400a7c450
 Group level HA:
 	 group-ha-ctrl           : disabled
@@ -656,7 +648,7 @@ Node level HA status :
 	 overall monitor status  : VnfHaMonitorStateUnknown
 	 overall task HA status  : VnfHaStateActive
 	 peer standby-status     : Not Ready
-	 heartbeats sent         : 601557
+	 heartbeats sent         : 861399
 	 heartbeats received     : 0
 Individual task HA status: 
 	                                                been active before, down times in last minute
@@ -679,44 +671,44 @@ Individual task HA status:
 	     reporter/0:      VnfHaStateActive,                Yes,               0
 
 CASA-MOBILE>
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:18 Mon root INFO Checking host 172.0.5.37 system status:show ha info
-2019-07-15  10:01:18 Mon root INFO Checking step <_sre.SRE_Match object; span=(593, 625), match='state                   : Active'> is successful!
-2019-07-15  10:01:18 Mon root INFO beginning check sgwc pfcp info
-2019-07-15  10:01:18 Mon root INFO The host 172.0.5.37 is connecting!
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8ba6e48
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:01:18 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:01:18 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:01:19 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:01:19 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:01:19 Mon root INFO Connect to host 172.0.5.37 successful!
-2019-07-15  10:01:19 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:01:19 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:01:19 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:01:19 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:19 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:21 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:29:57 Thu root INFO Checking host 172.0.5.37 system status:show ha info
+2019-07-18  10:29:57 Thu root INFO Checking step <_sre.SRE_Match object; span=(593, 625), match='state                   : Active'> is successful!
+2019-07-18  10:29:57 Thu root INFO beginning check sgwc pfcp info
+2019-07-18  10:29:57 Thu root INFO The host 172.0.5.37 is connecting!
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a4fda0
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:29:57 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:29:57 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:29:57 Thu root INFO Connect to host 172.0.5.37 successful!
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:29:57 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:00 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:00:50 EDT 2019
+  System information as of Wed Jul 17 22:29:26 EDT 2019
 
-  System load:            4.14               IP address for dp_0_1: 172.1.5.37
-  Usage of /:             50.3% of 13.54GB   IP address for dp_0_2: 172.2.5.37
+  System load:            4.07               IP address for dp_0_1: 172.1.5.37
+  Usage of /:             50.4% of 13.54GB   IP address for dp_0_2: 172.2.5.37
   Memory usage:           49%                IP address for lo1:    1.1.1.37
   Swap usage:             0%                 IP address for lo2:    2.1.1.37
-  Processes:              696                IP address for lo3:    3.1.1.37
+  Processes:              697                IP address for lo3:    3.1.1.37
   Users logged in:        0                  IP address for lo4:    4.1.1.37
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.37
   IP address for dp_0_0:  172.0.5.37
@@ -727,8 +719,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 22:00:51 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:29:26 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -737,22 +728,22 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:24 Mon root DEBUG show sgw-c stats pfcp peer
+2019-07-18  10:30:03 Thu root DEBUG show sgw-c stats pfcp peer
 [0]  Peer Node Type : PFCP_SGW_UP       State : Connected
      Local Ip : 2.1.1.37                Peer Ip : 2.1.1.38
-     Heartbeat Req Sendout : 10066      Heartbeat Rsp Receive : 10065      
-     Heartbeat Req Receive : 10066      Heartbeat Rsp Sendout : 10066      
+     Heartbeat Req Sendout : 14414      Heartbeat Rsp Receive : 14413      
+     Heartbeat Req Receive : 14415      Heartbeat Rsp Sendout : 14415      
      Retry HB Req Sendout : 0           Path Failure Count : 0             
      Local         Timestamp : UTC Mon Jul  8 02:14:16 2019
      Peer Previous Timestamp : UTC Mon Jul  8 02:14:32 2019
      Peer Current  Timestamp : UTC Mon Jul  8 02:14:32 2019
      Receive msg:
-     HEARTBEAT_REQ                       : 10066
-     HEARTBEAT_RSP                       : 10065
+     HEARTBEAT_REQ                       : 14415
+     HEARTBEAT_RSP                       : 14413
      ASSO_SETUP_REQ                      : 1
      Sendout msg:
-     HEARTBEAT_REQ                       : 10066
-     HEARTBEAT_RSP                       : 10066
+     HEARTBEAT_REQ                       : 14414
+     HEARTBEAT_RSP                       : 14415
      ASSO_SETUP_RSP                      : 1
 
      Gtpu Ip Infor:
@@ -764,44 +755,44 @@ CASA-MOBILE>
           Teid range      : 0x0
 
 CASA-MOBILE>
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:24 Mon root INFO Checking host 172.0.5.37 system status:show sgw-c stats pfcp peer
-2019-07-15  10:01:24 Mon root INFO Checking step <_sre.SRE_Match object; span=(33, 85), match='Peer Node Type : PFCP_SGW_UP       State : Connec> is successful!
-2019-07-15  10:01:24 Mon root INFO beginning check pgwc pfcp info
-2019-07-15  10:01:24 Mon root INFO The host 172.0.5.37 is connecting!
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8ba7898
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:01:24 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:01:24 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:01:24 Mon root INFO Connect to host 172.0.5.37 successful!
-2019-07-15  10:01:24 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:01:25 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:01:25 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:01:25 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:25 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:27 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:30:03 Thu root INFO Checking host 172.0.5.37 system status:show sgw-c stats pfcp peer
+2019-07-18  10:30:03 Thu root INFO Checking step <_sre.SRE_Match object; span=(33, 85), match='Peer Node Type : PFCP_SGW_UP       State : Connec> is successful!
+2019-07-18  10:30:03 Thu root INFO beginning check pgwc pfcp info
+2019-07-18  10:30:03 Thu root INFO The host 172.0.5.37 is connecting!
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a3fcc0
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:30:03 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:30:03 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:30:04 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:30:04 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:30:04 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:30:04 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:30:04 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:30:04 Thu root INFO Connect to host 172.0.5.37 successful!
+2019-07-18  10:30:04 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:30:04 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:30:04 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:30:04 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:04 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:07 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:00:56 EDT 2019
+  System information as of Wed Jul 17 22:29:32 EDT 2019
 
-  System load:            4.2                IP address for dp_0_1: 172.1.5.37
-  Usage of /:             50.3% of 13.54GB   IP address for dp_0_2: 172.2.5.37
+  System load:            4.06               IP address for dp_0_1: 172.1.5.37
+  Usage of /:             50.4% of 13.54GB   IP address for dp_0_2: 172.2.5.37
   Memory usage:           49%                IP address for lo1:    1.1.1.37
   Swap usage:             0%                 IP address for lo2:    2.1.1.37
-  Processes:              696                IP address for lo3:    3.1.1.37
+  Processes:              698                IP address for lo3:    3.1.1.37
   Users logged in:        0                  IP address for lo4:    4.1.1.37
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.37
   IP address for dp_0_0:  172.0.5.37
@@ -812,8 +803,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 22:00:56 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:29:33 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -822,22 +812,22 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:30 Mon root DEBUG show pgw-c stats pfcp peer
+2019-07-18  10:30:10 Thu root DEBUG show pgw-c stats pfcp peer
 [0]  Peer Node Type : PFCP_PGW_UP       State : Connected
      Local Ip : 5.1.1.37                Peer Ip : 5.1.1.38
-     Heartbeat Req Sendout : 10066      Heartbeat Rsp Receive : 10065      
-     Heartbeat Req Receive : 10066      Heartbeat Rsp Sendout : 10066      
+     Heartbeat Req Sendout : 14414      Heartbeat Rsp Receive : 14413      
+     Heartbeat Req Receive : 14415      Heartbeat Rsp Sendout : 14415      
      Retry HB Req Sendout : 0           Path Failure Count : 0             
      Local         Timestamp : UTC Mon Jul  8 02:13:33 2019
      Peer Previous Timestamp : UTC Mon Jul  8 02:14:32 2019
      Peer Current  Timestamp : UTC Mon Jul  8 02:14:32 2019
      Receive msg:
-     HEARTBEAT_REQ                       : 10066
-     HEARTBEAT_RSP                       : 10065
+     HEARTBEAT_REQ                       : 14415
+     HEARTBEAT_RSP                       : 14413
      ASSO_SETUP_RSP                      : 1
      Sendout msg:
-     HEARTBEAT_REQ                       : 10066
-     HEARTBEAT_RSP                       : 10066
+     HEARTBEAT_REQ                       : 14414
+     HEARTBEAT_RSP                       : 14415
      ASSO_SETUP_REQ                      : 4
 
      Ip Pool Infor:
@@ -856,44 +846,44 @@ CASA-MOBILE>
           Teid range      : 0x0
 
 CASA-MOBILE>
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:30 Mon root INFO Checking host 172.0.5.37 system status:show pgw-c stats pfcp peer
-2019-07-15  10:01:30 Mon root INFO Checking step <_sre.SRE_Match object; span=(33, 85), match='Peer Node Type : PFCP_PGW_UP       State : Connec> is successful!
-2019-07-15  10:01:30 Mon root INFO beginning check show sgw-c session summary
-2019-07-15  10:01:30 Mon root INFO The host 172.0.5.37 is connecting!
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8bb1860
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:01:30 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:01:30 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:01:30 Mon root INFO Connect to host 172.0.5.37 successful!
-2019-07-15  10:01:30 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:01:31 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:01:31 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:01:31 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:31 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:33 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:30:10 Thu root INFO Checking host 172.0.5.37 system status:show pgw-c stats pfcp peer
+2019-07-18  10:30:10 Thu root INFO Checking step <_sre.SRE_Match object; span=(33, 85), match='Peer Node Type : PFCP_PGW_UP       State : Connec> is successful!
+2019-07-18  10:30:10 Thu root INFO beginning check show sgw-c session summary
+2019-07-18  10:30:10 Thu root INFO The host 172.0.5.37 is connecting!
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a57710
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:30:10 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:30:10 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:30:10 Thu root INFO Connect to host 172.0.5.37 successful!
+2019-07-18  10:30:10 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:30:11 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:30:11 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:30:11 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:11 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:14 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:01:02 EDT 2019
+  System information as of Wed Jul 17 22:29:39 EDT 2019
 
-  System load:            4.18               IP address for dp_0_1: 172.1.5.37
-  Usage of /:             50.3% of 13.54GB   IP address for dp_0_2: 172.2.5.37
+  System load:            4.2                IP address for dp_0_1: 172.1.5.37
+  Usage of /:             50.4% of 13.54GB   IP address for dp_0_2: 172.2.5.37
   Memory usage:           49%                IP address for lo1:    1.1.1.37
   Swap usage:             0%                 IP address for lo2:    2.1.1.37
-  Processes:              696                IP address for lo3:    3.1.1.37
+  Processes:              699                IP address for lo3:    3.1.1.37
   Users logged in:        0                  IP address for lo4:    4.1.1.37
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.37
   IP address for dp_0_0:  172.0.5.37
@@ -904,8 +894,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 22:01:02 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:29:40 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -914,64 +903,64 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:36 Mon root DEBUG show sgw-c session summary
+2019-07-18  10:30:17 Thu root DEBUG show sgw-c session summary
 Node      Instance    Active-Sessions    Pending-Sessions    Bearers
-0            0            6                 0                 6       
+0            0            7                 0                 7       
 -------------------------------------------------------
-Total Active  Sessions: 6
+Total Active  Sessions: 7
 Total Pending Sessions: 0
-Total Bearers: 6
-Total UEs: 5
+Total Bearers: 7
+Total UEs: 6
 
 CASA-MOBILE>
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:36 Mon root INFO Checking host 172.0.5.37 system status:show sgw-c session summary
-2019-07-15  10:01:36 Mon root INFO show sgw-c session summary
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:30:17 Thu root INFO Checking host 172.0.5.37 system status:show sgw-c session summary
+2019-07-18  10:30:17 Thu root INFO show sgw-c session summary
 Node      Instance    Active-Sessions    Pending-Sessions    Bearers
-0            0            6                 0                 6       
+0            0            7                 0                 7       
 -------------------------------------------------------
-Total Active  Sessions: 6
+Total Active  Sessions: 7
 Total Pending Sessions: 0
-Total Bearers: 6
-Total UEs: 5
+Total Bearers: 7
+Total UEs: 6
 
 CASA-MOBILE>
-2019-07-15  10:01:36 Mon root INFO beginning check pgw task crash info
-2019-07-15  10:01:36 Mon root INFO The host 172.0.5.38 is connecting!
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8ba7780
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:01:36 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:01:36 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:01:36 Mon root INFO Connect to host 172.0.5.38 successful!
-2019-07-15  10:01:36 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:01:37 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:01:37 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:01:37 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:37 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:39 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:30:17 Thu root INFO beginning check pgw task crash info
+2019-07-18  10:30:17 Thu root INFO The host 172.0.5.38 is connecting!
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a4fda0
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:30:17 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:30:17 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:30:17 Thu root INFO Connect to host 172.0.5.38 successful!
+2019-07-18  10:30:17 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:30:18 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:30:18 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:30:18 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:18 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:21 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 21:42:25 EDT 2019
+  System information as of Wed Jul 17 22:05:09 EDT 2019
 
-  System load:            36.11              IP address for dp_0_1: 172.1.5.38
-  Usage of /:             52.2% of 13.54GB   IP address for dp_0_2: 172.2.5.38
-  Memory usage:           96%                IP address for lo1:    1.1.1.38
-  Swap usage:             45%                IP address for lo2:    2.1.1.38
-  Processes:              699                IP address for lo3:    3.1.1.38
-  Users logged in:        0                  IP address for lo4:    4.1.1.38
+  System load:            36.38              IP address for dp_0_1: 172.1.5.38
+  Usage of /:             52.3% of 13.54GB   IP address for dp_0_2: 172.2.5.38
+  Memory usage:           94%                IP address for lo1:    1.1.1.38
+  Swap usage:             78%                IP address for lo2:    2.1.1.38
+  Processes:              708                IP address for lo3:    3.1.1.38
+  Users logged in:        2                  IP address for lo4:    4.1.1.38
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.38
   IP address for dp_0_0:  172.0.5.38
 
@@ -981,8 +970,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 21:42:26 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:05:10 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -991,50 +979,50 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:42 Mon root DEBUG show task crash
+2019-07-18  10:30:24 Thu root DEBUG show task crash
 Number  Task             Crash-Time                Exit-Code     Exit-Reason     Core-file
 ==========================================================================================
 Total 0 crash records
 CASA-MOBILE>
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:42 Mon root INFO Checking host 172.0.5.38 system status:show task crash
-2019-07-15  10:01:42 Mon root INFO Checking step <_sre.SRE_Match object; span=(201, 222), match='Total 0 crash records'> is successful!
-2019-07-15  10:01:42 Mon root INFO beginning check pgw ha info
-2019-07-15  10:01:42 Mon root INFO The host 172.0.5.38 is connecting!
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8ba7400
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:01:42 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:01:42 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:01:42 Mon root INFO Connect to host 172.0.5.38 successful!
-2019-07-15  10:01:42 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:01:43 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:01:43 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:01:43 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:43 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:45 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:30:24 Thu root INFO Checking host 172.0.5.38 system status:show task crash
+2019-07-18  10:30:24 Thu root INFO Checking step <_sre.SRE_Match object; span=(201, 222), match='Total 0 crash records'> is successful!
+2019-07-18  10:30:24 Thu root INFO beginning check pgw ha info
+2019-07-18  10:30:24 Thu root INFO The host 172.0.5.38 is connecting!
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a4f780
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:30:24 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:30:24 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:30:24 Thu root INFO Connect to host 172.0.5.38 successful!
+2019-07-18  10:30:24 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:30:25 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:30:25 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:30:25 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:25 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:28 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:01:53 EDT 2019
+  System information as of Wed Jul 17 22:30:36 EDT 2019
 
-  System load:            36.15              IP address for dp_0_1: 172.1.5.38
-  Usage of /:             52.2% of 13.54GB   IP address for dp_0_2: 172.2.5.38
-  Memory usage:           96%                IP address for lo1:    1.1.1.38
-  Swap usage:             45%                IP address for lo2:    2.1.1.38
-  Processes:              696                IP address for lo3:    3.1.1.38
-  Users logged in:        0                  IP address for lo4:    4.1.1.38
+  System load:            36.1               IP address for dp_0_1: 172.1.5.38
+  Usage of /:             52.3% of 13.54GB   IP address for dp_0_2: 172.2.5.38
+  Memory usage:           94%                IP address for lo1:    1.1.1.38
+  Swap usage:             78%                IP address for lo2:    2.1.1.38
+  Processes:              704                IP address for lo3:    3.1.1.38
+  Users logged in:        2                  IP address for lo4:    4.1.1.38
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.38
   IP address for dp_0_0:  172.0.5.38
 
@@ -1044,8 +1032,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 22:01:54 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:30:37 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -1054,7 +1041,7 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:48 Mon root DEBUG show ha info
+2019-07-18  10:30:31 Thu root DEBUG show ha info
 VNF node name: Default:f7830f3c-e17c-11e8-a4da-525400a7c450
 Group level HA:
 	 group-ha-ctrl           : disabled
@@ -1078,7 +1065,7 @@ Node level HA status :
 	 overall monitor status  : VnfHaMonitorStateUnknown
 	 overall task HA status  : VnfHaStateActive
 	 peer standby-status     : Not Ready
-	 heartbeats sent         : 602432
+	 heartbeats sent         : 862662
 	 heartbeats received     : 0
 Individual task HA status: 
 	                                                been active before, down times in last minute
@@ -1133,45 +1120,45 @@ Individual task HA status:
 	     connmgr/29:      VnfHaStateActive,                Yes,               0
 
 CASA-MOBILE>
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:48 Mon root INFO Checking host 172.0.5.38 system status:show ha info
-2019-07-15  10:01:48 Mon root INFO Checking step <_sre.SRE_Match object; span=(593, 625), match='state                   : Active'> is successful!
-2019-07-15  10:01:48 Mon root INFO beginning check show sgw-u stats pfcp peer
-2019-07-15  10:01:48 Mon root INFO The host 172.0.5.38 is connecting!
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8ba6400
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:01:48 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:01:48 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:01:48 Mon root INFO Connect to host 172.0.5.38 successful!
-2019-07-15  10:01:48 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:01:49 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:01:49 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:01:49 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:49 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:51 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:30:31 Thu root INFO Checking host 172.0.5.38 system status:show ha info
+2019-07-18  10:30:31 Thu root INFO Checking step <_sre.SRE_Match object; span=(593, 625), match='state                   : Active'> is successful!
+2019-07-18  10:30:31 Thu root INFO beginning check show sgw-u stats pfcp peer
+2019-07-18  10:30:31 Thu root INFO The host 172.0.5.38 is connecting!
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8ee6c50
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:30:31 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:30:31 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:30:31 Thu root INFO Connect to host 172.0.5.38 successful!
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:31 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:34 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:01:59 EDT 2019
+  System information as of Wed Jul 17 22:30:43 EDT 2019
 
-  System load:            36.13              IP address for dp_0_1: 172.1.5.38
-  Usage of /:             52.2% of 13.54GB   IP address for dp_0_2: 172.2.5.38
-  Memory usage:           96%                IP address for lo1:    1.1.1.38
-  Swap usage:             45%                IP address for lo2:    2.1.1.38
-  Processes:              697                IP address for lo3:    3.1.1.38
-  Users logged in:        0                  IP address for lo4:    4.1.1.38
+  System load:            36.09              IP address for dp_0_1: 172.1.5.38
+  Usage of /:             52.3% of 13.54GB   IP address for dp_0_2: 172.2.5.38
+  Memory usage:           94%                IP address for lo1:    1.1.1.38
+  Swap usage:             78%                IP address for lo2:    2.1.1.38
+  Processes:              705                IP address for lo3:    3.1.1.38
+  Users logged in:        2                  IP address for lo4:    4.1.1.38
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.38
   IP address for dp_0_0:  172.0.5.38
 
@@ -1181,8 +1168,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 22:02:00 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:30:43 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -1191,22 +1177,22 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:54 Mon root DEBUG show sgw-u stats pfcp peer
+2019-07-18  10:30:37 Thu root DEBUG show sgw-u stats pfcp peer
 [0]  Peer Node Type : PFCP_SGW_CP       State : Connected
      Local Ip : 2.1.1.38                Peer Ip : 2.1.1.37
-     Heartbeat Req Sendout : 10067      Heartbeat Rsp Receive : 10067      
-     Heartbeat Req Receive : 10065      Heartbeat Rsp Sendout : 10065      
+     Heartbeat Req Sendout : 14415      Heartbeat Rsp Receive : 14415      
+     Heartbeat Req Receive : 14414      Heartbeat Rsp Sendout : 14414      
      Retry HB Req Sendout : 0           Path Failure Count : 0             
      Local         Timestamp : UTC Mon Jul  8 02:14:32 2019
      Peer Previous Timestamp : UTC Mon Jul  8 02:14:16 2019
      Peer Current  Timestamp : UTC Mon Jul  8 02:14:16 2019
      Receive msg:
-     HEARTBEAT_REQ                       : 10065
-     HEARTBEAT_RSP                       : 10067
+     HEARTBEAT_REQ                       : 14414
+     HEARTBEAT_RSP                       : 14415
      ASSO_SETUP_RSP                      : 1
      Sendout msg:
-     HEARTBEAT_REQ                       : 10067
-     HEARTBEAT_RSP                       : 10065
+     HEARTBEAT_REQ                       : 14415
+     HEARTBEAT_RSP                       : 14414
      ASSO_SETUP_REQ                      : 1
 
      Gtpu Ip Infor:
@@ -1218,45 +1204,45 @@ CASA-MOBILE>
           Teid range      : 0x0
 
 CASA-MOBILE>
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:54 Mon root INFO Checking host 172.0.5.38 system status:show sgw-u stats pfcp peer
-2019-07-15  10:01:54 Mon root INFO Checking step <_sre.SRE_Match object; span=(33, 85), match='Peer Node Type : PFCP_SGW_CP       State : Connec> is successful!
-2019-07-15  10:01:54 Mon root INFO beginning check show upf stats pfcp peer
-2019-07-15  10:01:54 Mon root INFO The host 172.0.5.38 is connecting!
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG starting thread (client mode): 0xe903fc50
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:01:54 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:01:54 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:01:54 Mon root INFO Connect to host 172.0.5.38 successful!
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:54 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:01:56 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:30:37 Thu root INFO Checking host 172.0.5.38 system status:show sgw-u stats pfcp peer
+2019-07-18  10:30:37 Thu root INFO Checking step <_sre.SRE_Match object; span=(33, 85), match='Peer Node Type : PFCP_SGW_CP       State : Connec> is successful!
+2019-07-18  10:30:37 Thu root INFO beginning check show upf stats pfcp peer
+2019-07-18  10:30:37 Thu root INFO The host 172.0.5.38 is connecting!
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a57cc0
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:30:37 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:30:37 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:30:38 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:30:38 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:30:38 Thu root INFO Connect to host 172.0.5.38 successful!
+2019-07-18  10:30:38 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:30:38 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:30:38 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:30:38 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:38 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:41 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:02:05 EDT 2019
+  System information as of Wed Jul 17 22:30:50 EDT 2019
 
-  System load:            36.12              IP address for dp_0_1: 172.1.5.38
-  Usage of /:             52.2% of 13.54GB   IP address for dp_0_2: 172.2.5.38
-  Memory usage:           96%                IP address for lo1:    1.1.1.38
-  Swap usage:             45%                IP address for lo2:    2.1.1.38
-  Processes:              698                IP address for lo3:    3.1.1.38
-  Users logged in:        0                  IP address for lo4:    4.1.1.38
+  System load:            36.15              IP address for dp_0_1: 172.1.5.38
+  Usage of /:             52.3% of 13.54GB   IP address for dp_0_2: 172.2.5.38
+  Memory usage:           94%                IP address for lo1:    1.1.1.38
+  Swap usage:             78%                IP address for lo2:    2.1.1.38
+  Processes:              706                IP address for lo3:    3.1.1.38
+  Users logged in:        2                  IP address for lo4:    4.1.1.38
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.38
   IP address for dp_0_0:  172.0.5.38
 
@@ -1266,8 +1252,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 22:02:06 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:30:50 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -1276,22 +1261,22 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:01:59 Mon root DEBUG show upf stats pfcp peer
+2019-07-18  10:30:44 Thu root DEBUG show upf stats pfcp peer
 [0]  Peer Node Type : PFCP_PGW_CP       State : Connected
      Local Ip : 5.1.1.38                Peer Ip : 5.1.1.37
-     Heartbeat Req Sendout : 10067      Heartbeat Rsp Receive : 10067      
-     Heartbeat Req Receive : 10065      Heartbeat Rsp Sendout : 10065      
+     Heartbeat Req Sendout : 14416      Heartbeat Rsp Receive : 14416      
+     Heartbeat Req Receive : 14414      Heartbeat Rsp Sendout : 14414      
      Retry HB Req Sendout : 0           Path Failure Count : 0             
      Local         Timestamp : UTC Mon Jul  8 02:14:32 2019
      Peer Previous Timestamp : UTC Mon Jul  8 02:13:33 2019
      Peer Current  Timestamp : UTC Mon Jul  8 02:13:33 2019
      Receive msg:
-     HEARTBEAT_REQ                       : 10065
-     HEARTBEAT_RSP                       : 10067
+     HEARTBEAT_REQ                       : 14414
+     HEARTBEAT_RSP                       : 14416
      ASSO_SETUP_REQ                      : 1
      Sendout msg:
-     HEARTBEAT_REQ                       : 10067
-     HEARTBEAT_RSP                       : 10065
+     HEARTBEAT_REQ                       : 14416
+     HEARTBEAT_RSP                       : 14414
      ASSO_SETUP_RSP                      : 1
 
      Ip Pool Infor:
@@ -1310,45 +1295,45 @@ CASA-MOBILE>
           Teid range      : 0x0
 
 CASA-MOBILE>
-2019-07-15  10:01:59 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:01:59 Mon root INFO Checking host 172.0.5.38 system status:show upf stats pfcp peer
-2019-07-15  10:01:59 Mon root INFO Checking step <_sre.SRE_Match object; span=(31, 83), match='Peer Node Type : PFCP_PGW_CP       State : Connec> is successful!
-2019-07-15  10:01:59 Mon root INFO beginning check show upf session all
-2019-07-15  10:01:59 Mon root INFO The host 172.0.5.38 is connecting!
-2019-07-15  10:01:59 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8bb1c50
-2019-07-15  10:01:59 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:02:00 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:02:00 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:02:00 Mon root INFO Connect to host 172.0.5.38 successful!
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:02:00 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:02:01 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:02:03 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:30:44 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:30:44 Thu root INFO Checking host 172.0.5.38 system status:show upf stats pfcp peer
+2019-07-18  10:30:44 Thu root INFO Checking step <_sre.SRE_Match object; span=(31, 83), match='Peer Node Type : PFCP_PGW_CP       State : Connec> is successful!
+2019-07-18  10:30:44 Thu root INFO beginning check show upf session all
+2019-07-18  10:30:44 Thu root INFO The host 172.0.5.38 is connecting!
+2019-07-18  10:30:44 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a5e2b0
+2019-07-18  10:30:44 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:30:45 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:30:45 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:30:45 Thu root INFO Connect to host 172.0.5.38 successful!
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:45 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:48 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:02:11 EDT 2019
+  System information as of Wed Jul 17 22:30:56 EDT 2019
 
-  System load:            36.18              IP address for dp_0_1: 172.1.5.38
-  Usage of /:             52.2% of 13.54GB   IP address for dp_0_2: 172.2.5.38
-  Memory usage:           96%                IP address for lo1:    1.1.1.38
-  Swap usage:             45%                IP address for lo2:    2.1.1.38
-  Processes:              699                IP address for lo3:    3.1.1.38
-  Users logged in:        0                  IP address for lo4:    4.1.1.38
+  System load:            36.14              IP address for dp_0_1: 172.1.5.38
+  Usage of /:             52.3% of 13.54GB   IP address for dp_0_2: 172.2.5.38
+  Memory usage:           94%                IP address for lo1:    1.1.1.38
+  Swap usage:             78%                IP address for lo2:    2.1.1.38
+  Processes:              708                IP address for lo3:    3.1.1.38
+  Users logged in:        2                  IP address for lo4:    4.1.1.38
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.38
   IP address for dp_0_0:  172.0.5.38
 
@@ -1358,8 +1343,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 22:02:12 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:30:57 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -1368,74 +1352,76 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:02:06 Mon root DEBUG show upf session all
+2019-07-18  10:30:51 Thu root DEBUG show upf session all
 Node  TM  SEID-L              SEID-R              Sx-PEER                UE-IPADDR              IMSI/MEI*         STATE   
-0     0   0xe6800000000000a0  0xf5c00000000000e7  5.1.1.37               172.31.1.228         
-                                                                         2001:2001:0:e40::      311480105674513   2
-0     0   0x1dc00000000000d2  0x7e000000000000d4  5.1.1.37               172.31.1.29          
+0     0   0x1dc0000000000166  0x7e00000000000168  5.1.1.37               172.31.1.29          
                                                                          2001:2001:0:1c0::      311480105674539   2
-0     0   0x45000000000003b6  0x41000000000003b6  5.1.1.37               172.31.1.68          
+0     0   0x36c000000000000c  0x1b40000000000006  5.1.1.37               172.31.1.52            311480105674515   2
+0     0   0xe6800000000000d2  0xf5c000000000012f  5.1.1.37               172.31.1.228         
+                                                                         2001:2001:0:e40::      311480105674513   2
+0     0   0x45000000000005b2  0x41000000000005b2  5.1.1.37               172.31.1.68          
                                                                          2001:2001:0:440::      311480105674527   2
-0     0   0x1dc00000000000d4  0x7e000000000000d6  5.1.1.37               172.31.1.28            311480105674539   2
-0     0   0x8080000000000044  0x55c00000000000db  5.1.1.37               172.31.1.128         
-                                                                         2001:2001:0:800::      460010000000101   2
-0     0   0x9200000000000024  0xca80000000000024  5.1.1.37               172.31.1.144         
+0     0   0x1dc0000000000168  0x7e0000000000016a  5.1.1.37               172.31.1.28            311480105674539   2
+0     0   0x9200000000000032  0xca80000000000032  5.1.1.37               172.31.1.144         
                                                                          2001:2001:0:900::      311480105674521   2
-Total sessions: 6
+0     0   0x808000000000005a  0x55c0000000000127  5.1.1.37               172.31.1.128         
+                                                                         2001:2001:0:800::      460010000000101   2
+Total sessions: 7
 CASA-MOBILE>
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:02:06 Mon root INFO Checking host 172.0.5.38 system status:show upf session all
-2019-07-15  10:02:06 Mon root INFO show upf session all
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:30:51 Thu root INFO Checking host 172.0.5.38 system status:show upf session all
+2019-07-18  10:30:51 Thu root INFO show upf session all
 Node  TM  SEID-L              SEID-R              Sx-PEER                UE-IPADDR              IMSI/MEI*         STATE   
-0     0   0xe6800000000000a0  0xf5c00000000000e7  5.1.1.37               172.31.1.228         
-                                                                         2001:2001:0:e40::      311480105674513   2
-0     0   0x1dc00000000000d2  0x7e000000000000d4  5.1.1.37               172.31.1.29          
+0     0   0x1dc0000000000166  0x7e00000000000168  5.1.1.37               172.31.1.29          
                                                                          2001:2001:0:1c0::      311480105674539   2
-0     0   0x45000000000003b6  0x41000000000003b6  5.1.1.37               172.31.1.68          
+0     0   0x36c000000000000c  0x1b40000000000006  5.1.1.37               172.31.1.52            311480105674515   2
+0     0   0xe6800000000000d2  0xf5c000000000012f  5.1.1.37               172.31.1.228         
+                                                                         2001:2001:0:e40::      311480105674513   2
+0     0   0x45000000000005b2  0x41000000000005b2  5.1.1.37               172.31.1.68          
                                                                          2001:2001:0:440::      311480105674527   2
-0     0   0x1dc00000000000d4  0x7e000000000000d6  5.1.1.37               172.31.1.28            311480105674539   2
-0     0   0x8080000000000044  0x55c00000000000db  5.1.1.37               172.31.1.128         
-                                                                         2001:2001:0:800::      460010000000101   2
-0     0   0x9200000000000024  0xca80000000000024  5.1.1.37               172.31.1.144         
+0     0   0x1dc0000000000168  0x7e0000000000016a  5.1.1.37               172.31.1.28            311480105674539   2
+0     0   0x9200000000000032  0xca80000000000032  5.1.1.37               172.31.1.144         
                                                                          2001:2001:0:900::      311480105674521   2
-Total sessions: 6
+0     0   0x808000000000005a  0x55c0000000000127  5.1.1.37               172.31.1.128         
+                                                                         2001:2001:0:800::      460010000000101   2
+Total sessions: 7
 CASA-MOBILE>
-2019-07-15  10:02:06 Mon root INFO beginning check show upf session all counter
-2019-07-15  10:02:06 Mon root INFO The host 172.0.5.38 is connecting!
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG starting thread (client mode): 0xe8bb8c18
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG EOF in transport thread
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
-2019-07-15  10:02:06 Mon paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG HostKey agreed: ssh-ed25519
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG Cipher agreed: aes128-ctr
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG MAC agreed: hmac-sha2-256
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG Compression agreed: none
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG Switch to new keys ...
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG Attempting password auth...
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG userauth is OK
-2019-07-15  10:02:06 Mon paramiko.transport INFO Authentication (password) successful!
-2019-07-15  10:02:06 Mon root INFO Connect to host 172.0.5.38 successful!
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG Secsh channel 0 opened.
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:02:06 Mon paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
-2019-07-15  10:02:08 Mon root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
+2019-07-18  10:30:51 Thu root INFO beginning check show upf session all counter
+2019-07-18  10:30:51 Thu root INFO The host 172.0.5.38 is connecting!
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG starting thread (client mode): 0xd8a5ec50
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG Local version/idstring: SSH-2.0-paramiko_2.4.2
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG EOF in transport thread
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG Remote version/idstring: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+2019-07-18  10:30:51 Thu paramiko.transport INFO Connected (version 2.0, client OpenSSH_6.6.1p1)
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG kex algos:['curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'ssh-dss', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'arcfour256', 'arcfour128', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes128-cbc', '3des-cbc', 'blowfish-cbc', 'cast128-cbc', 'aes192-cbc', 'aes256-cbc', 'arcfour', 'rijndael-cbc@lysator.liu.se'] client mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] server mac:['hmac-md5-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-ripemd160-etm@openssh.com', 'hmac-sha1-96-etm@openssh.com', 'hmac-md5-96-etm@openssh.com', 'hmac-md5', 'hmac-sha1', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-ripemd160', 'hmac-ripemd160@openssh.com', 'hmac-sha1-96', 'hmac-md5-96'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG Kex agreed: ecdh-sha2-nistp256
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG HostKey agreed: ssh-ed25519
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG Cipher agreed: aes128-ctr
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG MAC agreed: hmac-sha2-256
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG Compression agreed: none
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG kex engine KexNistp256 specified hash_algo <built-in function openssl_sha256>
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG Switch to new keys ...
+2019-07-18  10:30:51 Thu paramiko.transport DEBUG Attempting password auth...
+2019-07-18  10:30:52 Thu paramiko.transport DEBUG userauth is OK
+2019-07-18  10:30:52 Thu paramiko.transport INFO Authentication (password) successful!
+2019-07-18  10:30:52 Thu root INFO Connect to host 172.0.5.38 successful!
+2019-07-18  10:30:52 Thu paramiko.transport DEBUG [chan 0] Max packet in: 32768 bytes
+2019-07-18  10:30:52 Thu paramiko.transport DEBUG [chan 0] Max packet out: 32768 bytes
+2019-07-18  10:30:52 Thu paramiko.transport DEBUG Secsh channel 0 opened.
+2019-07-18  10:30:52 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:52 Thu paramiko.transport DEBUG [chan 0] Sesch channel 0 request ok
+2019-07-18  10:30:55 Thu root DEBUG Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.19.0-25-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jul 14 22:02:17 EDT 2019
+  System information as of Wed Jul 17 22:31:03 EDT 2019
 
-  System load:            36.16              IP address for dp_0_1: 172.1.5.38
-  Usage of /:             52.2% of 13.54GB   IP address for dp_0_2: 172.2.5.38
-  Memory usage:           96%                IP address for lo1:    1.1.1.38
-  Swap usage:             45%                IP address for lo2:    2.1.1.38
-  Processes:              700                IP address for lo3:    3.1.1.38
-  Users logged in:        0                  IP address for lo4:    4.1.1.38
+  System load:            36.13              IP address for dp_0_1: 172.1.5.38
+  Usage of /:             52.3% of 13.54GB   IP address for dp_0_2: 172.2.5.38
+  Memory usage:           94%                IP address for lo1:    1.1.1.38
+  Swap usage:             78%                IP address for lo2:    2.1.1.38
+  Processes:              709                IP address for lo3:    3.1.1.38
+  Users logged in:        2                  IP address for lo4:    4.1.1.38
   IP address for docker0: 172.17.0.1         IP address for lo5:    5.1.1.38
   IP address for dp_0_0:  172.0.5.38
 
@@ -1445,8 +1431,7 @@ CASA-MOBILE>
 284 packages can be updated.
 197 updates are security updates.
 
-Last login: Sun Jul 14 22:02:18 2019 from 172.0.5.25
-/usr/local/bin/casa/casa-cli
+Last login: Wed Jul 17 22:31:04 2019 from 172.0.5.25
 root@CASA-MOBILE:~# /usr/local/bin/casa/casa-cli
 
 ===================================
@@ -1455,26 +1440,28 @@ Welcome to CASA MEC x86 Platform
 [KCLI services started!
 CASA-MOBILE>page-off
 CASA-MOBILE>
-2019-07-15  10:02:11 Mon root DEBUG show upf session all counter
+2019-07-18  10:30:58 Thu root DEBUG show upf session all counter
 Node  TM  SEID                UL-PKTS       UL-BYTES      DL-PKTS       DL-BYTES      DROP-UL-PKTS  DROP-UL-BYTES  DROP-DL-PKTS  DROP-DL-BYTES
-0     0   0xe6800000000000a0  0             0             5             480           0             0              0             0            
-0     0   0x1dc00000000000d2  0             0             5             480           0             0              0             0            
-0     0   0x45000000000003b6  0             0             5             480           0             0              0             0            
-0     0   0x1dc00000000000d4  1550          427709        1431          514658        1             100            0             0            
-0     0   0x8080000000000044  3220          747348        3071          1109201       0             0              0             0            
-0     0   0x9200000000000024  0             0             5             480           0             0              0             0            
-Total sessions: 6
+0     0   0x1dc0000000000166  0             0             5             480           0             0              0             0            
+0     0   0x36c000000000000c  2644          431952        2545          1060338       1             76             0             0            
+0     0   0xe6800000000000d2  0             0             5             480           0             0              0             0            
+0     0   0x45000000000005b2  0             0             5             480           0             0              0             0            
+0     0   0x1dc0000000000168  2212          362878        1963          654067        0             0              0             0            
+0     0   0x9200000000000032  0             0             5             480           0             0              0             0            
+0     0   0x808000000000005a  2335          608110        2159          845850        0             0              0             0            
+Total sessions: 7
 CASA-MOBILE>
-2019-07-15  10:02:11 Mon paramiko.transport DEBUG [chan 0] EOF sent (0)
-2019-07-15  10:02:11 Mon root INFO Checking host 172.0.5.38 system status:show upf session all counter
-2019-07-15  10:02:11 Mon root INFO show upf session all counter
+2019-07-18  10:30:58 Thu paramiko.transport DEBUG [chan 0] EOF sent (0)
+2019-07-18  10:30:58 Thu root INFO Checking host 172.0.5.38 system status:show upf session all counter
+2019-07-18  10:30:58 Thu root INFO show upf session all counter
 Node  TM  SEID                UL-PKTS       UL-BYTES      DL-PKTS       DL-BYTES      DROP-UL-PKTS  DROP-UL-BYTES  DROP-DL-PKTS  DROP-DL-BYTES
-0     0   0xe6800000000000a0  0             0             5             480           0             0              0             0            
-0     0   0x1dc00000000000d2  0             0             5             480           0             0              0             0            
-0     0   0x45000000000003b6  0             0             5             480           0             0              0             0            
-0     0   0x1dc00000000000d4  1550          427709        1431          514658        1             100            0             0            
-0     0   0x8080000000000044  3220          747348        3071          1109201       0             0              0             0            
-0     0   0x9200000000000024  0             0             5             480           0             0              0             0            
-Total sessions: 6
+0     0   0x1dc0000000000166  0             0             5             480           0             0              0             0            
+0     0   0x36c000000000000c  2644          431952        2545          1060338       1             76             0             0            
+0     0   0xe6800000000000d2  0             0             5             480           0             0              0             0            
+0     0   0x45000000000005b2  0             0             5             480           0             0              0             0            
+0     0   0x1dc0000000000168  2212          362878        1963          654067        0             0              0             0            
+0     0   0x9200000000000032  0             0             5             480           0             0              0             0            
+0     0   0x808000000000005a  2335          608110        2159          845850        0             0              0             0            
+Total sessions: 7
 CASA-MOBILE>
-2019-07-15  10:02:11 Mon root INFO Spend time: 99.42147707939148
+2019-07-18  10:30:58 Thu root INFO Spend time: 115.92410206794739

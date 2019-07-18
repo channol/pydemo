@@ -59,6 +59,7 @@ def run_cli(hostname,command,port=22):
         channel.settimeout(3)
         channel.get_pty()
         channel.invoke_shell()
+        time.sleep(1)
         channel.send('/usr/local/bin/casa/casa-cli\n')  #login into cli mode 
         time.sleep(1)
         channel.send('page-off\r')
