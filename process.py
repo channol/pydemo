@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-
+import paramiko
 import psutil
 import os,time,re,sys
+import logging
 
 def process(process,hostname):
     try:
@@ -15,3 +16,11 @@ def process(process,hostname):
         channel.invoke_shell()
         time.sleep(1)
         channel.send('')
+
+    except Exception as err:
+        logging.error('Try to connect host {} failure!'.format(hostname))
+
+#logging.basicConfig(logging.level=logging.INFO)
+logging.basicConfig(level=logging.INFO,format="%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a')
+
+

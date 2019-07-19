@@ -42,7 +42,7 @@ def copy_version(version,hostname,port=22):
             if comparsion1:
                 channel.send('casa\r')
                 logging.info('Waiting for copy file!!!')
-                time.sleep(15)
+                time.sleep(60)
                 result = (channel.recv(65535)).decode(encoding='utf-8')
                 logging.info(result)
                 sys.stdout.flush()
@@ -133,12 +133,12 @@ def update(version,hostname,port=22):
         logging.error('Try to update host {} to version {} failure! The reason is {}'.format(hostname,version,e))
 
 if __name__ == '__main__':
-#    hostname = input('enter update hostname:')
-#    time.sleep(1)
-#    version = input('enter update version:')
-#    time.sleep(1)
-    hostname = '172.0.10.165'
-    version = '4.9.3-320'
+    hostname = input('enter update hostname:')
+    time.sleep(1)
+    version = input('enter update version:')
+    time.sleep(1)
+#    hostname = '172.0.10.165'
+#    version = '4.9.3-320'
     port = 22
     if copy_version(version,hostname):
         update(version,hostname)
