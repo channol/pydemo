@@ -141,7 +141,11 @@ if __name__ == '__main__':
 #    version = '4.9.3-320'
     port = 22
     if copy_version(version,hostname):
-        update(version,hostname)
+        s = input('Are you want to update version (input y to continue or other to cancel):')
+        if s == 'y':
+            update(version,hostname)
+        else:
+            logging.info('Bye!')
     else:
         pass
 
