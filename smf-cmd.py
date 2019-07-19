@@ -70,7 +70,7 @@ smfip = smfip(hostname)
 url = 'http://{}:80/mgmt/v1/'.format(smfip)+setion+supi
 headers = {"Accept": "application/json","Content-type": "application/json"}
 r = requests.put(url,headers=headers)
-logging.info(url)
+logging.info('put '+url)
 print('respose code is:',r.status_code)
 print(r.text)
 
@@ -78,7 +78,7 @@ print(r.text)
 url = 'http://{}:80/mgmt/v1/'.format(smfip)+setion+supi
 headers = {"Accept": "application/json","Content-type": "application/json"}
 r = requests.delete(url,headers=headers)
-logging.info(url)
+logging.info('delete '+url)
 print('respose code is:',r.status_code)
 print(r.text)
 
@@ -86,7 +86,7 @@ print(r.text)
 url = 'http://{}:80/mgmt/v1/'.format(smfip)+setion1+interface
 headers = {"Accept": "application/json","Content-type": "application/json"}
 r = requests.put(url,headers=headers)
-logging.info(url)
+logging.info('put '+url)
 print('respose code is:',r.status_code)
 print(r.text)
 
@@ -94,7 +94,7 @@ print(r.text)
 url = 'http://{}:80/mgmt/v1/'.format(smfip)+setion1+interface
 headers = {"Accept": "application/json","Content-type": "application/json"}
 r = requests.delete(url,headers=headers)
-logging.info(url)
+logging.info('delete '+url)
 print('respose code is:',r.status_code)
 print(r.text)
 
@@ -102,7 +102,7 @@ print(r.text)
 url = 'http://{}:80/mgmt/v1/'.format(smfip)+setion2+supi+pduid
 headers = {"Accept": "application/json","Content-type": "application/json"}
 r = requests.get(url,headers=headers)
-logging.info(url)
+logging.info('get '+url)
 print('respose code is:',r.status_code)
 print(r.text)
 
@@ -110,6 +110,6 @@ print(r.text)
 url = 'http://{}:80/mgmt/v1/'.format(smfip)+setion2+supi+pduid
 headers = {"Accept": "application/json","Content-type": "application/json"}
 r = requests.delete(url,headers=headers)
-logging.info(url)
+logging.info('delete '+url)
 print('respose code is:',r.status_code)
 print(r.text)
