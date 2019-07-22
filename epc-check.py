@@ -203,5 +203,5 @@ if __name__ == '__main__':
     logging.info(cli_context)
 
     end = time.time()
-    logging.info(datetime.time())
+    logging.info(datetime.now())
     logging.info('Spend time: {}'.format(end-start))
