@@ -3,6 +3,7 @@ import paramiko
 import os,sys,re,time
 import logging
 import configparser
+from datetime import datetime
 
 #logging settin
 logger = logging.getLogger()
@@ -12,7 +13,8 @@ logger.setLevel(logging.DEBUG)
 
 #set file handler of logging
 #file_handler = logging.FileHandler('./log/{}.log'.format(time.strftime('%Y_%m_%d_%H_%M_%S')),mode='w')
-file_handler = logging.FileHandler('./log/epc-check.log',mode='w')
+#file_handler = logging.FileHandler('./log/epc-check.log',mode='w')
+file_handler = logging.FileHandler('/tmp/epc-check.log',mode='w')
 file_handler.setLevel(logging.DEBUG)
 file_handler.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a'))
 logger.addHandler(file_handler)
@@ -201,4 +203,5 @@ if __name__ == '__main__':
     logging.info(cli_context)
 
     end = time.time()
+    logging.info(datetime.time())
     logging.info('Spend time: {}'.format(end-start))

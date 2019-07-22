@@ -20,7 +20,7 @@ else:
     pass
 
 #get smfip
-def smfip(hostname,port=22):
+def get_ip(hostname,container,port=22):
     try:
         logging.info('connecting host {} ...'.format(hostname))
         transport = paramiko.Transport(hostname,port)
@@ -34,14 +34,14 @@ def smfip(hostname,port=22):
         time.sleep(1)
         connectioninfo = channel.recv(65535).decode(encoding='utf-8')
         sys.stdout.flush()
-        dockeripcmd = "docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' root-test_smfsm_1\n"
+        dockeripcmd = "docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' {}\n".format(container)
         channel.send(dockeripcmd)
         time.sleep(1)
         result_container = channel.recv(65535).decode(encoding='utf-8')
         #print(result_container)
         pattern_ip = re.compile(r'((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})(\.((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})){3}')
         container_ip = pattern_ip.search(result_container)
-        print('The container smfsm ip:',container_ip.group())
+        print('The container {} ip:'.format(container),container_ip.group())
         #print(container_ip)
         channel.close()
         transport.close()
@@ -62,9 +62,10 @@ pduid = '/5'
 hostname = '172.0.5.27'
 port = 22
 
+container = 'root-test_smfsm_1'
 
 #smfip = '172.24.14.5'
-smfip = smfip(hostname)
+smfip = get_ip(hostname,container)
 
 #put
 url = 'http://{}:80/mgmt/v1/'.format(smfip)+setion+supi
