@@ -21,7 +21,7 @@ def route(container_ip,hostname):
         logging.info('add route {}'.format(container_ip))
         routeadd = os.popen('route add -host {} gw {}\n'.format(container_ip,hostname))
     else:
-        logging.info('The route {} is exist!'.format(container_ip))
+        logging.warning('The route {} is exist!'.format(container_ip))
         pass
 
 #get smfip
@@ -49,7 +49,7 @@ def get_ip_and_route(hostname,container,port=22):
         if container_ip is None:
             logging.error(result_container)
         else:
-            print('The container ip is:')
+            print('The container {} ip is:'.format(container))
             print(container_ip.group())
             logging.info('set docker route of {}'.format(container))
             sys.stdout.flush()
@@ -62,7 +62,7 @@ def get_ip_and_route(hostname,container,port=22):
         return container_ip.group()
 
     except Exception as err:
-            logging.info('Connecting host {} is failure!!! Reason is {}'.format(hostname,err))
+            logging.error('peer options be failure!!! Reason is {}'.format(err))
 
 
 if __name__=='__main__':
@@ -159,7 +159,7 @@ if __name__=='__main__':
             pass
         print(r.text)
     else:
-        logging.info('Can not get smf ip!')
+        logging.error('Can not get smf ip!')
 
     end = time.time()
     logging.info('spend time(s): {}'.format(end-start))

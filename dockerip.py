@@ -37,13 +37,13 @@ def dockerip(hostname,port=22):
                 container_ip = pattern_ip.search(result_container)
                 print(container,container_ip.group())
         else:
-            logging.info('no find containers!')
+            logging.error('Can not find any test containers!')
 
         channel.close()
         transport.close()
 
     except Exception as err:
-        logging.info('Connecting host {} is failure!!! Reason is {}'.format(hostname,err))
+        logging.error('Connecting host {} is failure!!! Reason is {}'.format(hostname,err))
 
 
 if __name__ == '__main__':
