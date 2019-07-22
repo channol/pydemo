@@ -5,27 +5,27 @@ import os,time,re,sys
 import logging
 import requests
 import configparser
-from datetime import datetime
+#from datetime import datetime
 
 logging.basicConfig(level=logging.INFO,format="%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a')
 
-def route():
+def route(container_ip,hostname):
     #route
-    logging.info('Checking the route 172.24.14.0/24...')
+    logging.info('Checking the route...')
     route = os.popen('route -n\n')
     context = route.read()
     #print(context)
-    pattern = re.compile(r'172.24.14.0',re.M)
+    pattern = re.compile(container_ip,re.M)
     comparsion = pattern.search(context)
     if comparsion is None:
-        logging.info('add route to 172.24.14.0/24')
-        routeadd = os.popen('route add -net 172.24.14.0/24 gw 172.0.5.27\n')
+        logging.info('add route {}'.format(container_ip))
+        routeadd = os.popen('route add -host {} gw {}\n'.format(container_ip,hostname))
     else:
-        logging.info('The route is exist!')
+        logging.info('The route {} is exist!'.format(container_ip))
         pass
 
 #get smfip
-def get_ip(hostname,container,port=22):
+def get_ip_and_route(hostname,container,port=22):
     try:
         logging.info('connecting host {} ...'.format(hostname))
         transport = paramiko.Transport(hostname,port)
@@ -37,10 +37,7 @@ def get_ip(hostname,container,port=22):
         channel.invoke_shell()
         channel.send('date\n')
         time.sleep(1)
-        channel.send('iptables -I DOCKER-USER --dst 172.24.14.0/24 -j ACCEPT\n')
-        time.sleep(1)
-        connectioninfo = channel.recv(65535).decode(encoding='utf-8')
-        #logging.info(connectioninfo)
+        logging.debug(channel.recv(65535).decode(encoding='utf-8'))
         sys.stdout.flush()
         dockeripcmd = "docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
         channel.send('{} {}\n'.format(dockeripcmd,container))
@@ -49,9 +46,17 @@ def get_ip(hostname,container,port=22):
         #print(result_container)
         pattern_ip = re.compile(r'((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})(\.((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})){3}')
         container_ip = pattern_ip.search(result_container)
-        print('The container ip is:')
-        print(container_ip.group())
-        #print(container_ip)
+        if container_ip is None:
+            logging.error(result_container)
+        else:
+            print('The container ip is:')
+            print(container_ip.group())
+            logging.info('set docker route of {}'.format(container))
+            sys.stdout.flush()
+            channel.send('iptables -I DOCKER-USER --dst {}/32 -j ACCEPT\n'.format(container_ip.group()))
+            time.sleep(1)
+            logging.debug(channel.recv(65535).decode(encoding='utf-8'))
+
         channel.close()
         transport.close()
         return container_ip.group()
@@ -73,16 +78,13 @@ if __name__=='__main__':
     container_udm = config.get('smf','container_udm')
     pdu_id = config.get('smf','pdu_id')
 
-    #set route
-    route()
-
     #get ip
-    smf_ip = get_ip(hostname,container_smfsm)
-    time.sleep(1)
-    #udm_ip = get_ip(hostname,container_udm)
-    #time.sleep(1)
+    smf_ip = get_ip_and_route(hostname,container_smfsm)
+    time.sleep(10)
 
     if smf_ip:
+        #set route of peer
+        route(smf_ip,hostname)
         #put 
         url = 'http://{}:80/mgmt/v1/log-filter/{}'.format(smf_ip,supi)
         headers = {"Accept": "application/json","Content-type": "application/json"}
@@ -160,5 +162,4 @@ if __name__=='__main__':
         logging.info('Can not get smf ip!')
 
     end = time.time()
-    print(datetime.now())
-    logging.info('spend time: {}'.format(end-start))
+    logging.info('spend time(s): {}'.format(end-start))

@@ -3,7 +3,7 @@ import paramiko
 import os,sys,re,time
 import logging
 import configparser
-from datetime import datetime
+#from datetime import datetime
 
 #logging settin
 logger = logging.getLogger()
@@ -203,5 +203,4 @@ if __name__ == '__main__':
     logging.info(cli_context)
 
     end = time.time()
-    logging.info(datetime.now())
     logging.info('Spend time: {}'.format(end-start))
