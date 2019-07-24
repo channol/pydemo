@@ -7,6 +7,8 @@ import requests
 import configparser
 #from datetime import datetime
 
+#while true; do netstat -an | grep 8080; sleep 1; done
+
 logging.basicConfig(level=logging.INFO,format="%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a')
 
 def route(container_ip,hostname):

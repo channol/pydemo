@@ -44,6 +44,7 @@ def dockerip(hostname,port=22):
 
     except Exception as err:
         logging.error('Connecting host {} is failure!!! Reason is {}'.format(hostname,err))
+        transport.close()
 
 
 if __name__ == '__main__':
