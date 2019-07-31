@@ -99,7 +99,7 @@ if __name__=='__main__':
             logging.warning('response failure!')
         else:
             pass
-        print(r.text)
+        #print(r.text)
 
         #delete
         url = 'http://{}:80/mgmt/v1/log-filter/{}'.format(smf_ip,supi)
@@ -111,7 +111,7 @@ if __name__=='__main__':
             logging.warning('response failure!')
         else:
             pass
-        print(r.text)
+        #print(r.text)
 
         #put log-interface/NSMF
         url = 'http://{}:80/mgmt/v1/log-interface/nsmf'.format(smf_ip)
@@ -123,7 +123,7 @@ if __name__=='__main__':
             logging.warning('response failure!')
         else:
             pass
-        print(r.text)
+        #print(r.text)
 
         #delete log-interface/NSMF
         url = 'http://{}:80/mgmt/v1/log-interface/nsmf'.format(smf_ip)
@@ -135,7 +135,7 @@ if __name__=='__main__':
             logging.warning('response failure!')
         else:
             pass
-        print(r.text)
+        #print(r.text)
 
         #get sesssion pdu id
         url = 'http://{}:80/mgmt/v1/session/{}/{}'.format(smf_ip,supi,pdu_id)
@@ -147,7 +147,10 @@ if __name__=='__main__':
             logging.warning('response failure!')
         else:
             pass
-        print(r.text)
+            #print(r.text)
+            print(r.json())
+            with open('text','w') as f:
+                f.write(r.json())
 
         #delete sesssion pdu id
         url = 'http://{}:80/mgmt/v1/session/{}/{}'.format(smf_ip,supi,pdu_id)
@@ -159,7 +162,7 @@ if __name__=='__main__':
             logging.warning('response failure!')
         else:
             pass
-        print(r.text)
+        #print(r.text)
     else:
         logging.error('Can not get smf ip!')
 

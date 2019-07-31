@@ -1,0 +1,198 @@
+{
+   "ue_info": {
+      "supi": "imsi-450051234000000",
+      "sessions": [
+         7
+      ]
+   },
+   "sess": {
+      "key": {
+         "supi": "imsi-450051234000000",
+         "pduSessionId": 7
+      },
+      "rsc": {
+         "sessIp": {
+            "addr": {
+               "Ipv4": 4076800779
+            },
+            "ipaddr": "11.11.255.242",
+            "static": true
+         },
+         "pool": "IPPool|static-upf1|11.11.0.1/16",
+         "rFseid": {
+            "flag": 2,
+            "seid": 18374686479671623750,
+            "ip_addr": {
+               "Ipv4": 83951910
+            },
+            "port": 8805
+         },
+         "isDynamicPcc": true,
+         "pcfRef": "833469f9-8fc7",
+         "pcfPath": "http://pcf1:8080/npcf-smpolicycontrol/v1",
+         "isChargingOn": true,
+         "chfRef": "833469f9-8fc7",
+         "chfPath": "http://chf1:5848/nchf-convergedcharging/v1"
+      },
+      "loc": {
+         "Loc": [
+            {
+               "ueLocation": {
+                  "nrLocation": {
+                     "tai": {
+                        "plmnId": {
+                           "mcc": "450",
+                           "mnc": "05"
+                        },
+                        "tac": "1110096"
+                     },
+                     "ncgi": {
+                        "plmnId": {
+                           "mcc": "450",
+                           "mnc": "05"
+                        },
+                        "nrCellId": "1048576"
+                     }
+                  }
+               }
+            }
+         ]
+      },
+      "amfInfo": {
+         "servingNfId": "000041",
+         "guami": {
+            "plmnId": {
+               "mcc": "450",
+               "mnc": "05"
+            },
+            "amfId": "000041"
+         },
+         "smContextStatusUri": "http://uemgr/namf-comm/v1/ue-contexts/imsi-450051234000000/sm-contexts/7/notify"
+      },
+      "nwInfo": {
+         "dnn": "inet1",
+         "sNssai": {
+            "sst": 1,
+            "sd": "abd001"
+         },
+         "servingNetwork": {
+            "mcc": "450",
+            "mnc": "05"
+         },
+         "anType": "3GPP_ACCESS",
+         "pduSessionType": 1,
+         "ratType": "NR",
+         "requestType": "INITIAL_REQUEST"
+      },
+      "udmInfo": {
+         "smSubsData": {
+            "pduSessionTypes": {
+               "defaultSessionType": "IPV4",
+               "allowedSessionTypes": [
+                  "IPV6",
+                  "IPV4V6"
+               ]
+            },
+            "sscModes": {
+               "defaultSscMode": "SSC_MODE_1",
+               "allowedSscModes": [
+                  "SSC_MODE_2",
+                  "SSC_MODE_3"
+               ]
+            },
+            "iwkEpsInd": true,
+            "ladnIndicator": true,
+            "sessionAmbr": {
+               "uplink": "101 Mbps",
+               "downlink": "102 Mbps"
+            },
+            "staticIpAddress": [
+               {
+                  "ipv4Addr": "1.2.3.4",
+                  "ipv6Addr": "1.2.3.4::",
+                  "Ipv6Prefix": "5.6.7.8::"
+               }
+            ],
+            "upSecurity": {
+               "upIntegr": "REQUIRED",
+               "upConfid": "NOT_NEEDED"
+            }
+         },
+         "nfInstanceId": "smfsm",
+         "monitoredResourceUris": [
+            "/nudm-sdm/v1/imsi-450051234000000/sm-data"
+         ]
+      },
+      "flows": {
+         "lSeid": {
+            "flag": 2,
+            "seid": 7200819744000007
+         },
+         "upfFteid": {
+            "flag": 1,
+            "teid": 4278206672,
+            "ip_addr": {
+               "Ipv4": 637862060
+            }
+         },
+         "dlFteid": {
+            "flag": 1,
+            "teid": 117440512,
+            "ip_addr": {
+               "Ipv4": 16784138
+            }
+         },
+         "defUl": {
+            "pdrId": 65535,
+            "farId": 2147483647,
+            "qerIds": [
+               2147483646
+            ],
+            "qfi": 5,
+            "5qi": 5,
+            "qosRuleId": 1,
+            "sessRuleId": "SMF Static Policy"
+         },
+         "defDl": {
+            "pdrId": 65534,
+            "farId": 2147483646,
+            "qerIds": [
+               2147483645
+            ],
+            "qosRuleId": 1,
+            "sessRuleId": "SMF Static Policy"
+         },
+         "pDesicion": {
+            "sessRules": {
+               "SMF Static Policy": {
+                  "authSessAmbr": {
+                     "uplink": "1 Gbps",
+                     "downlink": "1 Gbps"
+                  },
+                  "authDefQos": {
+                     "5qi": 5,
+                     "arp": {
+                        "priorityLevel": 2,
+                        "preemptCap": "NOT_PREEMPT",
+                        "preemptVuln": "NOT_PREEMPTABLE"
+                     },
+                     "priorityLevel": 1
+                  },
+                  "sessRuleId": "SMF Static Policy"
+               }
+            },
+            "chargingInfo": {
+               "primaryChfAddress": "",
+               "secondaryChfAddress": ""
+            },
+            "revalidationTime": "0001-01-01T00:00:00Z"
+         },
+         "chrgData": {
+            "invocationTimeStamp": "0001-01-01T00:00:00Z",
+            "invocationSequenceNumber": 0,
+            "invocationResult": null
+         }
+      }
+   },
+   "fsmState": "PENDING"
+}
