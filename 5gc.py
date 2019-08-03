@@ -2,6 +2,7 @@
 #import pyshark
 import os,sys,time
 import pexpect
+import requests
 
 #tshark_path = '/opt/wireshark/wireshark-3.0.3-built/tshark'
 #capture = pyshark.LiveCapture(output_file="./debug/test.pcap",interface="any",tshark_path=tshark_path)
@@ -64,7 +65,7 @@ else:
                 print('send session pdu establishment request cmd:ule 0 0 7 1 inet1')
                 child.sendline('ule 0 0 7 1 inet1')
                 time.sleep(5)
-                index = child.expect(['diag> .',pexpect.EOF,pexpect.TIMEOUT])
+                index = child.expect([' diag> .',pexpect.EOF,pexpect.TIMEOUT])
                 if index != 0:
                     print('send pdu establishment request failure and check the setting!')
                     child.interact()
@@ -73,15 +74,44 @@ else:
                     print('wait for time 5s.............')
                     time.sleep(5)
 
-                    child.sendline('show ms')
-                    child.expect('diag> ')
+                    child.expect(' diag> ')
+                    child.buffer
                     child.sendline('show stat')
-                    child.expect('diag> ')
+                    time.sleep(1)
+                    child.expect(' diag> ')
+                    time.sleep(1)
                     result=child.before
+                    #result1=child.after
                     cli= result.decode(encoding='utf-8')
+                    #cli1= result1.decode(encoding='utf-8')
                     print(cli)
+                    #print(1)
+                    #print(cli1)
+                    time.sleep(3)
 
 
+                    #check pdu session
+                    print('check pdu session in the smfsm')
+                    supi = 'imsi-450051234000000'
+                    pdu_id = 7
+
+                    url = 'http://smfsm:80/mgmt/v1/session/{}/{}'.format(supi,pdu_id)
+                    headers = {"Accept": "application/json","Content-type": "application/json"}
+                    r = requests.get(url,headers=headers)
+                    logging.info('get '+r.url)
+                    print('The options respose code is:',r.status_code)
+                    if r.status_code != 200:
+                        print('The response failure!')
+                        print('Get pdu session failure!')
+                    else:
+                        pass
+                        #print(r.text)
+                        print(r.json())
+                        with open('text','w') as f:
+                            f.write(r.json())
+
+
+                    child.sendline('\n')
                     i = input("enter 'y' to cli or others to contniue update and release session: ")
                     if i=='y':
                         child.interact()
@@ -100,7 +130,7 @@ else:
                             time.sleep(5)
 
                             #send session release
-                            print('pdu session release!')
+                            print('send pdu session release!')
                             child.sendline('uld all')
                             time.sleep(5)
                             index = child.expect(['diag> .',pexpect.EOF,pexpect.TIMEOUT])
@@ -110,11 +140,13 @@ else:
                             else:
                                 print('send pdu session release successful!')
                                 print('wait for time 5s.............')
+                                child.close()
+
 
                                 #child.interact()
-                                s = input("enter 'y' to cli or others exit:  ")
-                                if s=='y':
-                                    child.interact()
-                                else:
-                                    child.close()
+                                #s = input("enter 'y' to cli or others exit:  ")
+                                #if s=='y':
+                                #    child.interact()
+                                #else:
+                                #    child.close()
 

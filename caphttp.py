@@ -15,8 +15,10 @@ pkts = rdpcap("n1n2.pcap")
 pkts1 = rdpcap("http1.pcap")
 
 print(pkts)
+print(pkts[0])
 print(pkts[0].show())
+print(pkts[0].sprintf('%Raw.load%'))
 
-print(pkts1)
-print(pkts1[0].show())
+#print(pkts1)
+#print(pkts1[0].show())
 
