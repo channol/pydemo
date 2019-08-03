@@ -1,0 +1,15 @@
+export PFCP_IMG=registry.gitlab.casa-systems.com/mobility/smf/pfcp
+export UDM_IMG=registry.gitlab.casa-systems.com/mobility/sim-udm
+export SMFSM_IMG=registry.gitlab.casa-systems.com/mobility/smf/sm
+export AMF_IMG=registry.gitlab.casa-systems.com/mobility/smf/sm/amf-sim
+export UEMGR_IMG=registry.gitlab.casa-systems.com/mobility/amf/uemgr
+export N2MGR_IMG=registry.gitlab.casa-systems.com/mobility/amf/n2mgr
+export SCTPMGR_IMG=registry.gitlab.casa-systems.com/mobility/amf/sctpmgr
+export GNB_IMG=registry.gitlab.casa-systems.com/mobility/sim-gnb
+export NSSF_IMG=registry.gitlab.casa-systems.com/mobility/sim-nssf
+export NRF_IMG=registry.gitlab.casa-systems.com/mobility/sim-nrf
+export AUSF_IMG=registry.gitlab.casa-systems.com/mobility/ausf/sim-ausf
+export REDISCLUSTER_IMG=grokzen/redis-cluster
+export CPE_IMG=registry.gitlab.casa-systems.com/mobility/sim-gnb:cpetest
+export CURL_IMG=registry.gitlab.casa-systems.com/mobility/smf/sm-test
+export AGENT_IMG=registry.gitlab.casa-systems.com/mobility/nrf/nrf-agent

@@ -163,6 +163,20 @@ if __name__=='__main__':
         else:
             pass
         #print(r.text)
+
+        #put log-interface/NSMF
+        nif = ['db','nsmf','namf','npcf','nchf','nnrf','nssf','nudm','gtpc','pfcp','nas','ngap','etcd','mgmt','lql']
+        for nl in nif:
+            url = 'http://{}:80/mgmt/v1/log-interface/{}'.format(smf_ip,nl)
+            headers = {"Accept": "application/json","Content-type": "application/json"}
+            r = requests.put(url,headers=headers)
+            logging.info('put '+r.url)
+            print('The options respose code is:',r.status_code)
+            if r.status_code != 200:
+                logging.warning('response failure!')
+            else:
+                pass
+
     else:
         logging.error('Can not get smf ip!')
 

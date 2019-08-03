@@ -1,0 +1,265 @@
+# Container definitions used for SMF integration testing
+# Copyright (C) 2019 Casa Systems, Inc.  All Rights Reserved.
+# Use this file in conjunction with the "dcomp" shell script.
+
+version: '3'
+
+# Containers all use a network defined by the environment variable ${RNDNET}
+# The value of ${RNDNET} must be unique on the docker host and must not
+# conflict with any other network that must be reachable from the host.
+networks:
+  default:
+    ipam:
+      driver: default
+      config:
+        - subnet: ${RNDNET}
+
+# Each docker container is defined as a named service.
+# The service identifies the image to be run, the command (if any) to be executed,
+# and other parameters necessary to bring up the container.
+#
+# Note that each container defines a security context. The security context defined
+# here disables apparmor protections so that the root user can terminate container
+# processes that are malfunctioning. With the default context, even the root user
+# cannot stop bad containers without restarting the docker service.
+services:
+
+  redis:
+    image: ${REDIS_IMG:-redis}
+    command: redis-server
+    security_opt:
+      - apparmor:unconfined
+
+  rediscluster:
+    #image: "grokzen/redis-cluster"
+    image: ${REDISCLUSTER_IMG:-redis-cluster}
+    #container_name: nrf-redis-cluster
+    ports:
+      - 7000:7000
+    depends_on:
+      - redis
+
+  etcd:
+    image: ${ETCD_IMG:-quay.io/coreos/etcd}
+    command: etcd -listen-client-urls http://0.0.0.0:2379 -advertise-client-urls http://etcd-srv:2379
+    security_opt:
+      - apparmor:unconfined
+    depends_on:
+      - rediscluster
+
+  pfcp:
+    image: ${PFCP_IMG:-registry.gitlab.casa-systems.com/mobility/smf/pfcp}
+    # Privileged containers have access to certain host resources.
+    privileged: true
+    # Services that require interactive shells must include the following two lines.
+    stdin_open: true
+    tty: true
+    volumes:
+      # Mount a local file to the container. The local file path is based on
+      # the current working directory.
+      - "./config/pfcp_cfg.json:/etc/config/config.json"
+      - "./script:/cfg"
+    command: /opt/casa/pfcp/pfcp
+    security_opt:
+      - apparmor:unconfined
+
+        #  upf:
+        #    image: ${UPF_IMG:-upf}
+        #    command: sim_upf pfcp 8805
+        #    security_opt:
+        #      - apparmor:unconfined
+    depends_on:
+      - gnb
+
+  udm:
+    image: ${UDM_IMG:-udm}
+    security_opt:
+      - apparmor:unconfined
+    depends_on:
+      - nrf
+
+  smfsm:
+    image: ${SMFSM_IMG:-sm}
+    volumes:
+      # Mount a local file to the container.
+      - "./config/smf_cfg.json-org:/etc/config/config.json"
+      #- "./config/450udm:/opt/casa/smf/sm/450udm"
+      - "./script:/cfg"
+
+    command: ./smfsm 
+    security_opt:
+      - apparmor:unconfined
+    depends_on:
+      - gnb
+      - udm
+      - nrf
+
+        #  smfsm1:
+        #    image: ${SMFSM_IMG:-sm}
+        #    container_name: root-test_smfsm1_1
+        #    volumes:
+        #      # Mount a local file to the container.
+        #      - "./config/smf1_cfg.json:/etc/config/config.json"
+        #      #- "./config/450udm:/opt/casa/smf/sm/450udm"
+        #      - "./script:/cfg"
+        #
+        #    command: ./smfsm 
+        #    security_opt:
+        #      - apparmor:unconfined
+        #    depends_on:
+        #      - gnb
+        #      - udm
+        #      - nrf
+
+
+#  amf:
+#    image: ${AMF_IMG:-amf}
+#    volumes:
+#      # Mount a local file to the container.
+#      - "./config/sim_amf_cfg.json:/etc/config/sim_amf_cfg.json"
+#    privileged: true
+#    stdin_open: true
+#    tty: true
+#    command: bash
+#    security_opt:
+#      - apparmor:unconfined
+
+  nrf:
+    image: ${NRF_IMG:-sim-nrf}
+    #image: registry.gitlab.casa-systems.com/mobility/sim-nrf:test-123
+    #container_name: root-test_nrf_1
+    command: /usr/local/bin/sim-nrf -c /sim-nrf.yaml
+    #command: /usr/local/bin/sim-nrf -c conf.ini
+    volumes:
+       - ./config/sim-nrf.yaml:/sim-nrf.yaml
+      #- ./config/conf.ini:/conf.ini
+    ports:
+      - 80:80
+    depends_on:
+      #- redis-cluster
+      - etcd
+
+  sctpmgr:
+    image: ${SCTPMGR_IMG:-sctpmgr}
+    volumes:
+      # Mount a local file to the container.
+      - "./config/sctpmgr.json:/etc/config/config.json"
+    security_opt:
+      - apparmor:unconfined
+    #ports:
+    #  - 9093:9093
+      #- "38412:38412"
+    depends_on:
+      - sim-ausf
+
+  n2mgr:
+    image: ${N2MGR_IMG:-n2mgr}
+    volumes:
+      # Mount a local file to the container.
+      - "./config/n2mgr.json:/etc/config/config.json"
+    security_opt:
+      - apparmor:unconfined
+    #ports:
+      #- 9097:9097
+    depends_on:
+      - sctpmgr
+
+  uemgr:
+    image: ${UEMGR_IMG:-uemgr}
+    volumes:
+      # Mount a local file to the container.
+      - "./config/uemgr.json:/etc/config/config.json"
+    security_opt:
+      - apparmor:unconfined
+    #ports:
+    #  - 9095:9095
+    depends_on:
+      - sctpmgr
+
+  sim-ausf:
+    image: ${AUSF_IMG:-sim-ausf}
+    container_name: root-test_ausf_1
+    #volumes:
+      # Mount a local file to the container.
+      #- "./config/sim-aush.json:/etc/config/config.json"
+    security_opt:
+      - apparmor:unconfined
+    #ports:
+      #- 9096
+    depends_on:
+      - nssf
+
+  nssf:
+    image: ${NSSF_IMG:-sim-nssf}
+    #volumes:
+      # Mount a local file to the container.
+      #- "./config/sim-aush.json:/etc/config/config.json"
+    command: sim-nssf -r redis
+    depends_on:
+      - redis
+    security_opt:
+      - apparmor:unconfined
+    depends_on:
+      - udm
+
+
+  gnb:
+    image: ${GNB_IMG:-sim-gnb/gnb-ysj:latest}
+    #environment:
+      #N2IP: n2mgr
+    command: sh 
+    #volumes:
+      # Mount a local file to the container.
+      #- "./config/sim-aush.json:/etc/config/config.json"
+    security_opt:
+      - apparmor:unconfined
+    ports: 
+      - 65501:65501
+    privileged: true
+    stdin_open: true
+    depends_on:
+      - sctpmgr
+
+  nrf-agent:
+    image: ${AGENT_IMG:-nrf-agent}
+    #image: registry.gitlab.casa-systems.com/mobility/nrf/nrf-agent:latest
+    #container_name: root-test_nrf-agent_1
+    volumes:
+      - ./config/nrf-agent-cfg/nrfa_smf.json:/etc/config/config.json
+    depends_on:
+      - sctpmgr
+
+  curl:
+    image: ${CURL_IMG:-sm-test} 
+    #container_name: root-test_curl_1
+    volumes:
+      - "./config/450udm:/root/450udm"
+    command: bash /root/450udm
+    #command:
+       #- bash
+       #- /root/450udm
+    security_opt:
+      - apparmor:unconfined
+    #privileged: true
+    #stdin_open: true
+    links:
+      - udm
+    depends_on:
+      - smfsm
+
+  cpe:
+    image: ${CPE_IMG:-sm-gnb:cpetest} 
+    container_name: root-test_cpe_1
+    #volumes:
+      #- "./config/450udm:/root/450udm"
+    command: sh
+    security_opt:
+      - apparmor:unconfined
+    privileged: true
+    stdin_open: true
+    #links:
+      #- udm
+    depends_on:
+      - gnb
+
+
