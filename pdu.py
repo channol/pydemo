@@ -10,6 +10,8 @@ import requests
 
 prompt = 'diag> '
 cmd = 'dcomp exec gnb sh'
+os.system('rm text')
+ue_ip = ""
 
 #index 
 print('start sim-gnb docker')
@@ -111,6 +113,74 @@ else:
                         print(r.json())
                         with open('text','w') as f:
                             f.write(r.json())
+                        #get ue ip
+                        ue_ip=os.popen("awk '/ipaddr/' text | awk -F \"\\\"\" '{print $4}'").read().replace('\n',"")
+                        print('>>>>>ue ip is :',ue_ip)
+                        time.sleep(1)
+
+                    #connect to upf
+                    upf_login = "ssh test@172.0.5.38"
+                    child_upf = pexpect.spawn(upf_login)
+                    index_upf = child_upf.expect(['password: ',pexpect.EOF,pexpect.TIMEOUT])
+                    if index_upf !=0:
+                        print('connect to upf failure!')
+                        child_upf.close()
+                    else:
+                        #check pfcp modify numbers
+                        print('check upf pdu session information:')
+                        child_upf.sendline('testcasa')
+                        time.sleep(1)
+                        child_upf.expect('CASA-MOBILE>')
+                        time.sleep(1)
+                        child_upf.sendline("page-off")
+                        time.sleep(1)
+                        child_upf.expect('CASA-MOBILE>')
+                        time.sleep(1)
+                        print('login upf successful!')
+
+                        if ue_ip:
+                            #check far
+                            child_upf.buffer
+                            time.sleep(1)
+                            child_upf.sendline("show upf session ue-ip {} far".format(ue_ip))
+                            time.sleep(1)
+                            index_ue = child_upf.expect(['session not found','CASA-MOBILE>'])
+                            time.sleep(1)
+                            if index_ue == 0:
+                                print('upf can not find the session')
+                            else:
+                                print(child_upf.before.decode(encoding='utf-8')) 
+                                with open('text','a') as f:
+                                    f.write(child_upf.before.decode(encoding='utf-8'))
+                            #check pdr
+                            child_upf.buffer
+                            time.sleep(1)
+                            child_upf.sendline("show upf session ue-ip {} pdr".format(ue_ip))
+                            time.sleep(1)
+                            index_ue = child_upf.expect(['session not found','CASA-MOBILE>'])
+                            time.sleep(1)
+                            if index_ue == 0:
+                                print('upf can not find the session')
+                            else:
+                                print(child_upf.before.decode(encoding='utf-8')) 
+                                with open('text','a') as f:
+                                    f.write(child_upf.before.decode(encoding='utf-8'))
+                            #check qer
+                            child_upf.buffer
+                            time.sleep(1)
+                            child_upf.sendline("show upf session ue-ip {} qer".format(ue_ip))
+                            time.sleep(1)
+                            index_ue = child_upf.expect(['session not found','CASA-MOBILE>'])
+                            time.sleep(1)
+                            if index_ue == 0:
+                                print('upf can not find the session')
+                            else:
+                                print(child_upf.before.decode(encoding='utf-8')) 
+                                with open('text','a') as f:
+                                    f.write(child_upf.before.decode(encoding='utf-8'))
+                        else:
+                            print('ue ip can not find from smf!')
+                            time.sleep(1)
 
 
                     print("please enter string to continue!")
@@ -119,30 +189,27 @@ else:
                     print("enter other to run release session!")
                     i = input(">>>>>please input: ")
                     print(i)
-                    if i=='xterm-256colory':
+                    if i=='xterm-256colory' or i=='y':
+                        child.sendline('\n')
                         child.interact()
-                    elif i=='xterm-256coloru':
+                    elif i=='xterm-256coloru' or i=='u':
                         #send pdu session update
-                        pfcpcmd = "ssh test@172.0.5.38"
-                        upf = pexpect.spawn(pfcpcmd)
-                        indexp = upf.expect(['password: ',pexpect.EOF,pexpect.TIMEOUT])
-                        if indexp !=0:
-                            print('connect to upf failure!')
-                            upf.close()
-                        else:
+                        if child_upf:
                             #check pfcp modify numbers
                             print('check pfcp modify stats')
-                            upf.sendline('testcasa')
+                            child_upf.sendline('show system')
                             time.sleep(1)
-                            upf.expect('CASA-MOBILE>')
-                            upf.buffer
-                            upf.sendline("show upf stats pfcp msg | include SESS_MOD_RSP")
+                            child_upf.expect('CASA-MOBILE>')
+                            child_upf.buffer
+                            child_upf.sendline("show upf stats pfcp msg | include SESS_MOD_RSP")
                             time.sleep(1)
-                            upf.expect('CASA-MOBILE>')
-                            cli = upf.before
+                            child_upf.expect('CASA-MOBILE>')
+                            cli = child_upf.before
                             num = cli.decode(encoding='utf8')
                             num_before = re.search('\d+',num,re.M)
                             print('pfcp before modify message number is:',num_before.group())
+                        else:
+                            pass
 
 
                         print('send pdu session update!')
@@ -158,15 +225,15 @@ else:
                             time.sleep(5)
 
                             #check pfcp modify numbers
-                            if upf:
-                                upf.sendline('show system')
+                            if child_upf:
+                                child_upf.sendline('show system')
                                 time.sleep(1)
-                                upf.expect('CASA-MOBILE>')
-                                upf.buffer
-                                upf.sendline("show upf stats pfcp msg | include SESS_MOD_RSP")
+                                child_upf.expect('CASA-MOBILE>')
+                                child_upf.buffer
+                                child_upf.sendline("show upf stats pfcp msg | include SESS_MOD_RSP")
                                 time.sleep(1)
-                                upf.expect('CASA-MOBILE>')
-                                cli1 = upf.before
+                                child_upf.expect('CASA-MOBILE>')
+                                cli1 = child_upf.before
                                 num1 = cli1.decode(encoding='utf8')
                                 num_after = re.search('\d+',num1,re.M)
                                 print('pfcp after modify message number is:',num_after.group())
@@ -179,7 +246,7 @@ else:
 
                                 print('wait for time 5s.............')
                                 time.sleep(5)
-                                upf.close()
+                                child_upf.close()
                             else:
                                 pass
 
@@ -190,11 +257,12 @@ else:
                             print("enter other to run release session!")
                             t = input(">>>>>please input: ")
                             if t=='y':
+                                child.sendline('\n')
                                 child.interact()
                             else:
                                 #send session release
                                 print('send pdu session release!')
-                                child.sendline('uld all')
+                                child.sendline('\nuld all')
                                 time.sleep(5)
                                 index = child.expect(['diag> .',pexpect.EOF,pexpect.TIMEOUT])
                                 if index !=0:
@@ -208,7 +276,7 @@ else:
                     else:
                         #send session release
                         print('send pdu session release!')
-                        child.sendline('uld all')
+                        child.sendline('\nuld all')
                         time.sleep(5)
                         index = child.expect(['diag> .',pexpect.EOF,pexpect.TIMEOUT])
                         if index !=0:
