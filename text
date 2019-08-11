@@ -1,8 +1,8 @@
 {
    "ue_info": {
       "supi": "imsi-450051234000000",
+      "gpsi": "gpsi1234",
       "sessions": [
-         7,
          7
       ]
    },
@@ -14,15 +14,15 @@
       "rsc": {
          "sessIp": {
             "addr": {
-               "Ipv4": 114297611
+               "Ipv4": 2097153285
             },
-            "ipaddr": "11.11.208.6",
+            "ipaddr": "5.5.0.125",
             "static": true
          },
-         "pool": "IPPool|static-upf1|11.11.0.1/16",
+         "pool": "IPPool|upf01|5.5.0.0/24",
          "rFseid": {
             "flag": 2,
-            "seid": 18374686479671623765,
+            "seid": 18374686479671623685,
             "ip_addr": {
                "Ipv4": 83951910
             },
@@ -34,26 +34,108 @@
          "isChargingOn": true,
          "chfRef": "833469f9-8fc7",
          "chfPath": "http://stub:5848/nchf-convergedcharging/v1",
-         "chfId": 1
+         "chfId": 2
       },
       "loc": {
          "Loc": [
             {
                "ueLocation": {
+                  "eutraLocation": {
+                     "tai": {
+                        "plmnId": {
+                           "mcc": "",
+                           "mnc": ""
+                        },
+                        "tac": ""
+                     },
+                     "ecgi": {
+                        "plmnId": {
+                           "mcc": "",
+                           "mnc": ""
+                        },
+                        "eutraCellId": ""
+                     },
+                     "ueLocationTimestamp": "0001-01-01T00:00:00Z",
+                     "globalNgenbId": {
+                        "plmnId": {
+                           "mcc": "",
+                           "mnc": ""
+                        }
+                     }
+                  },
                   "nrLocation": {
                      "tai": {
                         "plmnId": {
                            "mcc": "450",
                            "mnc": "05"
                         },
-                        "tac": "1110096"
+                        "tac": "10f050"
                      },
                      "ncgi": {
                         "plmnId": {
                            "mcc": "450",
                            "mnc": "05"
                         },
-                        "nrCellId": "1048576"
+                        "nrCellId": "000010000"
+                     }
+                  },
+                  "n3gaLocation": {
+                     "n3gppTai": {
+                        "plmnId": {
+                           "mcc": "",
+                           "mnc": ""
+                        },
+                        "tac": ""
+                     }
+                  }
+               },
+               "addUeLocation": {
+                  "eutraLocation": {
+                     "tai": {
+                        "plmnId": {
+                           "mcc": "",
+                           "mnc": ""
+                        },
+                        "tac": ""
+                     },
+                     "ecgi": {
+                        "plmnId": {
+                           "mcc": "",
+                           "mnc": ""
+                        },
+                        "eutraCellId": ""
+                     },
+                     "ueLocationTimestamp": "0001-01-01T00:00:00Z",
+                     "globalNgenbId": {
+                        "plmnId": {
+                           "mcc": "",
+                           "mnc": ""
+                        }
+                     }
+                  },
+                  "nrLocation": {
+                     "tai": {
+                        "plmnId": {
+                           "mcc": "",
+                           "mnc": ""
+                        },
+                        "tac": ""
+                     },
+                     "ncgi": {
+                        "plmnId": {
+                           "mcc": "",
+                           "mnc": ""
+                        },
+                        "nrCellId": ""
+                     }
+                  },
+                  "n3gaLocation": {
+                     "n3gppTai": {
+                        "plmnId": {
+                           "mcc": "",
+                           "mnc": ""
+                        },
+                        "tac": ""
                      }
                   }
                }
@@ -72,19 +154,12 @@
          "smContextStatusUri": "http://uemgr/namf-comm/v1/ue-contexts/imsi-450051234000000/sm-contexts/7/notify"
       },
       "nwInfo": {
-         "dnn": "inet1",
-         "sNssai": {
-            "sst": 1,
-            "sd": "abd001"
-         },
          "servingNetwork": {
-            "mcc": "450",
-            "mnc": "05"
+            "mcc": "",
+            "mnc": ""
          },
          "anType": "3GPP_ACCESS",
-         "pduSessionType": 1,
-         "ratType": "NR",
-         "requestType": "INITIAL_REQUEST"
+         "pduSessionType": 0
       },
       "udmInfo": {
          "smSubsData": {
@@ -132,7 +207,7 @@
          },
          "upfFteid": {
             "flag": 1,
-            "teid": 4278206912,
+            "teid": 4278194928,
             "ip_addr": {
                "Ipv4": 637862060
             }
@@ -150,8 +225,8 @@
             "qerIds": [
                2147483646
             ],
-            "qfi": 5,
-            "5qi": 5,
+            "qfi": 1,
+            "5qi": 1,
             "qosRuleId": 1,
             "sessRuleId": "SMF Static Policy"
          },
@@ -172,22 +247,19 @@
                      "downlink": "1 Gbps"
                   },
                   "authDefQos": {
-                     "5qi": 5,
+                     "5qi": 1,
                      "arp": {
                         "priorityLevel": 2,
                         "preemptCap": "NOT_PREEMPT",
                         "preemptVuln": "NOT_PREEMPTABLE"
                      },
-                     "priorityLevel": 1
+                     "priorityLevel": 1,
+                     "averWindow": 1000,
+                     "maxDataBurstVol": 10000
                   },
                   "sessRuleId": "SMF Static Policy"
                }
-            },
-            "chargingInfo": {
-               "primaryChfAddress": "",
-               "secondaryChfAddress": ""
-            },
-            "revalidationTime": "0001-01-01T00:00:00Z"
+            }
          },
          "chrgData": {
             "invocationTimeStamp": "0001-01-01T00:00:00Z",
@@ -196,5 +268,5 @@
          }
       }
    },
-   "fsmState": "PENDING"
+   "fsmState": "ACTIVE"
 }
