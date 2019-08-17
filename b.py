@@ -50,7 +50,17 @@ if __name__=='__main__':
     else:
         logging.error('check 5gc procedure!')
 ######################################################################
-    logging.info('step3-ue initiated deregistration procedure')
+    logging.info('step4-pdu session modification procedure')
+    num7=upf_check(child_upf,cmd='show upf stats pfcp msg | include SESS_MOD_REQ')
+    gnb_cli(child_gnb=child_gnb,cli='uerl all')
+    num8=upf_check(child_upf,cmd='show upf stats pfcp msg | include SESS_MOD_RSP')
+    bak3 = compare(num7,num8,1)
+    if bak3:
+        logging.info('AN context release procedure successful!')
+    else:
+        logging.error('AN context release  procedure failure!')
+######################################################################
+    logging.info('step5-ue initiated deregistration procedure')
     num5=upf_check(child_upf,cmd='show upf stats pfcp msg | include SESS_DEL_REQ')
     gnb_cli(child_gnb=child_gnb,cli='uld all')
     logging.info(gnb_show(child_gnb=child_gnb,cli='show stat'))

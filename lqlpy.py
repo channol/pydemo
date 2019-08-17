@@ -5,16 +5,26 @@ import pexpect
 import logging
 
 #set result file and log file
-st = time.strftime('%Y_%m_%d_%H_%M_%S')
-#result_file = '/root/test/log/result'+time.strftime('%Y_%m_%d_%H_%M_%S')+'.log'
-result_file = '/root/test/log/result'+st+'.log'
-log_file = '/root/test/log/running'+st+'.log'
+strftime = time.strftime('%Y_%m_%d_%H_%M_%S')
+report = 'report'+strftime
+os.makedirs('/root/test/log/{}'.format(report))
+def file_name(filename):
+    file_name = '/root/test/log/{}/{}'.format(report,filename)+strftime+'.log'
+    return file_name
+result_file = file_name('result')
+running_file = file_name('running')
+smfsm_file = file_name('smfsm')
+pcap_file = '/root/test/log/'+report+'/pcap'+strftime+'.pcap'
 
+with open(result_file,'w') as f:
+    f.write(strftime)
+
+#####################################################
 #set logging config
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 #set file handler of logging
-file_handler = logging.FileHandler(log_file,mode='w')
+file_handler = logging.FileHandler(running_file,mode='w')
 file_handler.setLevel(logging.DEBUG)
 file_handler.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d %H:%M:%S %a'))
 logger.addHandler(file_handler)
@@ -45,14 +55,17 @@ def get_pdu_session(smfip,supi,pdu_id):
         if r.status_code != 200:
             logging.error('Get pdu session failure!')
         else:
-            logging.info(r.json())
-            with open(result_file,'w') as f:
+            #logging.info(r.json())
+            with open(result_file,'a') as f:
                 f.write(r.json())
 
 def get_ue_ip():
     #get ue ip for smf
     if os.path.exists(result_file):
         ue_ip=os.popen("awk '/ipaddr/' %s | awk -F \"\\\"\" '{print $4}'" %(result_file)).read().replace('\n',"")
+        ue_state=os.popen("awk '/fsmState/' %s" %(result_file)).read().replace('\n',"")
+        logging.info('The ue ip is:'+str(ue_ip))
+        logging.info('The ue state is:'+str(ue_state))
         return ue_ip
     else:
         pass
@@ -132,6 +145,19 @@ def upf_check(child_upf,cmd):
             #retun result number
             return check_num.group()
 
+def compare(num1,num2,thereshold):
+    if str.isnumeric(num1) and str.isnumeric(num2):
+        n = int(num2) - int(num1)
+        if n == int(thereshold):
+            logging.info('The compare step running successful!')
+            return True
+        else:
+            logging.error('The compare step running failure!')
+            return False
+    else:
+        logging.error('Please check statis numbers!')
+        return False
+
 def conn_gnb(sctpmgr_ip):
     #connect to sim-gnb
     gnblogin = 'docker exec -it root-test_gnb_1 sh'
@@ -178,7 +204,7 @@ def gnb_cli(child_gnb,cli):
         else:
             logging.info('send cli successful! The cli: {}'.format(cli))
             time.sleep(3)
-
+            return True
     else:
         logging.error('check the connection of sim-gnb')
 
@@ -203,15 +229,51 @@ def gnb_show(child_gnb,cli):
 def gnb_close(child_gnb):
     #child_gnb = conn_gnb(sctpmgr_ip)
     if child_gnb:
+        child_gnb.sendcontrol('c')
+        child_gnb.expect('/ #')
         child_gnb.close()
+
+def get_log(node='smfsm'):
+    os.chdir('/root/test/')
+    os.popen('dcomp logs {} > {}'.format(node,smfsm_file))
+
+def tshark_start():
+    #os.system("nohup tshark -i any -f 'net 172.24.14.0/24' -w %s &" %(pcap_file))
+    os.system("nohup tcpdump -i any -f 'net 172.24.14.0/24' -w %s &" %(pcap_file))
+    logging.info('start tshark')
+
+def tshark_stop():
+    os.system('killall tcpdump')
+    logging.info('stop tshark')
+
+def tshark_show():
+    logging.info('show pcap file with http2 and pfcp')
+    show = os.popen("tshark -r %s -Y 'pfcp or http2'" %(pcap_file))
+    with open ('tmp.log','w') as f:
+        f.write(show.read())
+    logging.info('show file is tmp.log')
 
 def tiplog():
     if os.path.exists(result_file):
         logging.info('The information file: '+result_file)
     else:
         logging.warning('The information file is not exist!')
-    if os.path.exists(log_file):
-        logging.info('The running log file: '+log_file)
+
+    if os.path.exists(running_file):
+        logging.info('The running log file: '+running_file)
     else:
         logging.warning('The running log file is not exist!')
+
+    if os.path.exists(smfsm_file):
+        logging.info('The smfsm log file: '+smfsm_file)
+        logging.info('scp root@172.0.5.27:'+smfsm_file+' .')
+        logging.info('vim scp://root@172.0.5.27/'+smfsm_file)
+    else:
+        logging.warning('The smfsm log file is not exist!')
+
+    if os.path.exists(pcap_file):
+        logging.info('The pcap file: '+pcap_file)
+        logging.info('scp root@172.0.5.27:'+pcap_file+' .')
+    else:
+        logging.warning('The pcap file is not exist!')
 

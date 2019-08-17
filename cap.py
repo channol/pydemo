@@ -2,7 +2,7 @@
 import os,sys,time
 
 print('*******start capture and you can ctrl+c to stop wireshark!')
-pcapf='test'+time.strftime('%Y_%m_%d_%H_%M_%S')+'.pcap'
+pcapf='capture'+time.strftime('%Y_%m_%d_%H_%M_%S')+'.pcap'
 logf='smfsm'+time.strftime('%Y_%m_%d_%H_%M_%S')+'.log'
 os.system('tcpdump -i any net 172.24.14.0/24 -w /root/test/log/{}'.format(pcapf))
 time.sleep(1)
